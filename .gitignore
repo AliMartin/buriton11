@@ -5,6 +5,7 @@
 # Site credentials and local environment overrides.
 /sites/*/*settings*.php
 !/sites/default/default.settings.php
+!/sites/default/settings.local.php
 /sites/*/*services*.yml
 !/sites/default/default.services.yml
 /sites/*/drushrc.php
