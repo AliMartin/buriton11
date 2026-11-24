@@ -49,3 +49,5 @@ cloneable_entities:
   - entity_view_mode
   - entity_form_mode
   - base_field_override
+  - klaro_app
+  - klaro_purpose

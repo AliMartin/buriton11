@@ -1,5 +1,11 @@
 # Buriton local Drupal upgrade progress
 
+## Follow-up — Stage File Proxy and Klaro (24 November 2026)
+
+- Installed requested constraints `drupal/stage_file_proxy:^4.0` and `drupal/klaro:^3.1`: locked versions 4.0.2 and 3.1.2, plus `drupal/klaro_js` 3.1.0. No existing dependency versions changed; Composer reported no advisories.
+- Enabled both modules, confirmed no pending updates and rebuilt caches. Saved their default configuration and Entity Clone's automatic entity-type additions while preserving the three existing unrelated export differences.
+- Stage File Proxy origin remains unset; Klaro retains installation defaults pending site-specific consent configuration. Production unchanged.
+
 ## Follow-up — Database Logging enabled (24 November 2026)
 
 - Enabled core Database Logging (`dblog`) at the owner's request. Recent log messages is available at `/admin/reports/dblog`; retention is the default 1,000 entries, pruned by cron.

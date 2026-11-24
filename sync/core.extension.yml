@@ -30,6 +30,7 @@ module:
   help: 0
   honeypot: 0
   image: 0
+  klaro: 0
   link: 0
   media: 0
   media_library: 0
@@ -50,6 +51,7 @@ module:
   search_node: 0
   shortcut: 0
   similarterms: 0
+  stage_file_proxy: 0
   system: 0
   taxonomy: 0
   tb_megamenu: 0

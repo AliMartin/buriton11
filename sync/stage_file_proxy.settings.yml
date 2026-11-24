@@ -1,0 +1,10 @@
+_core:
+  default_config_hash: krCPB4R9eTxmcYKV8vVc2XqNf74CbjzYTCbvfOjQuSE
+hotlink: false
+origin: ''
+origin_dir: ''
+proxy_headers: ''
+use_imagecache_root: true
+verify: true
+excluded_extensions: ''
+excluded_hotlink_extensions: ''
