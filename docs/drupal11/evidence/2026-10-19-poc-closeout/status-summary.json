@@ -1,0 +1,25 @@
+{
+  "errors": [],
+  "warnings": [
+    {
+      "id": "configuration_files",
+      "severity": "Warning",
+      "value": "Protection disabled"
+    },
+    {
+      "id": "deprecated_modules",
+      "severity": "Warning",
+      "value": "Deprecated modules found: /Contact [1], History [2]/.\n\n[1] https://www.drupal.org/node/3223395#s-contact\n[2] https://www.drupal.org/node/3223395#s-history"
+    },
+    {
+      "id": "deprecated_themes",
+      "severity": "Warning",
+      "value": "Deprecated themes found: /Stable 9 [1]/.\n\n[1] https://www.drupal.org/node/3223395#s-stable9"
+    },
+    {
+      "id": "enable_html5_validation",
+      "severity": "Warning",
+      "value": "Enabled"
+    }
+  ]
+}

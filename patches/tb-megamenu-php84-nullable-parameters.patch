@@ -1,0 +1,11 @@
+--- a/src/Controller/TBMegaMenuAdminController.php
++++ b/src/Controller/TBMegaMenuAdminController.php
+@@ -220,7 +220,7 @@
+    * @return string
+    *   An error message displayed to the user.
+    */
+-  public function saveError(string $event, string $menu_name = NULL, string $theme = NULL, array $block_config = NULL, array $menu_config = NULL) {
++  public function saveError(string $event, ?string $menu_name = NULL, ?string $theme = NULL, ?array $block_config = NULL, ?array $menu_config = NULL) {
+     $msg = $this->t("TB MegaMenu error:");
+ 
+     switch ($event) {

@@ -1,0 +1,171 @@
+{
+  "total": 4295,
+  "severities": {
+    "minor": 4235,
+    "info": 57,
+    "major": 3
+  },
+  "test_path_findings": 3907,
+  "by_project": {
+    "admin_toolbar": {
+      "total": 11,
+      "non_test": 1,
+      "major_non_test": 0
+    },
+    "aggregator": {
+      "total": 338,
+      "non_test": 9,
+      "major_non_test": 0
+    },
+    "backup_migrate": {
+      "total": 6,
+      "non_test": 3,
+      "major_non_test": 0
+    },
+    "captcha": {
+      "total": 80,
+      "non_test": 2,
+      "major_non_test": 0
+    },
+    "ctools": {
+      "total": 203,
+      "non_test": 3,
+      "major_non_test": 0
+    },
+    "entity_clone": {
+      "total": 139,
+      "non_test": 0,
+      "major_non_test": 0
+    },
+    "fontawesome": {
+      "total": 13,
+      "non_test": 11,
+      "major_non_test": 2
+    },
+    "honeypot": {
+      "total": 22,
+      "non_test": 5,
+      "major_non_test": 0
+    },
+    "image_field_to_media": {
+      "total": 2,
+      "non_test": 2,
+      "major_non_test": 0
+    },
+    "pathauto": {
+      "total": 211,
+      "non_test": 11,
+      "major_non_test": 0
+    },
+    "recaptcha": {
+      "total": 14,
+      "non_test": 0,
+      "major_non_test": 0
+    },
+    "redirect": {
+      "total": 249,
+      "non_test": 3,
+      "major_non_test": 0
+    },
+    "rules": {
+      "total": 794,
+      "non_test": 38,
+      "major_non_test": 0
+    },
+    "similarterms": {
+      "total": 128,
+      "non_test": 2,
+      "major_non_test": 0
+    },
+    "tb_megamenu": {
+      "total": 8,
+      "non_test": 8,
+      "major_non_test": 1
+    },
+    "token": {
+      "total": 132,
+      "non_test": 20,
+      "major_non_test": 0
+    },
+    "typed_data": {
+      "total": 254,
+      "non_test": 2,
+      "major_non_test": 0
+    },
+    "views_slideshow": {
+      "total": 7,
+      "non_test": 0,
+      "major_non_test": 0
+    },
+    "webform": {
+      "total": 1655,
+      "non_test": 239,
+      "major_non_test": 0
+    },
+    "bootstrap5": {
+      "total": 2,
+      "non_test": 2,
+      "major_non_test": 0
+    },
+    "classy": {
+      "total": 3,
+      "non_test": 3,
+      "major_non_test": 0
+    },
+    "stable": {
+      "total": 24,
+      "non_test": 24,
+      "major_non_test": 0
+    }
+  },
+  "non_test_major": [
+    {
+      "type": "issue",
+      "check_name": "PHPStan",
+      "categories": [
+        "Compatibility"
+      ],
+      "description": "fontawesome - Call to deprecated function system_retrieve_file(). Deprecated in drupal:10.2.0 and is removed from drupal:11.0.0. There is no replacement.",
+      "fingerprint": "1bf35f258b8a3993308e28e595610fb81a5031fa1b73488cd05568e81dec393c",
+      "severity": "major",
+      "location": {
+        "path": "modules/contrib/fontawesome/modules/fontawesome_iconpicker_widget/src/Commands/FontawesomeIconPickerCommands.php",
+        "lines": {
+          "begin": 80
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "PHPStan",
+      "categories": [
+        "Compatibility"
+      ],
+      "description": "fontawesome - Call to deprecated function system_retrieve_file(). Deprecated in drupal:10.2.0 and is removed from drupal:11.0.0. There is no replacement.",
+      "fingerprint": "1c2a2fb88726e630e092225b682ec78196eb3d3981fec9fdbc8f12378fe50853",
+      "severity": "major",
+      "location": {
+        "path": "modules/contrib/fontawesome/src/Commands/FontawesomeCommands.php",
+        "lines": {
+          "begin": 80
+        }
+      }
+    },
+    {
+      "type": "issue",
+      "check_name": "PHPStan",
+      "categories": [
+        "Compatibility"
+      ],
+      "description": "tb_megamenu - Call to deprecated method getContentType() of class Symfony\\Component\\HttpFoundation\\Request: since Symfony 6.2, use getContentTypeFormat() instead",
+      "fingerprint": "96e5237175332f38a97cb131000636294a43ed5907f380c5bb00ebcee2986336",
+      "severity": "major",
+      "location": {
+        "path": "modules/contrib/tb_megamenu/src/Controller/TBMegaMenuAdminController.php",
+        "lines": {
+          "begin": 84
+        }
+      }
+    }
+  ]
+}

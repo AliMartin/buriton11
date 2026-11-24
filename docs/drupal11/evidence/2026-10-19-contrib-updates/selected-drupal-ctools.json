@@ -1,0 +1,38 @@
+{
+    "name": "drupal/ctools",
+    "description": "Provides a number of utility and helper APIs for Drupal developers and site builders.",
+    "keywords": [],
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/ctools",
+    "names": [
+        "drupal/ctools"
+    ],
+    "versions": [
+        "4.1.1"
+    ],
+    "licenses": [
+        {
+            "name": "GNU General Public License v2.0 or later",
+            "osi": "GPL-2.0-or-later",
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html#licenseText"
+        }
+    ],
+    "source": {
+        "type": "git",
+        "url": "https://git.drupalcode.org/project/ctools.git",
+        "reference": "4.1.1"
+    },
+    "dist": {
+        "type": "zip",
+        "url": "https://ftp.drupal.org/files/projects/ctools-4.1.1.zip",
+        "reference": "4.1.1"
+    },
+    "path": "/var/www/html/modules/contrib/ctools",
+    "support": {
+        "source": "https://git.drupalcode.org/project/ctools",
+        "issues": "https://www.drupal.org/project/issues/ctools"
+    },
+    "requires": {
+        "drupal/core": "^9.5 || ^10 || ^11"
+    }
+}

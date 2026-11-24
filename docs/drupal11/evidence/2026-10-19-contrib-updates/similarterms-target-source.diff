@@ -1,0 +1,603 @@
+--- old/similarterms.info.yml
++++ new/similarterms.info.yml
+@@ -1,13 +1,13 @@
+ name: Similar By Terms
+ type: module
+ description: Use Views to show similar content based on taxonomy terms
+-core_version_requirement: ^8 || ^9 || ^10 || ^11
++core_version_requirement: ^10.3 || ^11 || ^12
+ 
+ dependencies:
+   - drupal:taxonomy
+   - drupal:views
+ 
+ # Information added by Drupal.org packaging script on 2026-07-14
+-version: '8.x-1.10'
++version: '2.0.0'
+ project: 'similarterms'
+-datestamp: 1784045587
++datestamp: 1784045730
+--- old/similarterms.module
++++ new/similarterms.module
+@@ -5,6 +5,8 @@
+  * The similarterms primary module file.
+  */
+ 
++use Drupal\Core\Hook\Attribute\LegacyHook;
++use Drupal\similarterms\Hook\SimilartermsHooks;
+ use Drupal\Core\Routing\RouteMatchInterface;
+ 
+ /**
+@@ -12,17 +14,9 @@
+  *
+  * {@inheritdoc}
+  */
++#[LegacyHook]
+ function similarterms_help($route_name, RouteMatchInterface $route_match) {
+-  switch ($route_name) {
+-    case 'help.page.similarterms':
+-      $output = '';
+-      $output .= '<h3>' . t('About') . '</h3>';
+-      $output .= '<p>' . t('Similar by Terms module provides context for content items by displaying a block of other similar content.') . '</p>';
+-      $output .= '<p>' . t('Similarity is based on the taxonomy terms assigned to content.') . '</p>';
+-      return $output;
+-
+-    default:
+-  }
++  return \Drupal::service(SimilartermsHooks::class)->help($route_name, $route_match);
+ }
+ 
+ /**
+@@ -30,68 +24,7 @@
+  *
+  * {@inheritdoc}
+  */
++#[LegacyHook]
+ function similarterms_views_data_alter(&$data): void {
+-  if (\Drupal::moduleHandler()->moduleExists('taxonomy_entity_index')) {
+-    // When taxonomy_entity_index is enabled, its index covers term references
+-    // on any entity type, so expose the handlers for all content entity
+-    // types.
+-    $entity_types = \Drupal::entityTypeManager()->getDefinitions();
+-    foreach ($entity_types as $entity_type) {
+-      $base_table = $entity_type->getBaseTable();
+-      if ($entity_type->getGroup() != 'content' || empty($base_table) || !$entity_type->getKey('id')) {
+-        continue;
+-      }
+-
+-      $data[$base_table]['similarterms'] = [
+-        'group' => t('Similar by terms'),
+-        'title' => t('Similarity'),
+-        'help' => t('Percentage/count of terms which @type has in common with @type given as argument.', ['@type' => $entity_type->getLabel()]),
+-        'field' => [
+-          'id' => 'similar_terms_field',
+-        ],
+-        'sort' => [
+-          'id' => 'similar_terms_sort',
+-        ],
+-      ];
+-
+-      $data[$base_table]['similar_' . $entity_type->getKey('id')] = [
+-        'title' => t('@type ID', ['@type' => $entity_type->getLabel()]),
+-        'group' => t('Similar by terms'),
+-        'help' => t('ID of @type item(s).', ['@type' => $entity_type->getLabel()]),
+-        'argument' => [
+-          'id' => 'similar_terms_arg',
+-          'name field' => 'title',
+-          'numeric' => TRUE,
+-          'validate type' => $entity_type->getKey('id'),
+-        ],
+-      ];
+-    }
+-  }
+-  else {
+-    // Without taxonomy_entity_index only nodes are indexed (core
+-    // taxonomy_index).
+-    $data['node']['similarterms'] = [
+-      'group' => t('Similar by terms'),
+-      'title' => t('Similarity'),
+-      'help' => t('Percentage/count of terms which node has in common with node given as argument.'),
+-      'field' => [
+-        'id' => 'similar_terms_field',
+-      ],
+-      'sort' => [
+-        'id' => 'similar_terms_sort',
+-      ],
+-    ];
+-
+-    $data['node']['similar_nid'] = [
+-      'title' => t('Nid'),
+-      'group' => t('Similar by terms'),
+-      'help' => t('ID of content item(s).'),
+-      'argument' => [
+-        'id' => 'similar_terms_arg',
+-        'name field' => 'title',
+-        'numeric' => TRUE,
+-        'validate type' => 'nid',
+-      ],
+-    ];
+-  }
++  \Drupal::service(SimilartermsHooks::class)->viewsDataAlter($data);
+ }
+--- old/src/Hook/SimilartermsHooks.php
++++ new/src/Hook/SimilartermsHooks.php
+@@ -0,0 +1,125 @@
++<?php
++
++namespace Drupal\similarterms\Hook;
++
++use Drupal\Core\Entity\EntityTypeManagerInterface;
++use Drupal\Core\Extension\ModuleHandlerInterface;
++use Drupal\Core\Routing\RouteMatchInterface;
++use Drupal\Core\Hook\Attribute\Hook;
++use Drupal\Core\StringTranslation\StringTranslationTrait;
++
++/**
++ * Hook implementations for similarterms.
++ */
++class SimilartermsHooks {
++  use StringTranslationTrait;
++
++  /**
++   * Constructs a new SimilartermsHooks object.
++   *
++   * @param \Drupal\Core\Extension\ModuleHandlerInterface $moduleHandler
++   *   The module handler service.
++   * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entityTypeManager
++   *   The entity type manager service.
++   */
++  public function __construct(
++    protected ModuleHandlerInterface $moduleHandler,
++    protected EntityTypeManagerInterface $entityTypeManager,
++  ) {
++  }
++
++  /**
++   * Implements hook_help().
++   *
++   * {@inheritdoc}
++   */
++  #[Hook('help')]
++  public function help($route_name, RouteMatchInterface $route_match) {
++    switch ($route_name) {
++      case 'help.page.similarterms':
++        $output = '';
++        $output .= '<h3>' . $this->t('About') . '</h3>';
++        $output .= '<p>' . $this->t('Similar by Terms module provides context for content items by displaying a block of other similar content.') . '</p>';
++        $output .= '<p>' . $this->t('Similarity is based on the taxonomy terms assigned to content.') . '</p>';
++        return $output;
++
++      default:
++    }
++  }
++
++  /**
++   * Implements hook_views_data_alter().
++   *
++   * {@inheritdoc}
++   */
++  #[Hook('views_data_alter')]
++  public function viewsDataAlter(&$data): void {
++    if ($this->moduleHandler->moduleExists('taxonomy_entity_index')) {
++      // When taxonomy_entity_index is enabled, its index covers term references
++      // on any entity type, so expose the handlers for all content entity
++      // types.
++      $entity_types = $this->entityTypeManager->getDefinitions();
++      foreach ($entity_types as $entity_type) {
++        $base_table = $entity_type->getBaseTable();
++        if ($entity_type->getGroup() != 'content' || empty($base_table) || !$entity_type->getKey('id')) {
++          continue;
++        }
++        $data[$base_table]['similarterms'] = [
++          'group' => $this->t('Similar by terms'),
++          'title' => $this->t('Similarity'),
++          'help' => $this->t('Percentage/count of terms which @type has in common with @type given as argument.', [
++            '@type' => $entity_type->getLabel(),
++          ]),
++          'field' => [
++            'id' => 'similar_terms_field',
++          ],
++          'sort' => [
++            'id' => 'similar_terms_sort',
++          ],
++        ];
++        $data[$base_table]['similar_' . $entity_type->getKey('id')] = [
++          'title' => $this->t('@type ID', [
++            '@type' => $entity_type->getLabel(),
++          ]),
++          'group' => $this->t('Similar by terms'),
++          'help' => $this->t('ID of @type item(s).', [
++            '@type' => $entity_type->getLabel(),
++          ]),
++          'argument' => [
++            'id' => 'similar_terms_arg',
++            'name field' => 'title',
++            'numeric' => TRUE,
++            'validate type' => $entity_type->getKey('id'),
++          ],
++        ];
++      }
++    }
++    else {
++      // Without taxonomy_entity_index only nodes are indexed (core
++      // taxonomy_index).
++      $data['node']['similarterms'] = [
++        'group' => $this->t('Similar by terms'),
++        'title' => $this->t('Similarity'),
++        'help' => $this->t('Percentage/count of terms which node has in common with node given as argument.'),
++        'field' => [
++          'id' => 'similar_terms_field',
++        ],
++        'sort' => [
++          'id' => 'similar_terms_sort',
++        ],
++      ];
++      $data['node']['similar_nid'] = [
++        'title' => $this->t('Nid'),
++        'group' => $this->t('Similar by terms'),
++        'help' => $this->t('ID of content item(s).'),
++        'argument' => [
++          'id' => 'similar_terms_arg',
++          'name field' => 'title',
++          'numeric' => TRUE,
++          'validate type' => 'nid',
++        ],
++      ];
++    }
++  }
++
++}
+--- old/src/Plugin/views/argument/SimilarTermsArgument.php
++++ new/src/Plugin/views/argument/SimilarTermsArgument.php
+@@ -6,7 +6,6 @@
+ use Drupal\Core\Entity\EntityTypeManagerInterface;
+ use Drupal\Core\Form\FormStateInterface;
+ use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+-use Drupal\taxonomy\VocabularyStorageInterface;
+ use Drupal\views\Plugin\views\argument\NumericArgument;
+ use Drupal\views\Plugin\views\join\Standard;
+ use Symfony\Component\DependencyInjection\ContainerInterface;
+@@ -26,11 +25,6 @@
+   protected Connection $connection;
+ 
+   /**
+-   * The vocabulary storage.
+-   */
+-  protected VocabularyStorageInterface $vocabularyStorage;
+-
+-  /**
+    * The entity type manager.
+    */
+   protected EntityTypeManagerInterface $entityTypeManager;
+@@ -53,14 +47,11 @@
+    *   The plugin implementation definition.
+    * @param \Drupal\Core\Database\Connection $connection
+    *   The database connection.
+-   * @param \Drupal\taxonomy\VocabularyStorageInterface $vocabulary_storage
+-   *   The vocabulary storage.
+    * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
+    *   The entity type manager.
+    */
+-  public function __construct(array $configuration, string $plugin_id, array $plugin_definition, Connection $connection, VocabularyStorageInterface $vocabulary_storage, EntityTypeManagerInterface $entity_type_manager) {
++  public function __construct(array $configuration, string $plugin_id, array $plugin_definition, Connection $connection, EntityTypeManagerInterface $entity_type_manager) {
+     parent::__construct($configuration, $plugin_id, $plugin_definition);
+-    $this->vocabularyStorage = $vocabulary_storage;
+     $this->connection = $connection;
+     $this->entityTypeManager = $entity_type_manager;
+   }
+@@ -74,7 +65,6 @@
+       $plugin_id,
+       $plugin_definition,
+       $container->get('database'),
+-      $container->get('entity_type.manager')->getStorage('taxonomy_vocabulary'),
+       $container->get('entity_type.manager')
+     );
+   }
+@@ -102,7 +92,7 @@
+ 
+     parent::buildOptionsForm($form, $form_state);
+     $vocabularies = [];
+-    $result = $this->vocabularyStorage->loadMultiple();
++    $result = $this->entityTypeManager->getStorage('taxonomy_vocabulary')->loadMultiple();
+ 
+     foreach ($result as $vocabulary) {
+       $vocabularies[$vocabulary->id()] = $vocabulary->label();
+--- old/tests/src/Kernel/SimilarTermsArgumentTest.php
++++ new/tests/src/Kernel/SimilarTermsArgumentTest.php
+@@ -13,8 +13,6 @@
+ 
+ /**
+  * Tests the Similar Terms argument plugin.
+- *
+- * @group similarterms
+  */
+ #[Group('similarterms')]
+ class SimilarTermsArgumentTest extends SimilarTermsTestBase {
+@@ -104,7 +102,7 @@
+     $result_nids = array_map(fn($row) => $row->nid, $view->result);
+ 
+     // Node2 should definitely be in results (it has matching terms).
+-    $this->assertContains($this->nodes['node2']->id(), $result_nids,
++    $this->assertTrue(in_array($this->nodes['node2']->id(), $result_nids),
+       'Node with matching terms is in results.');
+   }
+ 
+@@ -130,7 +128,7 @@
+     $result_nids = array_map(fn($row) => $row->nid, $view->result);
+ 
+     // Node1 (the argument) should NOT be in results.
+-    $this->assertNotContains($this->nodes['node1']->id(), $result_nids,
++    $this->assertFalse(in_array($this->nodes['node1']->id(), $result_nids),
+       'Argument node excluded when include_args is FALSE.');
+ 
+     // Test with include_args = TRUE.
+@@ -145,7 +143,7 @@
+     $result_nids = array_map(fn($row) => $row->nid, $view->result);
+ 
+     // Node1 (the argument) SHOULD be in results.
+-    $this->assertContains($this->nodes['node1']->id(), $result_nids,
++    $this->assertTrue(in_array($this->nodes['node1']->id(), $result_nids),
+       'Argument node included when include_args is TRUE.');
+   }
+ 
+@@ -228,12 +226,12 @@
+ 
+     foreach ($tids as $tid) {
+       $term = Term::load($tid);
+-      $this->assertEquals('tags', $term->bundle(),
++      $this->assertSame('tags', $term->bundle(),
+         'Only terms from filtered vocabulary are included.');
+     }
+ 
+     // The category term should not be in the tids.
+-    $this->assertNotContains($category_term->id(), $tids,
++    $this->assertFalse(in_array($category_term->id(), $tids),
+       'Term from excluded vocabulary is not included.');
+   }
+ 
+@@ -260,15 +258,15 @@
+     $result_nids = array_map(fn($row) => $row->nid, $view->result);
+ 
+     // Node2 has PHP, Drupal, JavaScript - 2 out of 2 match = 100%.
+-    $this->assertContains($this->nodes['node2']->id(), $result_nids,
++    $this->assertTrue(in_array($this->nodes['node2']->id(), $result_nids),
+       'Node with 100% match is included.');
+ 
+     // Node3 has only JavaScript - 0 out of 2 match = 0%.
+-    $this->assertNotContains($this->nodes['node3']->id(), $result_nids,
++    $this->assertFalse(in_array($this->nodes['node3']->id(), $result_nids),
+       'Node with 0% match is excluded when filtering for 100%.');
+ 
+     // Node4 has Python, React - 0 out of 2 match = 0%.
+-    $this->assertNotContains($this->nodes['node4']->id(), $result_nids,
++    $this->assertFalse(in_array($this->nodes['node4']->id(), $result_nids),
+       'Node with different terms is excluded when filtering for 100%.');
+   }
+ 
+@@ -294,12 +292,12 @@
+     $result_nids = array_map(fn($row) => $row->nid, $view->result);
+ 
+     // Node2 has PHP, Drupal - 2 out of 2 = 100% (should be included).
+-    $this->assertContains($this->nodes['node2']->id(), $result_nids,
++    $this->assertTrue(in_array($this->nodes['node2']->id(), $result_nids),
+       'Node with 100% match is included when filtering for 50%+.');
+ 
+     // Nodes with less than 50% match (less than 1 term) should be excluded.
+     // Node3, node4, node5 all have 0 matching terms = 0%.
+-    $this->assertNotContains($this->nodes['node3']->id(), $result_nids,
++    $this->assertFalse(in_array($this->nodes['node3']->id(), $result_nids),
+       'Node with 0% match is excluded when filtering for 50%+.');
+   }
+ 
+@@ -358,7 +356,7 @@
+     $result_nids = array_map(fn($row) => $row->nid, $view->result);
+ 
+     // Node2 has JavaScript (plus PHP and Drupal), so it should match.
+-    $this->assertContains($this->nodes['node2']->id(), $result_nids,
++    $this->assertTrue(in_array($this->nodes['node2']->id(), $result_nids),
+       'Node2 matches on JavaScript term.');
+ 
+     // Verify the similarity count for node2.
+@@ -370,7 +368,7 @@
+           // Node2 matches 1 out of 1 term from node3 = 100%.
+           if ($field->options['count_type'] == 1) {
+             $rendered = $field->render($row);
+-            $this->assertEquals('100%', $rendered,
++            $this->assertSame('100%', $rendered,
+               'Node2 shows 100% match with node3 (1 out of 1 term).');
+           }
+         }
+--- old/tests/src/Kernel/SimilarTermsEntityIndexTest.php
++++ new/tests/src/Kernel/SimilarTermsEntityIndexTest.php
+@@ -18,10 +18,6 @@
+  * When taxonomy_entity_index is installed, the handlers are exposed for all
+  * content entity types and similarity is calculated from the
+  * taxonomy_entity_index table instead of core's node-only taxonomy_index.
+- *
+- * @group similarterms
+- *
+- * @requires module taxonomy_entity_index
+  */
+ #[Group('similarterms')]
+ class SimilarTermsEntityIndexTest extends SimilarTermsTestBase {
+@@ -209,11 +205,11 @@
+ 
+     // The argument entity is excluded, everything else is included via the
+     // LEFT JOIN, matching or not.
+-    $this->assertNotContains($this->entities['entity1']->id(), $result_ids);
++    $this->assertFalse(in_array($this->entities['entity1']->id(), $result_ids));
+     $this->assertCount(3, $view->result);
+ 
+     // Entity 2 shares both of entity 1's terms and must sort first.
+-    $this->assertEquals($this->entities['entity2']->id(), $view->result[0]->id);
++    $this->assertSame($this->entities['entity2']->id(), $view->result[0]->id);
+ 
+     // Verify the similarity counts. The parent's nodes carry the same terms
+     // and overlapping numeric IDs, so these counts are only correct when the
+@@ -241,11 +237,11 @@
+     $this->assertNotEmpty($view->result, 'Node view returns results.');
+ 
+     $result_nids = array_map(fn($row) => $row->nid, $view->result);
+-    $this->assertNotContains($this->nodes['node1']->id(), $result_nids, 'Argument node is excluded.');
+-    $this->assertContains($this->nodes['node2']->id(), $result_nids, 'Node with matching terms is in results.');
++    $this->assertFalse(in_array($this->nodes['node1']->id(), $result_nids), 'Argument node is excluded.');
++    $this->assertTrue(in_array($this->nodes['node2']->id(), $result_nids), 'Node with matching terms is in results.');
+ 
+     // Node 2 shares both of node 1's terms and must sort first.
+-    $this->assertEquals($this->nodes['node2']->id(), $view->result[0]->nid);
++    $this->assertSame($this->nodes['node2']->id(), $view->result[0]->nid);
+   }
+ 
+ }
+--- old/tests/src/Kernel/SimilarTermsFieldTest.php
++++ new/tests/src/Kernel/SimilarTermsFieldTest.php
+@@ -10,8 +10,6 @@
+ 
+ /**
+  * Tests the Similar Terms field plugin.
+- *
+- * @group similarterms
+  */
+ #[Group('similarterms')]
+ class SimilarTermsFieldTest extends SimilarTermsTestBase {
+@@ -82,7 +80,7 @@
+       if ($row->nid == $this->nodes['node2']->id()) {
+         $rendered = $view->field['similarterms']->render($row);
+         // 2 matching terms / 2 total terms = 100%.
+-        $this->assertEquals('100%', $rendered, 'Percentage with suffix is correct.');
++        $this->assertSame('100%', $rendered, 'Percentage with suffix is correct.');
+       }
+     }
+   }
+@@ -147,7 +145,7 @@
+     // All results should show 0% since there are no terms to compare against.
+     foreach ($view->result as $row) {
+       $rendered = $view->field['similarterms']->render($row);
+-      $this->assertEquals('0%', $rendered,
++      $this->assertSame('0%', $rendered,
+         'Field renders 0% when argument node has no terms.');
+     }
+   }
+@@ -246,7 +244,7 @@
+     $field = $view->field['similarterms'];
+ 
+     // Verify count_type defaults to 1 (percentage).
+-    $this->assertEquals(1, $field->options['count_type'],
++    $this->assertSame(1, $field->options['count_type'],
+       'Field count_type defaults to 1 (percentage display).');
+ 
+     // Verify percent_suffix defaults to 1 (show %).
+@@ -254,7 +252,7 @@
+       'Field percent_suffix defaults to 1 (show % symbol).');
+ 
+     // Also verify that weight_suffix has an empty default.
+-    $this->assertEquals('', $field->options['weight_suffix'] ?? '',
++    $this->assertSame('', $field->options['weight_suffix'] ?? '',
+       'Field weight_suffix defaults to empty string.');
+   }
+ 
+--- old/tests/src/Kernel/SimilarTermsWeightTest.php
++++ new/tests/src/Kernel/SimilarTermsWeightTest.php
+@@ -11,8 +11,6 @@
+ 
+ /**
+  * Tests the Similar Terms weight-based functionality.
+- *
+- * @group similarterms
+  */
+ #[Group('similarterms')]
+ class SimilarTermsWeightTest extends SimilarTermsTestBase {
+@@ -121,11 +119,11 @@
+    * Tests that terms with different weights are stored correctly.
+    */
+   public function testTermWeightsAreStoredCorrectly(): void {
+-    $this->assertEquals(0, $this->terms['PHP']->get('weight')->value, 'PHP term has weight 0.');
+-    $this->assertEquals(1, $this->terms['JavaScript']->get('weight')->value, 'JavaScript term has weight 1.');
+-    $this->assertEquals(5, $this->terms['Python']->get('weight')->value, 'Python term has weight 5.');
+-    $this->assertEquals(50, $this->terms['Drupal']->get('weight')->value, 'Drupal term has weight 50.');
+-    $this->assertEquals(200, $this->terms['React']->get('weight')->value, 'React term has weight 200.');
++    $this->assertSame(0, $this->terms['PHP']->get('weight')->value, 'PHP term has weight 0.');
++    $this->assertSame(1, $this->terms['JavaScript']->get('weight')->value, 'JavaScript term has weight 1.');
++    $this->assertSame(5, $this->terms['Python']->get('weight')->value, 'Python term has weight 5.');
++    $this->assertSame(50, $this->terms['Drupal']->get('weight')->value, 'Drupal term has weight 50.');
++    $this->assertSame(200, $this->terms['React']->get('weight')->value, 'React term has weight 200.');
+   }
+ 
+   /**
+@@ -245,7 +243,7 @@
+     $result_nids = array_map(fn($row) => $row->nid, $view->result);
+ 
+     // Node5 should be in results (has React term).
+-    $this->assertContains($this->nodes['node5']->id(), $result_nids,
++    $this->assertTrue(in_array($this->nodes['node5']->id(), $result_nids),
+       'Node with high-weight matching term is in results.');
+   }
+ 
+@@ -283,7 +281,7 @@
+     $count_results = array_map(fn($row) => $row->nid, $view->result);
+ 
+     // Node5 should be first (2 matching terms).
+-    $this->assertEquals($this->nodes['node5']->id(), $count_results[0],
++    $this->assertSame($this->nodes['node5']->id(), $count_results[0],
+       'Count-based: Node with most matching terms is first.');
+ 
+     // Test weight-based sorting.
+@@ -298,7 +296,7 @@
+     $weight_results = array_map(fn($row) => $row->nid, $view->result);
+ 
+     // Node5 should still be first (highest weight sum = 55).
+-    $this->assertEquals($this->nodes['node5']->id(), $weight_results[0],
++    $this->assertSame($this->nodes['node5']->id(), $weight_results[0],
+       'Weight-based: Node with highest weight sum is first.');
+ 
+     // But the order of node2 (weight=50) and node1 (weight=5) should differ.
+@@ -425,7 +423,7 @@
+ 
+     // Node5 should be first (has 2 matching terms: Python + Drupal).
+     $result_nids = array_map(fn($row) => $row->nid, $view->result);
+-    $this->assertEquals($this->nodes['node5']->id(), $result_nids[0],
++    $this->assertSame($this->nodes['node5']->id(), $result_nids[0],
+       'Count-based sorting: Node with most matching terms is first.');
+   }
+ 
+@@ -460,7 +458,7 @@
+     foreach ($view->result as $row) {
+       if ($row->nid == $this->nodes['node5']->id()) {
+         $rendered = $view->field['similarterms']->render($row);
+-        $this->assertEquals('100%', $rendered,
++        $this->assertSame('100%', $rendered,
+           'Percentage display shows 100% for nodes with all matching terms.');
+       }
+     }
+@@ -469,7 +467,7 @@
+     foreach ($view->result as $row) {
+       if ($row->nid == $this->nodes['node1']->id()) {
+         $rendered = $view->field['similarterms']->render($row);
+-        $this->assertEquals('50%', $rendered,
++        $this->assertSame('50%', $rendered,
+           'Percentage display shows 50% for nodes with half matching terms.');
+       }
+     }
+@@ -597,7 +595,7 @@
+     $result_nids = array_map(fn($row) => $row->nid, $view->result);
+ 
+     // Node4 (the argument) should be included in results.
+-    $this->assertContains($this->nodes['node4']->id(), $result_nids,
++    $this->assertTrue(in_array($this->nodes['node4']->id(), $result_nids),
+       'Argument node is included in results when include_args is TRUE.');
+   }
+ 
+@@ -627,11 +625,11 @@
+     $sort = $view->sort['similarterms'];
+ 
+     // Verify sort_method defaults to 'count'.
+-    $this->assertEquals('count', $sort->options['sort_method'],
++    $this->assertSame('count', $sort->options['sort_method'],
+       'Sort sort_method defaults to "count".');
+ 
+     // Verify order defaults to 'DESC'.
+-    $this->assertEquals('DESC', $sort->options['order'],
++    $this->assertSame('DESC', $sort->options['order'],
+       'Sort order defaults to "DESC" (descending).');
+   }
+ 

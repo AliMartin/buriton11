@@ -1,0 +1,9 @@
+{
+  "checked_content_tables": 66,
+  "full_content_rows_unchanged": true,
+  "managed_file_records": 2035,
+  "managed_file_states_and_bytes_unchanged": true,
+  "present_files": 1726,
+  "pre_existing_missing_files": 309,
+  "details": "Private content fingerprints and URI/file-ID evidence retained outside web root."
+}

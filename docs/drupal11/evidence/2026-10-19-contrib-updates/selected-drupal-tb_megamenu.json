@@ -1,0 +1,38 @@
+{
+    "name": "drupal/tb_megamenu",
+    "description": "Provides complex, multi-column mega menu solutions for Drupal.",
+    "keywords": [],
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/tb_megamenu",
+    "names": [
+        "drupal/tb_megamenu"
+    ],
+    "versions": [
+        "1.10.0"
+    ],
+    "licenses": [
+        {
+            "name": "GNU General Public License v2.0 or later",
+            "osi": "GPL-2.0+",
+            "url": "https://spdx.org/licenses/GPL-2.0+.html#licenseText"
+        }
+    ],
+    "source": {
+        "type": "git",
+        "url": "https://git.drupalcode.org/project/tb_megamenu.git",
+        "reference": "8.x-1.10"
+    },
+    "dist": {
+        "type": "zip",
+        "url": "https://ftp.drupal.org/files/projects/tb_megamenu-8.x-1.10.zip",
+        "reference": "8.x-1.10"
+    },
+    "path": "/var/www/html/modules/contrib/tb_megamenu",
+    "support": {
+        "source": "https://git.drupalcode.org/project/tb_megamenu",
+        "issues": "https://www.drupal.org/project/issues/tb_megamenu"
+    },
+    "requires": {
+        "drupal/core": "^8 || ^9 || ^10 || ^11"
+    }
+}

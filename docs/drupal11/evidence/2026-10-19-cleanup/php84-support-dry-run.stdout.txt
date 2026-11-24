@@ -1,0 +1,21 @@
+PHP Deprecated:  Composer\Installers\Installer::__construct(): Implicitly marking parameter $filesystem as nullable is deprecated, the explicit nullable type must be used instead in /var/www/html/vendor/composer/installers/src/Composer/Installers/Installer.php on line 136
+PHP Deprecated:  Composer\Installers\Installer::__construct(): Implicitly marking parameter $binaryInstaller as nullable is deprecated, the explicit nullable type must be used instead in /var/www/html/vendor/composer/installers/src/Composer/Installers/Installer.php on line 136
+PHP Deprecated:  Composer\Installers\BaseInstaller::__construct(): Implicitly marking parameter $package as nullable is deprecated, the explicit nullable type must be used instead in /var/www/html/vendor/composer/installers/src/Composer/Installers/BaseInstaller.php on line 22
+PHP Deprecated:  Composer\Installers\BaseInstaller::__construct(): Implicitly marking parameter $composer as nullable is deprecated, the explicit nullable type must be used instead in /var/www/html/vendor/composer/installers/src/Composer/Installers/BaseInstaller.php on line 22
+PHP Deprecated:  Composer\Installers\BaseInstaller::__construct(): Implicitly marking parameter $io as nullable is deprecated, the explicit nullable type must be used instead in /var/www/html/vendor/composer/installers/src/Composer/Installers/BaseInstaller.php on line 22
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 0 installs, 3 updates, 1 removal
+  - Removing consolidation/self-update (2.2.0)
+  - Upgrading composer/installers (v1.12.0 => v2.3.0)
+  - Upgrading consolidation/config (2.1.2 => 3.2.1)
+  - Upgrading consolidation/robo (4.0.6 => 5.1.1)
+Installing dependencies from lock file (including require-dev)
+Package operations: 0 installs, 3 updates, 1 removal
+  - Removing consolidation/self-update (2.2.0)
+  - Upgrading composer/installers (v1.12.0 => v2.3.0)
+  - Upgrading consolidation/config (2.1.2 => 3.2.1)
+  - Upgrading consolidation/robo (4.0.6 => 5.1.1)
+50 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+No security vulnerability advisories found.

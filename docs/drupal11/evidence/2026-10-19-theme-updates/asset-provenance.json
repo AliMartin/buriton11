@@ -1,0 +1,23 @@
+{
+  "bootstrap": {
+    "project": "entreprise7pro/bootstrap",
+    "release": "3.4.9",
+    "commit": "f4de277e03cd7dd5753d40b127d0c6de2d06789e",
+    "archive": "https://api.github.com/repos/entreprise7pro/bootstrap/zipball/f4de277e03cd7dd5753d40b127d0c6de2d06789e",
+    "local_scope": "dist/js/bootstrap.js, dist/js/bootstrap.min.js and LICENSE copied byte for byte; Bootstrap CSS and fonts retained at 3.4.1",
+    "constructor_version_note": "Upstream 3.4.9 bundle retains 3.4.6 component constructor versions."
+  },
+  "target_jquery": {
+    "core": "11.4.10",
+    "version": "4.0.0",
+    "source": "https://git.drupalcode.org/project/drupal/-/raw/11.4.10/core/assets/vendor/jquery/jquery.min.js",
+    "installed_in_site_core": false
+  },
+  "sha256": {
+    "themes/custom/zircon/includes/bootstrap/js/bootstrap.js": "6cb98415383d43d56ed734668c34f225f10196461496366f2e9b630a8c096b76",
+    "themes/custom/zircon/includes/bootstrap/js/bootstrap.min.js": "5815181eb52e659ace0188587c6773ae74b181789ba635fb8df8d03e8224d02b",
+    "themes/custom/zircon/includes/bootstrap/LICENSE": "2e87dec66f3e532e2dd183b5edede9ebcb1e967f37779ec7c9cad3a472752281",
+    "tmp/theme11/jquery-drupal-11.4.10.min.js": "39a546ea9ad97f8bfaf5d3e0e8f8556adb415e470e59007ada9759dce472adaa",
+    "tmp/theme11/bootstrap-3.4.9.zip": "5aa1478275f133b0d29d087706e77b294dc66f176080e6235acc49d6829de661"
+  }
+}

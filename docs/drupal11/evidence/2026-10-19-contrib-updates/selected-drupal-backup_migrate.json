@@ -1,0 +1,42 @@
+{
+    "name": "drupal/backup_migrate",
+    "description": "Backup and Migrate Drupal Module",
+    "keywords": [],
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/backup_migrate",
+    "names": [
+        "drupal/backup_migrate"
+    ],
+    "versions": [
+        "5.1.5"
+    ],
+    "licenses": [
+        {
+            "name": "GNU General Public License v2.0 or later",
+            "osi": "GPL-2.0-or-later",
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html#licenseText"
+        }
+    ],
+    "source": {
+        "type": "git",
+        "url": "https://git.drupalcode.org/project/backup_migrate.git",
+        "reference": "5.1.5"
+    },
+    "dist": {
+        "type": "zip",
+        "url": "https://ftp.drupal.org/files/projects/backup_migrate-5.1.5.zip",
+        "reference": "5.1.5"
+    },
+    "path": "/var/www/html/modules/contrib/backup_migrate",
+    "suggests": {
+        "defuse/php-encryption": "Optional encryption of saved backups."
+    },
+    "support": {
+        "source": "https://git.drupalcode.org/project/backup_migrate",
+        "issues": "https://www.drupal.org/project/issues/backup_migrate",
+        "slack": "https://drupal.slack.com/messages/C7C4M4QJV/details/"
+    },
+    "requires": {
+        "drupal/core": "^10.3 || ^11"
+    }
+}

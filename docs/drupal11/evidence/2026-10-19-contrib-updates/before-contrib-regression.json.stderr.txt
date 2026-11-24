@@ -1,0 +1,12 @@
+PHP Deprecated:  Drupal\tb_megamenu\Controller\TBMegaMenuAdminController::saveError(): Implicitly marking parameter $menu_name as nullable is deprecated, the explicit nullable type must be used instead in /var/www/html/modules/contrib/tb_megamenu/src/Controller/TBMegaMenuAdminController.php on line 223
+PHP Deprecated:  Drupal\tb_megamenu\Controller\TBMegaMenuAdminController::saveError(): Implicitly marking parameter $theme as nullable is deprecated, the explicit nullable type must be used instead in /var/www/html/modules/contrib/tb_megamenu/src/Controller/TBMegaMenuAdminController.php on line 223
+PHP Deprecated:  Drupal\tb_megamenu\Controller\TBMegaMenuAdminController::saveError(): Implicitly marking parameter $block_config as nullable is deprecated, the explicit nullable type must be used instead in /var/www/html/modules/contrib/tb_megamenu/src/Controller/TBMegaMenuAdminController.php on line 223
+PHP Deprecated:  Drupal\tb_megamenu\Controller\TBMegaMenuAdminController::saveError(): Implicitly marking parameter $menu_config as nullable is deprecated, the explicit nullable type must be used instead in /var/www/html/modules/contrib/tb_megamenu/src/Controller/TBMegaMenuAdminController.php on line 223
+
+In Renderer.php line 303:
+                                                                                                                                      
+  Render context is empty, because render() was called outside of a renderRoot() or renderInIsolation() call. Use renderInIsolation(  
+  )/renderRoot() or #lazy_builder/#pre_render instead.                                                                                
+                                                                                                                                      
+
+Failed to execute command `env CONTRIB_QA_ALLOW_WARNINGS=1 vendor/bin/drush php:script tools/check-contrib.php`: exit status 1

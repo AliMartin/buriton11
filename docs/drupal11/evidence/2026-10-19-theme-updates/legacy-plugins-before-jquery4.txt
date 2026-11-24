@@ -1,0 +1,17 @@
+<anonymous_script>:229
+	var meta = $.isFunction($cont.data) ? $cont.data(opts.metaAttr) : null;
+	             ^
+
+TypeError: $.isFunction is not a function
+    at buildOptions (eval at <anonymous> (/Users/aam/Sites/GitHub/buriton11/docs/drupal11/checks/check-legacy-plugins.cjs:14:5), <anonymous>:229:15)
+    at HTMLDivElement.eval (eval at <anonymous> (/Users/aam/Sites/GitHub/buriton11/docs/drupal11/checks/check-legacy-plugins.cjs:14:5), <anonymous>:79:15)
+    at T.each (eval at <anonymous> (/Users/aam/Sites/GitHub/buriton11/docs/drupal11/checks/check-legacy-plugins.cjs:10:5), <anonymous>:2:2869)
+    at T.fn.init.each (eval at <anonymous> (/Users/aam/Sites/GitHub/buriton11/docs/drupal11/checks/check-legacy-plugins.cjs:10:5), <anonymous>:2:1379)
+    at $.fn.cycle (eval at <anonymous> (/Users/aam/Sites/GitHub/buriton11/docs/drupal11/checks/check-legacy-plugins.cjs:14:5), <anonymous>:57:14)
+    at Object.<anonymous> (/Users/aam/Sites/GitHub/buriton11/docs/drupal11/checks/check-legacy-plugins.cjs:16:9)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+
+Node.js v24.14.0

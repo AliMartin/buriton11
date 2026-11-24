@@ -1,0 +1,14 @@
+ --------- ------------------------- ------------- --------------------------- 
+  Module    Update ID                 Type          Description                
+ --------- ------------------------- ------------- --------------------------- 
+  captcha   clear_plain_session_ids   post-update   Remove plain-text session  
+                                                    IDs stored by earlier      
+                                                    CAPTCHA sessions.          
+ --------- ------------------------- ------------- --------------------------- 
+
+
+ // Do you wish to run the specified pending updates?: yes.                     
+
+>  [notice] Update started: captcha_post_update_clear_plain_session_ids
+>  [notice] Update completed: captcha_post_update_clear_plain_session_ids
+ [success] Finished performing updates.

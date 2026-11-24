@@ -1,0 +1,10 @@
+
+Deprecated: Drupal\fontawesome\Form\EditorIconDialog::buildForm(): Implicitly marking parameter $editor as nullable is deprecated, the explicit nullable type must be used instead in /var/www/html/modules/contrib/fontawesome/src/Form/EditorIconDialog.php on line 71
+
+Deprecated: Drupal\tb_megamenu\Controller\TBMegaMenuAdminController::saveError(): Implicitly marking parameter $menu_name as nullable is deprecated, the explicit nullable type must be used instead in /var/www/html/modules/contrib/tb_megamenu/src/Controller/TBMegaMenuAdminController.php on line 223
+
+Deprecated: Drupal\tb_megamenu\Controller\TBMegaMenuAdminController::saveError(): Implicitly marking parameter $theme as nullable is deprecated, the explicit nullable type must be used instead in /var/www/html/modules/contrib/tb_megamenu/src/Controller/TBMegaMenuAdminController.php on line 223
+
+Deprecated: Drupal\tb_megamenu\Controller\TBMegaMenuAdminController::saveError(): Implicitly marking parameter $block_config as nullable is deprecated, the explicit nullable type must be used instead in /var/www/html/modules/contrib/tb_megamenu/src/Controller/TBMegaMenuAdminController.php on line 223
+
+Deprecated: Drupal\tb_megamenu\Controller\TBMegaMenuAdminController::saveError(): Implicitly marking parameter $menu_config as nullable is deprecated, the explicit nullable type must be used instead in /var/www/html/modules/contrib/tb_megamenu/src/Controller/TBMegaMenuAdminController.php on line 223

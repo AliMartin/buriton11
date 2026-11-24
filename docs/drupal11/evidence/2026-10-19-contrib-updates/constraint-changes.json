@@ -1,0 +1,77 @@
+{
+  "requirements": {
+    "drupal/admin_toolbar": {
+      "before": "^3.1",
+      "after": "^3.6.3"
+    },
+    "drupal/aggregator": {
+      "before": "^2.2",
+      "after": "^2.2.6"
+    },
+    "drupal/backup_migrate": {
+      "before": "^5.0",
+      "after": "^5.1.5"
+    },
+    "drupal/ctools": {
+      "before": "^4.0",
+      "after": "^4.1.1"
+    },
+    "drupal/entity_clone": {
+      "before": "^2.0@beta",
+      "after": "^2.2@beta"
+    },
+    "drupal/fitvids": {
+      "before": "^2.0",
+      "after": "^2.1.0"
+    },
+    "drupal/fontawesome": {
+      "before": "^2.23",
+      "after": "^3.0.0"
+    },
+    "drupal/honeypot": {
+      "before": "^2.1",
+      "after": "^2.2.2"
+    },
+    "drupal/pathauto": {
+      "before": "^1.11",
+      "after": "^1.15.0"
+    },
+    "drupal/recaptcha": {
+      "before": "^3.0",
+      "after": "^3.5.0"
+    },
+    "drupal/redirect": {
+      "before": "^1.8",
+      "after": "^1.13.0"
+    },
+    "drupal/rules": {
+      "before": "^4.0",
+      "after": "^4.0.1"
+    },
+    "drupal/similarterms": {
+      "before": "^1.5",
+      "after": "^2.0.0"
+    },
+    "drupal/tb_megamenu": {
+      "before": "^1.7",
+      "after": "^1.10.0"
+    },
+    "drupal/token": {
+      "before": "^1.11",
+      "after": "^1.17.0"
+    },
+    "drupal/views_slideshow": {
+      "before": "^5.0",
+      "after": "^5.0.1"
+    },
+    "drupal/webform": {
+      "before": "^6.1",
+      "after": "^6.3.1"
+    }
+  },
+  "minimum_stability": {
+    "before": "dev",
+    "after": "stable"
+  },
+  "explicit_unstable_exception": "drupal/entity_clone ^2.2@beta"
+}

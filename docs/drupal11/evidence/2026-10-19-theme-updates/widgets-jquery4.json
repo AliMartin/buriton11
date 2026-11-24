@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "jquery": "4.0.0",
+  "checks": [
+    "Inputmask formatting",
+    "Select2 init/destroy",
+    "telephone input",
+    "timepicker",
+    "Choices init/destroy",
+    "Textcounter/CodeMirror/SignaturePad APIs"
+  ]
+}

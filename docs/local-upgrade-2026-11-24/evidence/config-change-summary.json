@@ -1,0 +1,1892 @@
+{
+    "initial_export_vs_root_sync": {
+        "views.view.parish_council_financial_reports.yml": {
+            "status": "added",
+            "keys": [
+                ""
+            ]
+        },
+        "webform.webform.contact.yml": {
+            "status": "changed",
+            "keys": [
+                "handlers.email_notification.settings.to_mail"
+            ]
+        },
+        "webform.webform.contact_buriton_village_hall.yml": {
+            "status": "changed",
+            "keys": [
+                "handlers.email_notification.settings.to_mail"
+            ]
+        }
+    },
+    "initial_to_final": {
+        "aggregator.settings.yml": {
+            "status": "changed",
+            "keys": [
+                "items.allowed_html",
+                "items.teaser_length",
+                "normalize_post_dates"
+            ]
+        },
+        "backup_migrate.backup_migrate_schedule.daily_schedule.yml": {
+            "status": "changed",
+            "keys": [
+                "encrypt",
+                "encrypt_password"
+            ]
+        },
+        "backup_migrate.backup_migrate_schedule.weekly_site_schedule.yml": {
+            "status": "changed",
+            "keys": [
+                "encrypt",
+                "encrypt_password"
+            ]
+        },
+        "block.block.aboutburiton.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.status",
+                "settings.info"
+            ]
+        },
+        "block.block.bootstrap5_account_menu.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.depth"
+            ]
+        },
+        "block.block.bootstrap5_main_navigation.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.depth"
+            ]
+        },
+        "block.block.bootstrap5_search_form.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.page_id"
+            ]
+        },
+        "block.block.buriton5_account_menu.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.depth"
+            ]
+        },
+        "block.block.buriton5_main_navigation.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.depth"
+            ]
+        },
+        "block.block.buriton5_search_form.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.page_id"
+            ]
+        },
+        "block.block.claro_help_search.yml": {
+            "status": "added",
+            "keys": [
+                ""
+            ]
+        },
+        "block.block.hermajestyqueenelizabethll.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.status",
+                "settings.info"
+            ]
+        },
+        "block.block.hyperluminal.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.status",
+                "settings.info"
+            ]
+        },
+        "block.block.hyperluminal_2.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.status",
+                "settings.info"
+            ]
+        },
+        "block.block.localweather.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.status",
+                "settings.info"
+            ]
+        },
+        "block.block.nationalparkauthoritybranding.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.status",
+                "settings.info"
+            ]
+        },
+        "block.block.primarylinks.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.depth"
+            ]
+        },
+        "block.block.testblock.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.status",
+                "settings.info"
+            ]
+        },
+        "block.block.testblock_2.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.status",
+                "settings.info"
+            ]
+        },
+        "block.block.views_block__covid_19_news_block_1.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__covid_19_news_block_1_2.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__events_block_block_1.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__events_block_block_1_2.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__news_block_1.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__news_block_1_2.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__news_block_block_1.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__news_block_block_1_2.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__slideshow_block_1.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__slideshow_block_1_2.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__ww1_heritage_bank_stories_block_1.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.zircon_block_1.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.status",
+                "settings.info"
+            ]
+        },
+        "block.block.zircon_footer.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.depth"
+            ]
+        },
+        "block.block.zircon_menu.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.depth"
+            ]
+        },
+        "block.block.zircon_menu_1.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.depth"
+            ]
+        },
+        "block.block.zircon_search.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.page_id"
+            ]
+        },
+        "block.block.zircon_user_7.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.depth"
+            ]
+        },
+        "block_content.type.basic.yml": {
+            "status": "changed",
+            "keys": [
+                "revision"
+            ]
+        },
+        "captcha.settings.yml": {
+            "status": "changed",
+            "keys": [
+                "langcode"
+            ]
+        },
+        "core.entity_form_mode.media.media_library.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_form_mode.user.register.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_display.media.remote_video.default.yml": {
+            "status": "changed",
+            "keys": [
+                "content.field_media_oembed_video.settings.loading"
+            ]
+        },
+        "core.entity_view_mode.aggregator_feed.summary.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.aggregator_feed.token.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.aggregator_item.summary.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.aggregator_item.token.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.block.token.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.block_content.full.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.block_content.token.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.comment.full.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.comment.token.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.contact_message.token.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.file.token.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.media.carousel.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.media.full.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.media.media_library.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.media.page_listing.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.menu_link_content.token.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.node.full.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.node.rss.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.node.search_index.yml": {
+            "status": "changed",
+            "keys": [
+                "uuid",
+                "status",
+                "_core.default_config_hash",
+                "description"
+            ]
+        },
+        "core.entity_view_mode.node.search_result.yml": {
+            "status": "changed",
+            "keys": [
+                "uuid",
+                "status",
+                "_core.default_config_hash",
+                "label",
+                "description"
+            ]
+        },
+        "core.entity_view_mode.node.teaser.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.node.token.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.shortcut.token.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.taxonomy_term.full.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.taxonomy_term.token.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.tour.token.yml": {
+            "status": "removed",
+            "keys": [
+                ""
+            ]
+        },
+        "core.entity_view_mode.user.compact.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.user.full.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.user.token.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.webform.token.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.webform_submission.token.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.extension.yml": {
+            "status": "changed",
+            "keys": [
+                "module.admin_toolbar_links_access_filter",
+                "module.image_captcha",
+                "module.image_field_to_media",
+                "module.tour",
+                "module.phpass",
+                "module.search_help",
+                "module.search_node",
+                "module.upgrade_status",
+                "theme.stable9"
+            ]
+        },
+        "editor.editor.basic_html.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.7",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.8",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.9",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.10",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.11",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.12",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.13",
+                "settings.plugins.ckeditor5_list.reversed",
+                "settings.plugins.ckeditor5_list.startIndex",
+                "settings.plugins.ckeditor5_list.properties",
+                "settings.plugins.ckeditor5_list.multiBlock",
+                "image_upload.max_size",
+                "image_upload.max_dimensions.width",
+                "image_upload.max_dimensions.height"
+            ]
+        },
+        "editor.editor.full_html.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.8",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.9",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.10",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.11",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.12",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.13",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.14",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.15",
+                "settings.plugins.ckeditor5_list.reversed",
+                "settings.plugins.ckeditor5_list.startIndex",
+                "settings.plugins.ckeditor5_list.properties",
+                "settings.plugins.ckeditor5_list.multiBlock",
+                "settings.plugins.ckeditor5_codeBlock",
+                "image_upload.max_size"
+            ]
+        },
+        "editor.editor.restricted_html.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.2",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.3",
+                "settings.plugins.ckeditor5_list.reversed",
+                "settings.plugins.ckeditor5_list.startIndex",
+                "settings.plugins.ckeditor5_list.properties",
+                "settings.plugins.ckeditor5_list.multiBlock",
+                "image_upload.scheme",
+                "image_upload.directory",
+                "image_upload.max_size",
+                "image_upload.max_dimensions"
+            ]
+        },
+        "editor.editor.webform_default.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.plugins.ckeditor5_list.reversed",
+                "settings.plugins.ckeditor5_list.startIndex",
+                "settings.plugins.ckeditor5_list.properties",
+                "settings.plugins.ckeditor5_list.multiBlock",
+                "image_upload.status"
+            ]
+        },
+        "entity_clone.settings.yml": {
+            "status": "changed",
+            "keys": [
+                "handle_bundles"
+            ]
+        },
+        "field.settings.yml": {
+            "status": "removed",
+            "keys": [
+                ""
+            ]
+        },
+        "file.settings.yml": {
+            "status": "changed",
+            "keys": [
+                "filename_sanitization"
+            ]
+        },
+        "filter.format.aggregator_html.yml": {
+            "status": "added",
+            "keys": [
+                ""
+            ]
+        },
+        "filter.format.basic_html.yml": {
+            "status": "changed",
+            "keys": [
+                "filters.filter_image_lazy_load"
+            ]
+        },
+        "filter.format.filtered_html.yml": {
+            "status": "changed",
+            "keys": []
+        },
+        "filter.format.full_html.yml": {
+            "status": "changed",
+            "keys": []
+        },
+        "filter.format.plain_text.yml": {
+            "status": "changed",
+            "keys": []
+        },
+        "filter.format.restricted_html.yml": {
+            "status": "changed",
+            "keys": []
+        },
+        "filter.format.webform_default.yml": {
+            "status": "changed",
+            "keys": [
+                "uuid",
+                "roles"
+            ]
+        },
+        "image_captcha.settings.yml": {
+            "status": "removed",
+            "keys": [
+                ""
+            ]
+        },
+        "media.settings.yml": {
+            "status": "changed",
+            "keys": [
+                "iframe_domain"
+            ]
+        },
+        "node.type.event.yml": {
+            "status": "changed",
+            "keys": [
+                "help"
+            ]
+        },
+        "node.type.files.yml": {
+            "status": "changed",
+            "keys": [
+                "help"
+            ]
+        },
+        "node.type.news.yml": {
+            "status": "changed",
+            "keys": [
+                "help"
+            ]
+        },
+        "node.type.page.yml": {
+            "status": "changed",
+            "keys": [
+                "help"
+            ]
+        },
+        "node.type.parish_council.yml": {
+            "status": "changed",
+            "keys": [
+                "help"
+            ]
+        },
+        "node.type.quickevent.yml": {
+            "status": "changed",
+            "keys": [
+                "help"
+            ]
+        },
+        "node.type.webform.yml": {
+            "status": "changed",
+            "keys": [
+                "help"
+            ]
+        },
+        "pathauto.pattern.event.yml": {
+            "status": "changed",
+            "keys": [
+                "dependencies.config",
+                "pattern",
+                "selection_criteria.8ebd152d-c34a-4fd7-a35c-3b604b3cbbb6.uuid"
+            ]
+        },
+        "pathauto.pattern.news.yml": {
+            "status": "changed",
+            "keys": [
+                "dependencies.config",
+                "pattern",
+                "selection_criteria.3ea6045f-c5cb-4fca-84aa-57b5f51de861.uuid"
+            ]
+        },
+        "pathauto.pattern.pages.yml": {
+            "status": "changed",
+            "keys": [
+                "dependencies.config",
+                "pattern",
+                "selection_criteria.ca65067d-51eb-42f8-b7d6-52c7c844052a.uuid"
+            ]
+        },
+        "pathauto.pattern.parish_council.yml": {
+            "status": "changed",
+            "keys": [
+                "dependencies.config",
+                "pattern",
+                "selection_criteria.b54ef8d3-e281-4792-854e-77eb0b45574e.uuid"
+            ]
+        },
+        "search.page.help_search.yml": {
+            "status": "added",
+            "keys": [
+                ""
+            ]
+        },
+        "search.page.node_search.yml": {
+            "status": "changed",
+            "keys": [
+                "dependencies.module.0"
+            ]
+        },
+        "system.cron.yml": {
+            "status": "changed",
+            "keys": [
+                "logging"
+            ]
+        },
+        "system.feature_flags.yml": {
+            "status": "added",
+            "keys": [
+                ""
+            ]
+        },
+        "system.file.yml": {
+            "status": "changed",
+            "keys": [
+                "path"
+            ]
+        },
+        "system.mail.yml": {
+            "status": "changed",
+            "keys": [
+                "mailer_dsn"
+            ]
+        },
+        "system.performance.yml": {
+            "status": "changed",
+            "keys": [
+                "css.gzip",
+                "css.compress",
+                "js.gzip",
+                "js.compress",
+                "stale_file_threshold"
+            ]
+        },
+        "system.rss.yml": {
+            "status": "removed",
+            "keys": [
+                ""
+            ]
+        },
+        "system.site.yml": {
+            "status": "changed",
+            "keys": [
+                "mail_notification"
+            ]
+        },
+        "system.theme.global.yml": {
+            "status": "changed",
+            "keys": [
+                "logo.url"
+            ]
+        },
+        "taxonomy.vocabulary.page_layout.yml": {
+            "status": "changed",
+            "keys": [
+                "new_revision"
+            ]
+        },
+        "taxonomy.vocabulary.parish_council_section.yml": {
+            "status": "changed",
+            "keys": [
+                "description",
+                "new_revision"
+            ]
+        },
+        "taxonomy.vocabulary.section.yml": {
+            "status": "changed",
+            "keys": [
+                "description",
+                "new_revision"
+            ]
+        },
+        "taxonomy.vocabulary.tags.yml": {
+            "status": "changed",
+            "keys": [
+                "new_revision"
+            ]
+        },
+        "taxonomy.vocabulary.year.yml": {
+            "status": "changed",
+            "keys": [
+                "description",
+                "new_revision"
+            ]
+        },
+        "tour.tour.honeypot.yml": {
+            "status": "removed",
+            "keys": [
+                ""
+            ]
+        },
+        "tour.tour.views-ui.yml": {
+            "status": "removed",
+            "keys": [
+                ""
+            ]
+        },
+        "update.settings.yml": {
+            "status": "changed",
+            "keys": [
+                "fetch.url"
+            ]
+        },
+        "user.role.authenticated.yml": {
+            "status": "changed",
+            "keys": [
+                "dependencies.module.3",
+                "dependencies.module.4",
+                "dependencies.module.5",
+                "dependencies.module.6",
+                "dependencies.module.7",
+                "dependencies.module.8",
+                "permissions.15",
+                "permissions.16",
+                "permissions.17",
+                "permissions.18",
+                "permissions.19",
+                "permissions.20",
+                "permissions.21",
+                "permissions.22",
+                "permissions.23",
+                "permissions.24",
+                "permissions.25",
+                "permissions.26",
+                "permissions.27",
+                "permissions.28",
+                "permissions.29",
+                "permissions.30",
+                "permissions.31",
+                "permissions.32"
+            ]
+        },
+        "user.role.editor.yml": {
+            "status": "changed",
+            "keys": [
+                "dependencies.module.2",
+                "dependencies.module.3",
+                "dependencies.module.4",
+                "dependencies.module.5",
+                "dependencies.module.6",
+                "dependencies.module.7",
+                "permissions.17",
+                "permissions.18",
+                "permissions.19",
+                "permissions.20",
+                "permissions.21",
+                "permissions.22",
+                "permissions.23",
+                "permissions.24",
+                "permissions.25",
+                "permissions.26",
+                "permissions.27",
+                "permissions.28",
+                "permissions.29",
+                "permissions.30",
+                "permissions.31",
+                "permissions.32",
+                "permissions.33",
+                "permissions.34",
+                "permissions.35"
+            ]
+        },
+        "user.role.parish_council.yml": {
+            "status": "changed",
+            "keys": [
+                "dependencies.module.1",
+                "dependencies.module.2",
+                "permissions.3",
+                "permissions.4",
+                "permissions.5",
+                "permissions.6"
+            ]
+        },
+        "user.role.website_editor.yml": {
+            "status": "changed",
+            "keys": [
+                "dependencies.module.1",
+                "dependencies.module.2",
+                "dependencies.module.3",
+                "dependencies.module.4",
+                "permissions.10",
+                "permissions.11",
+                "permissions.12",
+                "permissions.13",
+                "permissions.14",
+                "permissions.15",
+                "permissions.16",
+                "permissions.17",
+                "permissions.18",
+                "permissions.19"
+            ]
+        },
+        "views.settings.yml": {
+            "status": "changed",
+            "keys": [
+                "skip_cache",
+                "ui.show.advanced_column"
+            ]
+        },
+        "views.view.aggregator_rss_feed.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.pager.options.pagination_heading_level"
+            ]
+        },
+        "views.view.aggregator_sources.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.pager.options.pagination_heading_level"
+            ]
+        },
+        "views.view.archive.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.pager.options.pagination_heading_level"
+            ]
+        },
+        "views.view.block_content.yml": {
+            "status": "changed",
+            "keys": [
+                "label",
+                "display.default.display_options.fields.changed.settings.tooltip",
+                "display.default.display_options.fields.changed.settings.time_diff",
+                "display.default.display_options.pager.options.pagination_heading_level",
+                "display.default.display_options.access.options.perm",
+                "display.default.display_options.empty.block_content_listing_empty",
+                "display.default.display_options.filters.info.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.info.expose.remember_roles.administrator",
+                "display.default.display_options.filters.type.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.type.expose.remember_roles.administrator",
+                "display.default.display_options.style.options.class",
+                "display.page_1.display_options.path",
+                "display.page_1.display_options.menu.title",
+                "display.page_1.display_options.menu.description",
+                "display.page_1.display_options.menu.parent",
+                "display.page_1.display_options.menu.expanded"
+            ]
+        },
+        "views.view.comment.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.fields.changed.settings.tooltip",
+                "display.default.display_options.fields.changed.settings.time_diff",
+                "display.default.display_options.pager.options.pagination_heading_level",
+                "display.default.display_options.filters.subject.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.subject.expose.remember_roles.administrator",
+                "display.default.display_options.filters.combine.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.combine.expose.remember_roles.administrator",
+                "display.default.display_options.filters.langcode.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.langcode.expose.remember_roles.administrator",
+                "display.default.display_options.style.options.class",
+                "display.page_unapproved.display_options.fields.changed.settings.tooltip",
+                "display.page_unapproved.display_options.fields.changed.settings.time_diff",
+                "display.page_unapproved.display_options.filters.subject.expose.remember_roles.anonymous",
+                "display.page_unapproved.display_options.filters.subject.expose.remember_roles.administrator",
+                "display.page_unapproved.display_options.filters.combine.expose.remember_roles.anonymous",
+                "display.page_unapproved.display_options.filters.combine.expose.remember_roles.administrator",
+                "display.page_unapproved.display_options.filters.langcode.expose.remember_roles.anonymous",
+                "display.page_unapproved.display_options.filters.langcode.expose.remember_roles.administrator"
+            ]
+        },
+        "views.view.content.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.fields.changed.settings.tooltip",
+                "display.default.display_options.fields.changed.settings.time_diff",
+                "display.default.display_options.pager.options.pagination_heading_level",
+                "display.default.display_options.filters.type.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.type.expose.remember_roles.administrator",
+                "display.default.display_options.filters.title.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.title.expose.remember_roles.administrator",
+                "display.default.display_options.filters.langcode.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.langcode.expose.remember_roles.administrator",
+                "display.default.display_options.style.options.class"
+            ]
+        },
+        "views.view.county_councillor_reports.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.cache_metadata.contexts.2",
+                "display.default.cache_metadata.contexts.3",
+                "display.default.cache_metadata.contexts.4",
+                "display.page_1.cache_metadata.contexts.2",
+                "display.page_1.cache_metadata.contexts.3",
+                "display.page_1.cache_metadata.contexts.4"
+            ]
+        },
+        "views.view.covid_19_news.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.fields.created.settings.tooltip",
+                "display.default.display_options.fields.created.settings.time_diff",
+                "display.default.display_options.pager.options.pagination_heading_level",
+                "display.default.cache_metadata.contexts.3",
+                "display.default.cache_metadata.contexts.4",
+                "display.default.cache_metadata.contexts.5",
+                "display.block_1.cache_metadata.contexts.3",
+                "display.block_1.cache_metadata.contexts.4",
+                "display.block_1.cache_metadata.contexts.5"
+            ]
+        },
+        "views.view.district_councillor_reports.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.cache_metadata.contexts.2",
+                "display.default.cache_metadata.contexts.3",
+                "display.default.cache_metadata.contexts.4",
+                "display.page_1.cache_metadata.contexts.2",
+                "display.page_1.cache_metadata.contexts.3",
+                "display.page_1.cache_metadata.contexts.4"
+            ]
+        },
+        "views.view.events.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.pager.options.pagination_heading_level"
+            ]
+        },
+        "views.view.events_block.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.pager.options.pagination_heading_level",
+                "display.default.display_options.arguments.similar_nid.default_argument_skip_url"
+            ]
+        },
+        "views.view.files.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.fields.created.settings.tooltip",
+                "display.default.display_options.fields.created.settings.time_diff",
+                "display.default.display_options.fields.changed.settings.tooltip",
+                "display.default.display_options.fields.changed.settings.time_diff",
+                "display.default.display_options.pager.options.pagination_heading_level",
+                "display.default.display_options.filters.filename.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.filename.expose.remember_roles.administrator",
+                "display.default.display_options.filters.filemime.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.filemime.expose.remember_roles.administrator",
+                "display.default.display_options.filters.status.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.status.expose.remember_roles.administrator",
+                "display.default.display_options.style.options.class",
+                "display.page_2.display_options.pager.options.pagination_heading_level",
+                "display.page_2.display_options.arguments.fid.default_argument_skip_url",
+                "display.page_2.display_options.style.options.class"
+            ]
+        },
+        "views.view.frontpage.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.pager.options.pagination_heading_level"
+            ]
+        },
+        "views.view.glossary.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.fields.changed.settings.tooltip",
+                "display.default.display_options.fields.changed.settings.time_diff",
+                "display.default.display_options.pager.options.pagination_heading_level",
+                "display.default.display_options.arguments.title.default_argument_skip_url",
+                "display.default.display_options.style.options.class",
+                "display.attachment_1.display_options.arguments.title.default_argument_skip_url"
+            ]
+        },
+        "views.view.home.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.fields.created.settings.tooltip",
+                "display.default.display_options.fields.created.settings.time_diff",
+                "display.default.display_options.pager.options.pagination_heading_level",
+                "display.page_2.display_options.fields.created.settings.tooltip",
+                "display.page_2.display_options.fields.created.settings.time_diff",
+                "display.page_2.display_options.pager.options.pagination_heading_level"
+            ]
+        },
+        "views.view.media.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.fields.changed.settings.tooltip",
+                "display.default.display_options.fields.changed.settings.time_diff",
+                "display.default.display_options.pager.options.pagination_heading_level",
+                "display.default.display_options.filters.name.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.name.expose.remember_roles.administrator",
+                "display.default.display_options.filters.bundle.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.bundle.expose.remember_roles.administrator",
+                "display.default.display_options.filters.langcode.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.langcode.expose.remember_roles.administrator",
+                "display.default.display_options.style.options.class"
+            ]
+        },
+        "views.view.media_library.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.pager.options.pagination_heading_level",
+                "display.default.display_options.filters.name.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.name.expose.remember_roles.administrator",
+                "display.default.display_options.filters.bundle.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.bundle.expose.remember_roles.administrator",
+                "display.default.display_options.filters.langcode.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.langcode.expose.remember_roles.administrator",
+                "display.widget.display_options.arguments.bundle.default_argument_skip_url",
+                "display.widget.display_options.filters.name.expose.remember_roles.anonymous",
+                "display.widget.display_options.filters.name.expose.remember_roles.administrator",
+                "display.widget_table.display_options.fields.changed.settings.tooltip",
+                "display.widget_table.display_options.fields.changed.settings.time_diff",
+                "display.widget_table.display_options.arguments.bundle.default_argument_skip_url",
+                "display.widget_table.display_options.filters.name.expose.remember_roles.anonymous",
+                "display.widget_table.display_options.filters.name.expose.remember_roles.administrator",
+                "display.widget_table.display_options.style.options.class"
+            ]
+        },
+        "views.view.news_block.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.fields.created.settings.tooltip",
+                "display.default.display_options.fields.created.settings.time_diff",
+                "display.default.display_options.pager.options.pagination_heading_level",
+                "display.default.display_options.arguments.similar_nid.default_argument_skip_url"
+            ]
+        },
+        "views.view.parish_council_agenda.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.cache_metadata.contexts.2",
+                "display.default.cache_metadata.contexts.3",
+                "display.default.cache_metadata.contexts.4",
+                "display.page_1.cache_metadata.contexts.2",
+                "display.page_1.cache_metadata.contexts.3",
+                "display.page_1.cache_metadata.contexts.4"
+            ]
+        },
+        "views.view.parish_council_annual_reports.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.cache_metadata.contexts.2",
+                "display.default.cache_metadata.contexts.3",
+                "display.default.cache_metadata.contexts.4",
+                "display.page_1.cache_metadata.contexts.2",
+                "display.page_1.cache_metadata.contexts.3",
+                "display.page_1.cache_metadata.contexts.4"
+            ]
+        },
+        "views.view.parish_council_finance.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.cache_metadata.contexts.2",
+                "display.default.cache_metadata.contexts.3",
+                "display.default.cache_metadata.contexts.4",
+                "display.page_1.cache_metadata.contexts.2",
+                "display.page_1.cache_metadata.contexts.3",
+                "display.page_1.cache_metadata.contexts.4"
+            ]
+        },
+        "views.view.parish_council_financial_reports.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.cache_metadata.contexts.2",
+                "display.default.cache_metadata.contexts.3",
+                "display.default.cache_metadata.contexts.4",
+                "display.page_1.cache_metadata.contexts.2",
+                "display.page_1.cache_metadata.contexts.3",
+                "display.page_1.cache_metadata.contexts.4"
+            ]
+        },
+        "views.view.parish_council_minutes.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.cache_metadata.contexts.2",
+                "display.default.cache_metadata.contexts.3",
+                "display.default.cache_metadata.contexts.4",
+                "display.page_1.cache_metadata.contexts.2",
+                "display.page_1.cache_metadata.contexts.3",
+                "display.page_1.cache_metadata.contexts.4"
+            ]
+        },
+        "views.view.parish_council_national_park_reports.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.cache_metadata.contexts.2",
+                "display.default.cache_metadata.contexts.3",
+                "display.default.cache_metadata.contexts.4",
+                "display.page_1.cache_metadata.contexts.2",
+                "display.page_1.cache_metadata.contexts.3",
+                "display.page_1.cache_metadata.contexts.4"
+            ]
+        },
+        "views.view.parish_council_other_information.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.cache_metadata.contexts.2",
+                "display.default.cache_metadata.contexts.3",
+                "display.default.cache_metadata.contexts.4",
+                "display.page_1.cache_metadata.contexts.2",
+                "display.page_1.cache_metadata.contexts.3",
+                "display.page_1.cache_metadata.contexts.4"
+            ]
+        },
+        "views.view.parish_council_update_reports.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.cache_metadata.contexts.2",
+                "display.default.cache_metadata.contexts.3",
+                "display.default.cache_metadata.contexts.4",
+                "display.page_1.cache_metadata.contexts.2",
+                "display.page_1.cache_metadata.contexts.3",
+                "display.page_1.cache_metadata.contexts.4"
+            ]
+        },
+        "views.view.planning_committee_agenda.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.cache_metadata.contexts.2",
+                "display.default.cache_metadata.contexts.3",
+                "display.default.cache_metadata.contexts.4",
+                "display.page_1.cache_metadata.contexts.2",
+                "display.page_1.cache_metadata.contexts.3",
+                "display.page_1.cache_metadata.contexts.4"
+            ]
+        },
+        "views.view.planning_committee_minutes.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.cache_metadata.contexts.2",
+                "display.default.cache_metadata.contexts.3",
+                "display.default.cache_metadata.contexts.4",
+                "display.page_1.cache_metadata.contexts.2",
+                "display.page_1.cache_metadata.contexts.3",
+                "display.page_1.cache_metadata.contexts.4"
+            ]
+        },
+        "views.view.redirect.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.pager.options.pagination_heading_level",
+                "display.default.display_options.filters.redirect_source__path.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.redirect_source__path.expose.remember_roles.administrator",
+                "display.default.display_options.filters.redirect_redirect__uri.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.redirect_redirect__uri.expose.remember_roles.administrator",
+                "display.default.display_options.filters.status_code.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.status_code.expose.remember_roles.administrator",
+                "display.default.display_options.filters.language.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.language.expose.remember_roles.administrator",
+                "display.default.display_options.style.options.class"
+            ]
+        },
+        "views.view.taxonomy_term.yml": {
+            "status": "changed",
+            "keys": [
+                "dependencies.config.0",
+                "dependencies.config.1",
+                "display.default.display_options.pager.options.pagination_heading_level",
+                "display.default.display_options.arguments.tid.default_argument_skip_url",
+                "display.feed_1.display_options.row.options.view_mode"
+            ]
+        },
+        "views.view.user_admin_people.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.pager.options.pagination_heading_level",
+                "display.default.display_options.filters.combine.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.combine.expose.remember_roles.administrator",
+                "display.default.display_options.filters.roles_target_id.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.roles_target_id.expose.remember_roles.administrator",
+                "display.default.display_options.filters.permission.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.permission.expose.remember_roles.administrator",
+                "display.default.display_options.filters.status.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.status.expose.remember_roles.administrator",
+                "display.default.display_options.style.options.class"
+            ]
+        },
+        "views.view.webform_submissions.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.fields.created.settings.tooltip",
+                "display.default.display_options.fields.created.settings.time_diff",
+                "display.default.display_options.pager.options.pagination_heading_level",
+                "display.default.display_options.arguments.uid.plugin_id",
+                "display.default.display_options.arguments.uid.target_entity_type_id",
+                "display.default.display_options.arguments.in_draft.default_argument_skip_url",
+                "display.default.display_options.style.options.class",
+                "display.embed_administer.display_options.fields.created.settings.tooltip",
+                "display.embed_administer.display_options.fields.created.settings.time_diff",
+                "display.embed_administer.display_options.fields.completed.settings.tooltip",
+                "display.embed_administer.display_options.fields.completed.settings.time_diff",
+                "display.embed_administer.display_options.filters.in_draft.expose.remember_roles.anonymous",
+                "display.embed_administer.display_options.filters.in_draft.expose.remember_roles.administrator",
+                "display.embed_administer.display_options.filters.sticky.expose.remember_roles.anonymous",
+                "display.embed_administer.display_options.filters.sticky.expose.remember_roles.administrator",
+                "display.embed_administer.display_options.filters.locked.expose.remember_roles.anonymous",
+                "display.embed_administer.display_options.filters.locked.expose.remember_roles.administrator",
+                "display.embed_administer.display_options.filters.locked.expose.remember_roles.demo_region",
+                "display.embed_administer.display_options.style.options.class",
+                "display.embed_default.display_options.style.options.class",
+                "display.embed_manage.display_options.fields.created.settings.tooltip",
+                "display.embed_manage.display_options.fields.created.settings.time_diff",
+                "display.embed_manage.display_options.fields.completed.settings.tooltip",
+                "display.embed_manage.display_options.fields.completed.settings.time_diff",
+                "display.embed_manage.display_options.filters.in_draft.expose.remember_roles.anonymous",
+                "display.embed_manage.display_options.filters.in_draft.expose.remember_roles.administrator",
+                "display.embed_manage.display_options.filters.sticky.expose.remember_roles.anonymous",
+                "display.embed_manage.display_options.filters.sticky.expose.remember_roles.administrator",
+                "display.embed_manage.display_options.filters.locked.expose.remember_roles.anonymous",
+                "display.embed_manage.display_options.filters.locked.expose.remember_roles.administrator",
+                "display.embed_manage.display_options.filters.locked.expose.remember_roles.demo_region",
+                "display.embed_manage.display_options.style.options.class",
+                "display.embed_review.display_options.fields.created.settings.tooltip",
+                "display.embed_review.display_options.fields.created.settings.time_diff",
+                "display.embed_review.display_options.fields.completed.settings.tooltip",
+                "display.embed_review.display_options.fields.completed.settings.time_diff",
+                "display.embed_review.display_options.filters.in_draft.expose.remember_roles.anonymous",
+                "display.embed_review.display_options.filters.in_draft.expose.remember_roles.administrator",
+                "display.embed_review.display_options.filters.sticky.expose.remember_roles.anonymous",
+                "display.embed_review.display_options.filters.sticky.expose.remember_roles.administrator",
+                "display.embed_review.display_options.filters.locked.expose.remember_roles.anonymous",
+                "display.embed_review.display_options.filters.locked.expose.remember_roles.administrator",
+                "display.embed_review.display_options.filters.locked.expose.remember_roles.demo_region",
+                "display.embed_review.display_options.style.options.class"
+            ]
+        },
+        "views.view.who_s_online.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.filters.access.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.access.expose.remember_roles.administrator"
+            ]
+        },
+        "views.view.ww1_heritage_bank_stories.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.fields.created.settings.tooltip",
+                "display.default.display_options.fields.created.settings.time_diff",
+                "display.default.cache_metadata.contexts.2",
+                "display.default.cache_metadata.contexts.3",
+                "display.default.cache_metadata.contexts.4",
+                "display.block_1.cache_metadata.contexts.2",
+                "display.block_1.cache_metadata.contexts.3",
+                "display.block_1.cache_metadata.contexts.4"
+            ]
+        },
+        "webform.settings.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.default_form_file_limit_message",
+                "requirements.bootstrap"
+            ]
+        },
+        "webform.webform.contact.yml": {
+            "status": "changed",
+            "keys": [
+                "handlers.email_confirmation.settings.langcode",
+                "handlers.email_notification.settings.langcode"
+            ]
+        },
+        "webform.webform.contact_buriton_village_hall.yml": {
+            "status": "changed",
+            "keys": [
+                "handlers.email_confirmation.settings.langcode",
+                "handlers.email_notification.settings.langcode"
+            ]
+        },
+        "webform.webform.test_webform.yml": {
+            "status": "changed",
+            "keys": [
+                "handlers.email.settings.langcode"
+            ]
+        }
+    },
+    "pre11_to_final": {
+        "block.block.aboutburiton.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.status",
+                "settings.info"
+            ]
+        },
+        "block.block.bootstrap5_account_menu.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.depth"
+            ]
+        },
+        "block.block.bootstrap5_main_navigation.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.depth"
+            ]
+        },
+        "block.block.bootstrap5_search_form.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.page_id"
+            ]
+        },
+        "block.block.buriton5_account_menu.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.depth"
+            ]
+        },
+        "block.block.buriton5_main_navigation.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.depth"
+            ]
+        },
+        "block.block.buriton5_search_form.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.page_id"
+            ]
+        },
+        "block.block.hermajestyqueenelizabethll.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.status",
+                "settings.info"
+            ]
+        },
+        "block.block.hyperluminal.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.status",
+                "settings.info"
+            ]
+        },
+        "block.block.hyperluminal_2.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.status",
+                "settings.info"
+            ]
+        },
+        "block.block.localweather.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.status",
+                "settings.info"
+            ]
+        },
+        "block.block.nationalparkauthoritybranding.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.status",
+                "settings.info"
+            ]
+        },
+        "block.block.primarylinks.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.depth"
+            ]
+        },
+        "block.block.testblock.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.status",
+                "settings.info"
+            ]
+        },
+        "block.block.testblock_2.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.status",
+                "settings.info"
+            ]
+        },
+        "block.block.views_block__covid_19_news_block_1.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__covid_19_news_block_1_2.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__events_block_block_1.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__events_block_block_1_2.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__news_block_1.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__news_block_1_2.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__news_block_block_1.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__news_block_block_1_2.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__slideshow_block_1.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__slideshow_block_1_2.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.views_block__ww1_heritage_bank_stories_block_1.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.items_per_page"
+            ]
+        },
+        "block.block.zircon_block_1.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.status",
+                "settings.info"
+            ]
+        },
+        "block.block.zircon_footer.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.depth"
+            ]
+        },
+        "block.block.zircon_menu.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.depth"
+            ]
+        },
+        "block.block.zircon_menu_1.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.depth"
+            ]
+        },
+        "block.block.zircon_search.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.page_id"
+            ]
+        },
+        "block.block.zircon_user_7.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.depth"
+            ]
+        },
+        "core.entity_form_mode.media.media_library.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_form_mode.user.register.yml": {
+            "status": "changed",
+            "keys": [
+                "description"
+            ]
+        },
+        "core.entity_view_mode.node.search_index.yml": {
+            "status": "changed",
+            "keys": [
+                "uuid",
+                "status",
+                "_core.default_config_hash"
+            ]
+        },
+        "core.entity_view_mode.node.search_result.yml": {
+            "status": "changed",
+            "keys": [
+                "uuid",
+                "status",
+                "_core.default_config_hash",
+                "label"
+            ]
+        },
+        "core.extension.yml": {
+            "status": "changed",
+            "keys": [
+                "module.search_help",
+                "module.search_node"
+            ]
+        },
+        "editor.editor.basic_html.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.plugins.ckeditor5_list.properties.styles",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.7",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.8",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.9",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.10",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.11",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.12",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.13"
+            ]
+        },
+        "editor.editor.full_html.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.plugins.ckeditor5_list.properties.styles",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.8",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.9",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.10",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.11",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.12",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.13",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.14",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.15"
+            ]
+        },
+        "editor.editor.restricted_html.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.plugins.ckeditor5_list.properties.styles",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.2",
+                "settings.plugins.ckeditor5_sourceEditing.allowed_tags.3"
+            ]
+        },
+        "editor.editor.webform_default.yml": {
+            "status": "changed",
+            "keys": [
+                "settings.plugins.ckeditor5_list.properties.styles"
+            ]
+        },
+        "field.settings.yml": {
+            "status": "removed",
+            "keys": [
+                ""
+            ]
+        },
+        "search.page.help_search.yml": {
+            "status": "changed",
+            "keys": [
+                "dependencies.module.0",
+                "uuid"
+            ]
+        },
+        "search.page.node_search.yml": {
+            "status": "changed",
+            "keys": [
+                "dependencies.module.0"
+            ]
+        },
+        "system.file.yml": {
+            "status": "changed",
+            "keys": [
+                "path"
+            ]
+        },
+        "system.performance.yml": {
+            "status": "changed",
+            "keys": [
+                "css.gzip",
+                "css.compress",
+                "js.gzip",
+                "js.compress"
+            ]
+        },
+        "system.rss.yml": {
+            "status": "removed",
+            "keys": [
+                ""
+            ]
+        },
+        "user.role.website_editor.yml": {
+            "status": "changed",
+            "keys": [
+                "permissions.16",
+                "permissions.17",
+                "permissions.18",
+                "permissions.19"
+            ]
+        },
+        "views.settings.yml": {
+            "status": "changed",
+            "keys": [
+                "ui.show.advanced_column"
+            ]
+        },
+        "views.view.block_content.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.empty.block_content_listing_empty",
+                "display.default.display_options.filters.info.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.info.expose.remember_roles.administrator",
+                "display.default.display_options.filters.type.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.type.expose.remember_roles.administrator",
+                "display.default.display_options.style.options.class"
+            ]
+        },
+        "views.view.comment.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.filters.subject.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.subject.expose.remember_roles.administrator",
+                "display.default.display_options.filters.combine.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.combine.expose.remember_roles.administrator",
+                "display.default.display_options.filters.langcode.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.langcode.expose.remember_roles.administrator",
+                "display.default.display_options.style.options.class",
+                "display.page_unapproved.display_options.filters.subject.expose.remember_roles.anonymous",
+                "display.page_unapproved.display_options.filters.subject.expose.remember_roles.administrator",
+                "display.page_unapproved.display_options.filters.combine.expose.remember_roles.anonymous",
+                "display.page_unapproved.display_options.filters.combine.expose.remember_roles.administrator",
+                "display.page_unapproved.display_options.filters.langcode.expose.remember_roles.anonymous",
+                "display.page_unapproved.display_options.filters.langcode.expose.remember_roles.administrator"
+            ]
+        },
+        "views.view.content.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.filters.type.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.type.expose.remember_roles.administrator",
+                "display.default.display_options.filters.title.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.title.expose.remember_roles.administrator",
+                "display.default.display_options.filters.langcode.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.langcode.expose.remember_roles.administrator",
+                "display.default.display_options.style.options.class"
+            ]
+        },
+        "views.view.files.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.filters.filename.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.filename.expose.remember_roles.administrator",
+                "display.default.display_options.filters.filemime.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.filemime.expose.remember_roles.administrator",
+                "display.default.display_options.filters.status.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.status.expose.remember_roles.administrator",
+                "display.default.display_options.style.options.class",
+                "display.page_2.display_options.style.options.class"
+            ]
+        },
+        "views.view.glossary.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.style.options.class"
+            ]
+        },
+        "views.view.media.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.filters.name.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.name.expose.remember_roles.administrator",
+                "display.default.display_options.filters.bundle.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.bundle.expose.remember_roles.administrator",
+                "display.default.display_options.filters.langcode.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.langcode.expose.remember_roles.administrator",
+                "display.default.display_options.style.options.class"
+            ]
+        },
+        "views.view.media_library.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.filters.name.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.name.expose.remember_roles.administrator",
+                "display.default.display_options.filters.bundle.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.bundle.expose.remember_roles.administrator",
+                "display.default.display_options.filters.langcode.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.langcode.expose.remember_roles.administrator",
+                "display.widget.display_options.filters.name.expose.remember_roles.anonymous",
+                "display.widget.display_options.filters.name.expose.remember_roles.administrator",
+                "display.widget_table.display_options.filters.name.expose.remember_roles.anonymous",
+                "display.widget_table.display_options.filters.name.expose.remember_roles.administrator",
+                "display.widget_table.display_options.style.options.class"
+            ]
+        },
+        "views.view.redirect.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.filters.redirect_source__path.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.redirect_source__path.expose.remember_roles.administrator",
+                "display.default.display_options.filters.redirect_redirect__uri.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.redirect_redirect__uri.expose.remember_roles.administrator",
+                "display.default.display_options.filters.status_code.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.status_code.expose.remember_roles.administrator",
+                "display.default.display_options.filters.language.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.language.expose.remember_roles.administrator",
+                "display.default.display_options.style.options.class"
+            ]
+        },
+        "views.view.taxonomy_term.yml": {
+            "status": "changed",
+            "keys": [
+                "dependencies.config.0",
+                "dependencies.config.1",
+                "display.feed_1.display_options.row.options.view_mode"
+            ]
+        },
+        "views.view.user_admin_people.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.filters.combine.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.combine.expose.remember_roles.administrator",
+                "display.default.display_options.filters.roles_target_id.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.roles_target_id.expose.remember_roles.administrator",
+                "display.default.display_options.filters.permission.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.permission.expose.remember_roles.administrator",
+                "display.default.display_options.filters.status.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.status.expose.remember_roles.administrator",
+                "display.default.display_options.style.options.class"
+            ]
+        },
+        "views.view.webform_submissions.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.style.options.class",
+                "display.embed_administer.display_options.filters.in_draft.expose.remember_roles.anonymous",
+                "display.embed_administer.display_options.filters.in_draft.expose.remember_roles.administrator",
+                "display.embed_administer.display_options.filters.sticky.expose.remember_roles.anonymous",
+                "display.embed_administer.display_options.filters.sticky.expose.remember_roles.administrator",
+                "display.embed_administer.display_options.filters.locked.expose.remember_roles.anonymous",
+                "display.embed_administer.display_options.filters.locked.expose.remember_roles.administrator",
+                "display.embed_administer.display_options.filters.locked.expose.remember_roles.demo_region",
+                "display.embed_administer.display_options.style.options.class",
+                "display.embed_default.display_options.style.options.class",
+                "display.embed_manage.display_options.filters.in_draft.expose.remember_roles.anonymous",
+                "display.embed_manage.display_options.filters.in_draft.expose.remember_roles.administrator",
+                "display.embed_manage.display_options.filters.sticky.expose.remember_roles.anonymous",
+                "display.embed_manage.display_options.filters.sticky.expose.remember_roles.administrator",
+                "display.embed_manage.display_options.filters.locked.expose.remember_roles.anonymous",
+                "display.embed_manage.display_options.filters.locked.expose.remember_roles.administrator",
+                "display.embed_manage.display_options.filters.locked.expose.remember_roles.demo_region",
+                "display.embed_manage.display_options.style.options.class",
+                "display.embed_review.display_options.filters.in_draft.expose.remember_roles.anonymous",
+                "display.embed_review.display_options.filters.in_draft.expose.remember_roles.administrator",
+                "display.embed_review.display_options.filters.sticky.expose.remember_roles.anonymous",
+                "display.embed_review.display_options.filters.sticky.expose.remember_roles.administrator",
+                "display.embed_review.display_options.filters.locked.expose.remember_roles.anonymous",
+                "display.embed_review.display_options.filters.locked.expose.remember_roles.administrator",
+                "display.embed_review.display_options.filters.locked.expose.remember_roles.demo_region",
+                "display.embed_review.display_options.style.options.class"
+            ]
+        },
+        "views.view.who_s_online.yml": {
+            "status": "changed",
+            "keys": [
+                "display.default.display_options.filters.access.expose.remember_roles.anonymous",
+                "display.default.display_options.filters.access.expose.remember_roles.administrator"
+            ]
+        }
+    },
+    "role_permission_changes": {
+        "user.role.authenticated.yml": {
+            "added": [
+                "delete own files"
+            ],
+            "removed": []
+        },
+        "user.role.editor.yml": {
+            "added": [
+                "delete own files"
+            ],
+            "removed": []
+        },
+        "user.role.parish_council.yml": {
+            "added": [
+                "delete own files"
+            ],
+            "removed": []
+        },
+        "user.role.website_editor.yml": {
+            "added": [
+                "delete own files",
+                "rebuild node access permissions"
+            ],
+            "removed": []
+        }
+    }
+}

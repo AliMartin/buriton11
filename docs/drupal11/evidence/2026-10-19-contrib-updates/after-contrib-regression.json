@@ -1,0 +1,82 @@
+{
+    "core": "10.6.19",
+    "related_views": {
+        "news_block": {
+            "2115": {
+                "node_ids": [
+                    2109,
+                    2108,
+                    2107,
+                    2102
+                ],
+                "rendered_bytes": 4523
+            },
+            "2113": {
+                "node_ids": [
+                    2115,
+                    2109,
+                    2108,
+                    2107
+                ],
+                "rendered_bytes": 4580
+            },
+            "2109": {
+                "node_ids": [
+                    2115,
+                    2108,
+                    2107,
+                    2102
+                ],
+                "rendered_bytes": 4518
+            },
+            "2108": {
+                "node_ids": [
+                    2115,
+                    2109,
+                    2107,
+                    2102
+                ],
+                "rendered_bytes": 4513
+            }
+        },
+        "events_block": {
+            "2115": {
+                "node_ids": [
+                    2113,
+                    2030
+                ],
+                "rendered_bytes": 839
+            },
+            "2113": {
+                "node_ids": [
+                    2030
+                ],
+                "rendered_bytes": 475
+            },
+            "2109": {
+                "node_ids": [
+                    2113,
+                    2030
+                ],
+                "rendered_bytes": 839
+            },
+            "2108": {
+                "node_ids": [
+                    2113,
+                    2030
+                ],
+                "rendered_bytes": 839
+            }
+        }
+    },
+    "admin_routes": {
+        "fontawesome.admin_settings": 200,
+        "entity.tb_megamenu.collection": 200
+    },
+    "mega_menu_load": {
+        "status": 200,
+        "rendered_bytes": 37389
+    },
+    "active_config_unchanged": true,
+    "warnings": []
+}

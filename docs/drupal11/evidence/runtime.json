@@ -1,0 +1,12 @@
+{
+    "drupal-version": "10.6.19",
+    "uri": "https://buriton11.ddev.site",
+    "db-driver": "mysql",
+    "db-status": "Connected",
+    "bootstrap": "Successful",
+    "php-version": "8.2.30",
+    "drush-version": "12.5.3.0",
+    "theme": "zircon",
+    "admin-theme": "claro",
+    "config-sync": "/var/www/html/sync"
+}

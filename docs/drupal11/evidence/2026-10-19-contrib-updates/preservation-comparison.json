@@ -1,0 +1,41 @@
+{
+  "counts_before": {
+    "node": 1880,
+    "users": 6,
+    "file_managed": 2018,
+    "taxonomy_term_data": 122,
+    "media": 891,
+    "webform_submission": 443,
+    "aggregator_feed": 2,
+    "aggregator_item": 2310
+  },
+  "counts_after": {
+    "node": 1880,
+    "users": 6,
+    "file_managed": 2018,
+    "taxonomy_term_data": 122,
+    "media": 891,
+    "webform_submission": 443,
+    "aggregator_feed": 2,
+    "aggregator_item": 2310
+  },
+  "counts_unchanged": true,
+  "fingerprints_unchanged": true,
+  "enabled_modules_unchanged": true,
+  "editors_unchanged": true,
+  "installed_themes_unchanged": true,
+  "config_counts_before_after": [
+    536,
+    536
+  ],
+  "sync_counts_before_after": [
+    536,
+    536
+  ],
+  "related_view_result_ids_unchanged": true,
+  "related_view_cases": 8,
+  "after_warning_count": 0,
+  "read_only_qa_config_unchanged": true,
+  "core_after": "10.6.19",
+  "untracked_backups_outside_docroot": true
+}

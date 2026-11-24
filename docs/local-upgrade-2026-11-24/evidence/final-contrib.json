@@ -1,0 +1,95 @@
+{
+    "core": "11.4.13",
+    "related_views": {
+        "news_block": {
+            "2131": {
+                "node_ids": [
+                    2115,
+                    2109,
+                    2108,
+                    2107
+                ],
+                "rendered_bytes": 4574
+            },
+            "2130": {
+                "node_ids": [
+                    2115,
+                    2109,
+                    2108,
+                    2107
+                ],
+                "rendered_bytes": 4580
+            },
+            "2128": {
+                "node_ids": [
+                    2115,
+                    2109,
+                    2108,
+                    2107
+                ],
+                "rendered_bytes": 4580
+            },
+            "2127": {
+                "node_ids": [
+                    2115,
+                    2109,
+                    2108,
+                    2107
+                ],
+                "rendered_bytes": 4580
+            }
+        },
+        "events_block": {
+            "2131": {
+                "node_ids": [
+                    2125,
+                    2030,
+                    2130,
+                    2126,
+                    2127
+                ],
+                "rendered_bytes": 2628
+            },
+            "2130": {
+                "node_ids": [
+                    2125,
+                    2030,
+                    2126,
+                    2131,
+                    2127
+                ],
+                "rendered_bytes": 2626
+            },
+            "2128": {
+                "node_ids": [
+                    2125,
+                    2030,
+                    2130,
+                    2126,
+                    2131
+                ],
+                "rendered_bytes": 2586
+            },
+            "2127": {
+                "node_ids": [
+                    2125,
+                    2030,
+                    2130,
+                    2126,
+                    2131
+                ],
+                "rendered_bytes": 2586
+            }
+        }
+    },
+    "admin_routes": {
+        "fontawesome.admin_settings": 200,
+        "entity.tb_megamenu.collection": 200
+    },
+    "mega_menu_load": {
+        "status": 200,
+        "rendered_bytes": 37389
+    },
+    "active_config_unchanged": true,
+    "warnings": []
+}

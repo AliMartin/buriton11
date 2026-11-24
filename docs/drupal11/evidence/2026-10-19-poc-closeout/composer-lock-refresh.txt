@@ -1,0 +1,16 @@
+Loading composer repositories with package information
+Updating dependencies
+Nothing to modify in lock file
+Writing lock file
+56 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+Cleaning installed packages.
+No security vulnerability advisories found.
+Loading composer repositories with package information
+Updating dependencies
+Nothing to modify in lock file
+Writing lock file
+56 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+Cleaning installed packages.
+No security vulnerability advisories found.

@@ -1,0 +1,35 @@
+{
+  "command": [
+    "ddev",
+    "drush",
+    "php:script",
+    "docs/drupal11/check-baseline.php"
+  ],
+  "exit_code": 0,
+  "comparisons": {
+    "counts": {
+      "unchanged": true
+    },
+    "fingerprints": {
+      "unchanged": true
+    },
+    "modules": {
+      "unchanged": true
+    },
+    "installed_themes": {
+      "unchanged": true
+    },
+    "editors": {
+      "unchanged": true
+    },
+    "active_config_count": {
+      "unchanged": true
+    },
+    "sync_config_count": {
+      "unchanged": true
+    },
+    "legacy_password_accounts": {
+      "unchanged": false
+    }
+  }
+}

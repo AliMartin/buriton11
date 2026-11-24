@@ -1,0 +1,39 @@
+{
+    "name": "drupal/ckeditor_iframe",
+    "description": "Adds the iFrame dialog plugin to CKEditor.",
+    "keywords": [
+        "Drupal"
+    ],
+    "type": "drupal-module",
+    "homepage": "http://drupal.org/project/ckeditor_iframe",
+    "names": [
+        "drupal/ckeditor_iframe"
+    ],
+    "versions": [
+        "3.1.2"
+    ],
+    "licenses": [
+        {
+            "name": "GNU General Public License v2.0 or later",
+            "osi": "GPL-2.0+",
+            "url": "https://spdx.org/licenses/GPL-2.0+.html#licenseText"
+        }
+    ],
+    "source": {
+        "type": "git",
+        "url": "https://git.drupalcode.org/project/ckeditor_iframe.git",
+        "reference": "3.1.2"
+    },
+    "dist": {
+        "type": "zip",
+        "url": "https://ftp.drupal.org/files/projects/ckeditor_iframe-3.1.2.zip",
+        "reference": "3.1.2"
+    },
+    "support": {
+        "source": "https://git.drupalcode.org/project/ckeditor_iframe",
+        "issues": "https://drupal.org/project/issues/ckeditor_iframe"
+    },
+    "requires": {
+        "drupal/core": "^10.5 || ^11.2"
+    }
+}

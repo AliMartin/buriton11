@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-19",
+  "database_bytes": 4913118,
+  "database_gzip_integrity": "passed",
+  "source_bytes": 5750801,
+  "location": "Private host temporary directory; private path in ignored tmp/contrib-updates-backup-path.txt",
+  "uploaded_files_copied": false,
+  "restore_exercised": false
+}

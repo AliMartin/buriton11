@@ -1,0 +1,7 @@
+0a9242f993ba8d429ef07f4a6d16638b575fbbba6280f39a2f9822d170d7dffa  docs/README.md
+bf7f48a48df5a03147478161d545921a3049c442cb838b10aea5b7392596eaa7  docs/drupal11/2026-10-19-tour-asset-warning.md
+e2c539b9263e89850ba0b6788b1e88b8871185df8a3c9d1f1e1fd30b8157ec67  docs/drupal11/evidence/2026-10-19-tour-warning/README.md
+a96ba243d7e85019c3a950817d509f6f62e8a94b7e1a2f4d5460d04a638fc8d1  docs/drupal11/evidence/2026-10-19-tour-warning/admin-assets-after.json
+a96ba243d7e85019c3a950817d509f6f62e8a94b7e1a2f4d5460d04a638fc8d1  docs/drupal11/evidence/2026-10-19-tour-warning/admin-assets-before.json
+37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570  docs/drupal11/evidence/2026-10-19-tour-warning/config-status.json
+00986127ededc222459045417bbcd2ec190272553c15f5ad162222f0a8d54e02  tools/check-admin-assets.php

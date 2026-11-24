@@ -1,0 +1,1 @@
+Failed to execute command `diff -qr sync /tmp/buriton11-module-cleanup-config-20261019`: exit status 1

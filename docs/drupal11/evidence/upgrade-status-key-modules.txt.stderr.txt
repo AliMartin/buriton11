@@ -1,0 +1,4 @@
+ [notice] Processing /var/www/html/modules/contrib/aggregator.
+ [notice] Processing /var/www/html/modules/contrib/fontawesome.
+ [notice] Processing /var/www/html/modules/contrib/image_field_to_media.
+Failed to run drush upgrade_status:analyze aggregator fontawesome image_field_to_media: exit status 3

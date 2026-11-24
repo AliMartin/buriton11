@@ -1,0 +1,34 @@
+
+Upgraded DDEV v1.25.4 is available!
+Please visit https://github.com/ddev/ddev/releases/tag/v1.25.4
+to get the upgrade.
+For upgrade help see
+https://docs.ddev.com/en/stable/users/install/ddev-upgrade/
+
+Restarting project buriton11...
+ Container ddev-buriton11-web Removed 
+ Container ddev-buriton11-db Removed 
+ Network ddev-buriton11_default Removed 
+Using nginx snippets: 
+  - /Users/aam/Sites/GitHub/buriton11/.ddev/nginx/config-sync.conf
+  - /Users/aam/Sites/GitHub/buriton11/.ddev/nginx/private-storage.conf
+
+Custom configuration is updated on restart.
+If you don't see your custom configuration taking effect, run 'ddev restart'.
+Building project images....
+Project images built in 1s.
+ Network ddev-buriton11_default Created 
+ Container ddev-buriton11-db Started 
+ Container ddev-buriton11-web Started 
+Starting Mutagen sync process.....
+Mutagen sync flush completed in 3s.
+For details on sync status 'ddev mutagen st buriton11 -l'
+Waiting for containers to become ready: [web db]... ready in 3.5s
+ddev-router already running, pushing new config...
+Waiting for ddev-router to become ready... ready in 0.5s
+Warning: There are router configuration problems:
+WARNING: Router count mismatch: 18 loaded, 30 expected
+For help go to: https://docs.ddev.com/en/stable/users/extend/traefik-router/#troubleshooting-traefik-routing
+Restarted buriton11
+Your project can be reached at https://buriton11.ddev.site
+See 'ddev describe' for alternate URLs.

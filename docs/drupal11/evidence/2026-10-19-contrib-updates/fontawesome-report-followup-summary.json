@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-19",
+  "pasted_report_version": "8.x-2.26",
+  "pasted_report_scan": "2026-10-18 12:52",
+  "pasted_report_sha256": "d96bcf0fa0021434289c87fcfd018399ea8e9de56e779c8068156868f8346505",
+  "verified_installed_version": "3.0.0",
+  "fresh_findings": 5,
+  "severity_counts": {
+    "minor": 4,
+    "info": 1
+  },
+  "remaining_categories": {
+    "yaml_wrapper_recommendations": 2,
+    "test_framework_symbols": 2,
+    "inactive_iconpicker_library": 1
+  },
+  "application_source_or_dependencies_changed": false,
+  "system_retrieve_file_calls_present_in_current_fontawesome": false
+}

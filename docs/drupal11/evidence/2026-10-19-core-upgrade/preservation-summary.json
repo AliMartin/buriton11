@@ -1,0 +1,39 @@
+{
+  "before_core": "10.6.19",
+  "after_core": "11.4.10",
+  "counts_before": {
+    "node": 1880,
+    "users": 6,
+    "file_managed": 2018,
+    "taxonomy_term_data": 122,
+    "media": 891,
+    "webform_submission": 443,
+    "aggregator_feed": 2,
+    "aggregator_item": 2310
+  },
+  "counts_after": {
+    "node": 1880,
+    "users": 6,
+    "file_managed": 2018,
+    "taxonomy_term_data": 122,
+    "media": 891,
+    "webform_submission": 443,
+    "aggregator_feed": 2,
+    "aggregator_item": 2310
+  },
+  "counts_unchanged": true,
+  "recorded_fingerprints_unchanged": true,
+  "themes_unchanged": true,
+  "legacy_password_accounts_before": 4,
+  "legacy_password_accounts_after": 4,
+  "changed_existing_password_hashes": 0,
+  "added_modules": [
+    "search_help",
+    "search_node"
+  ],
+  "removed_modules": [],
+  "active_configuration_before": 536,
+  "active_configuration_after": 534,
+  "final_sync_configuration_count": 534,
+  "final_core": "11.4.10"
+}

@@ -1,0 +1,8 @@
+{
+    "maintenance_mode": 0,
+    "automatic_cron_interval": 0,
+    "sendmail_path": "\/usr\/local\/bin\/mailpit sendmail -t --smtp-addr 127.0.0.1:1025",
+    "dblog_enabled": false,
+    "tb_megamenu": "modules\/custom\/tb_megamenu",
+    "bootstrap5": "themes\/custom\/bootstrap5"
+}

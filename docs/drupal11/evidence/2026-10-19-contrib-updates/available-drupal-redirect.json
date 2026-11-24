@@ -1,0 +1,58 @@
+{
+    "name": "drupal/redirect",
+    "description": "Allows users to redirect from old URLs to new URLs.",
+    "keywords": [],
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/redirect",
+    "names": [
+        "drupal/redirect"
+    ],
+    "versions": [
+        "1.x-dev",
+        "1.13.0",
+        "1.12.0",
+        "1.11.0",
+        "1.10.0",
+        "1.9.0",
+        "1.8.0",
+        "1.7.0",
+        "1.6.0",
+        "1.5.0",
+        "1.4.0",
+        "1.3.0",
+        "1.2.0",
+        "1.1.0",
+        "1.0.0",
+        "1.0.0-beta1",
+        "1.0.0-alpha5",
+        "1.0.0-alpha4",
+        "1.0.0-alpha3",
+        "1.0.0-alpha2",
+        "1.0.0-alpha1",
+        "dev-1.x"
+    ],
+    "licenses": [
+        {
+            "name": "GNU General Public License v2.0 or later",
+            "osi": "GPL-2.0-or-later",
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html#licenseText"
+        }
+    ],
+    "source": {
+        "type": "git",
+        "url": "https://git.drupalcode.org/project/redirect.git",
+        "reference": "8.x-1.13"
+    },
+    "dist": {
+        "type": "zip",
+        "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.13.zip",
+        "reference": "8.x-1.13"
+    },
+    "path": "/var/www/html/modules/contrib/redirect",
+    "support": {
+        "source": "https://git.drupalcode.org/project/redirect"
+    },
+    "requires": {
+        "drupal/core": "^10 || ^11"
+    }
+}

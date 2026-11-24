@@ -1,0 +1,83 @@
+{
+    "name": "drupal/ctools",
+    "description": "Provides a number of utility and helper APIs for Drupal developers and site builders.",
+    "keywords": [],
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/ctools",
+    "names": [
+        "drupal/ctools"
+    ],
+    "versions": [
+        "4.x-dev",
+        "4.1.x-dev",
+        "4.1.1",
+        "4.1.0",
+        "4.0.x-dev",
+        "4.0.5",
+        "4.0.4",
+        "4.0.3",
+        "4.0.2",
+        "4.0.1",
+        "4.0.0",
+        "3.x-dev",
+        "3.15.0",
+        "3.14.0",
+        "3.13.0",
+        "3.12.0",
+        "3.11.0",
+        "3.11.0-rc1",
+        "3.10.0",
+        "3.9.0",
+        "3.8.0",
+        "3.7.0",
+        "3.6.0",
+        "3.5.0",
+        "3.4.0",
+        "3.3.0",
+        "3.2.0",
+        "3.1.0",
+        "3.0.0",
+        "3.0.0-beta2",
+        "3.0.0-beta1",
+        "3.0.0-alpha27",
+        "3.0.0-alpha26",
+        "3.0.0-alpha25",
+        "3.0.0-alpha24",
+        "3.0.0-alpha23",
+        "3.0.0-alpha22",
+        "3.0.0-alpha21",
+        "3.0.0-alpha20",
+        "3.0.0-alpha19",
+        "3.0.0-alpha18",
+        "3.0.0-alpha17",
+        "dev-4.1.x",
+        "dev-4.0.x",
+        "dev-4.x",
+        "dev-3.x"
+    ],
+    "licenses": [
+        {
+            "name": "GNU General Public License v2.0 or later",
+            "osi": "GPL-2.0-or-later",
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html#licenseText"
+        }
+    ],
+    "source": {
+        "type": "git",
+        "url": "https://git.drupalcode.org/project/ctools.git",
+        "reference": "4.1.1"
+    },
+    "dist": {
+        "type": "zip",
+        "url": "https://ftp.drupal.org/files/projects/ctools-4.1.1.zip",
+        "reference": "4.1.1"
+    },
+    "path": "/var/www/html/modules/contrib/ctools",
+    "support": {
+        "source": "https://git.drupalcode.org/project/ctools",
+        "issues": "https://www.drupal.org/project/issues/ctools"
+    },
+    "requires": {
+        "drupal/core": "^9.5 || ^10 || ^11"
+    }
+}

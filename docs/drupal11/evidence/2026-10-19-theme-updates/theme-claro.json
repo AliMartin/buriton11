@@ -1,0 +1,13 @@
+{
+    "core": "10.6.19",
+    "theme": "claro",
+    "compiled_twig_templates": 128,
+    "routes": {
+        "\/admin\/config\/system\/site-information": 200,
+        "\/admin\/reports\/status": 200
+    },
+    "css_assets": 79,
+    "javascript_assets": 10,
+    "missing_assets": [],
+    "warnings": []
+}

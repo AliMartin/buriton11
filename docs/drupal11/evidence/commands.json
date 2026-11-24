@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-18",
+  "purpose": "Pre-upgrade Drupal 10 appraisal; not Drupal 11 success evidence",
+  "commands": [
+    {
+      "file": "baseline.json",
+      "command": [
+        "ddev",
+        "drush",
+        "php:script",
+        "docs/drupal11/check-baseline.php"
+      ],
+      "exit_code": 0
+    },
+    {
+      "file": "runtime.json",
+      "command": [
+        "ddev",
+        "drush",
+        "status",
+        "--fields=drupal-version,uri,db-driver,db-status,bootstrap,php-version,drush-version,theme,admin-theme,config-sync",
+        "--format=json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "file": "composer-validate.txt",
+      "command": [
+        "ddev",
+        "composer",
+        "validate",
+        "--no-check-publish"
+      ],
+      "exit_code": 0
+    },
+    {
+      "file": "platform.txt",
+      "command": [
+        "ddev",
+        "composer",
+        "check-platform-reqs"
+      ],
+      "exit_code": 0
+    },
+    {
+      "file": "updates.txt",
+      "command": [
+        "ddev",
+        "drush",
+        "updatedb:status"
+      ],
+      "exit_code": 0
+    },
+    {
+      "file": "config-status.json",
+      "command": [
+        "ddev",
+        "drush",
+        "config:status",
+        "--format=json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "file": "composer-audit.json",
+      "command": [
+        "ddev",
+        "composer",
+        "audit",
+        "--format=json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "file": "composer-prohibits-11.4.10.txt",
+      "command": [
+        "ddev",
+        "composer",
+        "prohibits",
+        "drupal/core",
+        "11.4.10",
+        "--tree"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "upgrade-status-help.txt",
+      "command": [
+        "ddev",
+        "drush",
+        "help",
+        "upgrade_status:analyze"
+      ],
+      "exit_code": 0
+    },
+    {
+      "file": "upgrade-status-custom.txt",
+      "command": [
+        "ddev",
+        "drush",
+        "upgrade_status:analyze",
+        "zircon",
+        "buriton5"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "upgrade-status-key-modules.txt",
+      "command": [
+        "ddev",
+        "drush",
+        "upgrade_status:analyze",
+        "aggregator",
+        "fontawesome",
+        "image_field_to_media"
+      ],
+      "exit_code": 1
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "removed_paths": [
+    {
+      "path": "modules/contrib/adminimal_admin_toolbar",
+      "exists": false
+    },
+    {
+      "path": "modules/contrib/ckeditor",
+      "exists": false
+    },
+    {
+      "path": "modules/contrib/ckeditor_iframe",
+      "exists": false
+    },
+    {
+      "path": "modules/contrib/fakeobjects",
+      "exists": false
+    },
+    {
+      "path": "modules/contrib/google_analytics",
+      "exists": false
+    },
+    {
+      "path": "modules/contrib/httpswww",
+      "exists": false
+    },
+    {
+      "path": "modules/contrib/image_field_to_media",
+      "exists": false
+    },
+    {
+      "path": "modules/contrib/taxonomy_menu",
+      "exists": false
+    },
+    {
+      "path": "themes/contrib/adminimal_theme",
+      "exists": false
+    },
+    {
+      "path": "themes/contrib/seven",
+      "exists": false
+    },
+    {
+      "path": "libraries/iframe",
+      "exists": false
+    },
+    {
+      "path": "libraries/fakeobjects",
+      "exists": false
+    }
+  ],
+  "bootstrap5_guard_present": true,
+  "patch_sha256": "e4dea352cdd5942981eafc74c8599f44ec621cf37570322ec5aec429d620f8af",
+  "core_tour_bundled_code_retained": true,
+  "image_captcha_bundled_code_retained": true,
+  "host_iframe_remnant_removed": true
+}

@@ -1,0 +1,53 @@
+{
+    "name": "drupal/classy",
+    "description": "The Classy base theme from Drupal 8/9 moved to contrib",
+    "keywords": [],
+    "type": "drupal-theme",
+    "homepage": "https://drupal.org/project/classy",
+    "names": [
+        "drupal/classy"
+    ],
+    "versions": [
+        "2.0.x-dev",
+        "2.0.3",
+        "2.0.2",
+        "2.0.1",
+        "2.0.0",
+        "1.0.x-dev",
+        "1.0.2",
+        "1.0.1",
+        "1.0.0",
+        "1.0.0-rc1",
+        "1.0.0-alpha3",
+        "1.0.0-alpha2",
+        "1.0.0-alpha1",
+        "dev-2.0.x",
+        "dev-1.0.x"
+    ],
+    "licenses": [
+        {
+            "name": "GNU General Public License v2.0 or later",
+            "osi": "GPL-2.0-or-later",
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html#licenseText"
+        }
+    ],
+    "source": {
+        "type": "git",
+        "url": "https://git.drupalcode.org/project/classy.git",
+        "reference": "2.0.3"
+    },
+    "dist": {
+        "type": "zip",
+        "url": "https://ftp.drupal.org/files/projects/classy-2.0.3.zip",
+        "reference": "2.0.3"
+    },
+    "path": "/var/www/html/themes/contrib/classy",
+    "support": {
+        "source": "https://git.drupalcode.org/project/classy",
+        "issues": "https://drupal.org/project/issues/classy"
+    },
+    "requires": {
+        "drupal/core": "^10.3 || ^11 || ^12",
+        "drupal/stable": "^2.1"
+    }
+}

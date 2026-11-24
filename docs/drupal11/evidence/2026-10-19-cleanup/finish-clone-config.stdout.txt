@@ -1,0 +1,5 @@
+{
+    "removed_cloneable_entity_types": [
+        "tour"
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "method": "GET",
+  "chain": [
+    {
+      "url": "https://buriton11.ddev.site/home",
+      "http_status": 301,
+      "location": "https://buriton11.ddev.site/"
+    },
+    {
+      "url": "https://buriton11.ddev.site/",
+      "http_status": 200
+    }
+  ],
+  "final_status": 200,
+  "exit_code": 0
+}

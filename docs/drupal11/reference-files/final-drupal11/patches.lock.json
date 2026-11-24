@@ -1,0 +1,51 @@
+{
+    "_hash": "056727edb734d93266a51c7c188280d453bf6a2f2bcca87ec45bd2be2058a27d",
+    "patches": {
+        "drupal/bootstrap5": [
+            {
+                "package": "drupal/bootstrap5",
+                "description": "Preserve base themes still required by Zircon or another installed theme",
+                "url": "patches/bootstrap5-preserve-required-base-themes.patch",
+                "sha256": "e4dea352cdd5942981eafc74c8599f44ec621cf37570322ec5aec429d620f8af",
+                "depth": 1,
+                "extra": {
+                    "provenance": "root"
+                }
+            }
+        ],
+        "drupal/tb_megamenu": [
+            {
+                "package": "drupal/tb_megamenu",
+                "description": "Declare nullable parameters explicitly for PHP 8.4; preserve Drupal 10 and 11 support",
+                "url": "patches/tb-megamenu-php84-nullable-parameters.patch",
+                "sha256": "f98a35c0d9e4692b9f1df02fda68243b29c0665e028e8c57bcfef0d80c80567a",
+                "depth": 1,
+                "extra": {
+                    "provenance": "root"
+                }
+            },
+            {
+                "package": "drupal/tb_megamenu",
+                "description": "Parse block chooser JSON with the native API for jQuery 4",
+                "url": "patches/tb-megamenu-jquery4-json.patch",
+                "sha256": "1e8050dac19a07f8924be052eef0f82c816db1c02642341a5f5264409659a8a1",
+                "depth": 1,
+                "extra": {
+                    "provenance": "root"
+                }
+            }
+        ],
+        "malsup/jquery.cycle": [
+            {
+                "package": "malsup/jquery.cycle",
+                "description": "Replace removed jQuery 4 function helper with native checks",
+                "url": "patches/jquery-cycle-jquery4.patch",
+                "sha256": "ad9923c4661ebc93ded8b36da26f087944bd92eaf5c34531a755b365918bffda",
+                "depth": 1,
+                "extra": {
+                    "provenance": "root"
+                }
+            }
+        ]
+    }
+}

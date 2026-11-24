@@ -1,0 +1,8 @@
+{
+  "managed_file_records": 2018,
+  "existing_file_bytes_unchanged": 1726,
+  "missing_before_and_after": 292,
+  "other_uri_schemes": 0,
+  "differences": [],
+  "ordered_matching_fid_and_sha256_digest": "42bcefbd1ed32f19761eadb64c9afc76087fa03eeb7047dd3368e8fe75e58f64"
+}

@@ -1,0 +1,97 @@
+[
+  {
+    "file": "metadata-drupal-core.json",
+    "command": [
+      "ddev",
+      "exec",
+      "composer",
+      "show",
+      "drupal/core",
+      "11.4.10",
+      "--all",
+      "--format=json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "metadata-drush-drush.json",
+    "command": [
+      "ddev",
+      "exec",
+      "composer",
+      "show",
+      "drush/drush",
+      "13.7.3",
+      "--all",
+      "--format=json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "metadata-drupal-fontawesome.json",
+    "command": [
+      "ddev",
+      "exec",
+      "composer",
+      "show",
+      "drupal/fontawesome",
+      "3.0.0",
+      "--all",
+      "--format=json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "metadata-drupal-image_field_to_media.json",
+    "command": [
+      "ddev",
+      "exec",
+      "composer",
+      "show",
+      "drupal/image_field_to_media",
+      "3.0.2",
+      "--all",
+      "--format=json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "metadata-drupal-adminimal_admin_toolbar.json",
+    "command": [
+      "ddev",
+      "exec",
+      "composer",
+      "show",
+      "drupal/adminimal_admin_toolbar",
+      "--all",
+      "--format=json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "metadata-drupal-adminimal_theme.json",
+    "command": [
+      "ddev",
+      "exec",
+      "composer",
+      "show",
+      "drupal/adminimal_theme",
+      "--all",
+      "--format=json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "metadata-drupal-ckeditor_iframe.json",
+    "command": [
+      "ddev",
+      "exec",
+      "composer",
+      "show",
+      "drupal/ckeditor_iframe",
+      "--all",
+      "--format=json"
+    ],
+    "exit_code": 0
+  }
+]

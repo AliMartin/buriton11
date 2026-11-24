@@ -1,0 +1,48 @@
+{
+    "name": "drupal/admin_toolbar",
+    "description": "Provides a drop-down menu interface to the core Drupal Toolbar.",
+    "keywords": [
+        "Drupal",
+        "Toolbar"
+    ],
+    "type": "drupal-module",
+    "homepage": "http://drupal.org/project/admin_toolbar",
+    "names": [
+        "drupal/admin_toolbar"
+    ],
+    "versions": [
+        "3.6.3"
+    ],
+    "licenses": [
+        {
+            "name": "GNU General Public License v2.0 or later",
+            "osi": "GPL-2.0-or-later",
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html#licenseText"
+        }
+    ],
+    "source": {
+        "type": "git",
+        "url": "https://git.drupalcode.org/project/admin_toolbar.git",
+        "reference": "3.6.3"
+    },
+    "dist": {
+        "type": "zip",
+        "url": "https://ftp.drupal.org/files/projects/admin_toolbar-3.6.3.zip",
+        "reference": "3.6.3"
+    },
+    "path": "/var/www/html/modules/contrib/admin_toolbar",
+    "support": {
+        "source": "https://git.drupalcode.org/project/admin_toolbar",
+        "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+    },
+    "requires": {
+        "drupal/core": "^9.5 || ^10 || ^11",
+        "drupal/toolbar": "*"
+    },
+    "devRequires": {
+        "drupal/toolbar": "*"
+    },
+    "conflicts": {
+        "drupal/project_browser": "<2.1.0"
+    }
+}

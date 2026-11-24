@@ -1,0 +1,40 @@
+{
+    "name": "drupal/similarterms",
+    "description": "Displays similar content based on shared taxonomy terms.",
+    "keywords": [],
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/similarterms",
+    "names": [
+        "drupal/similarterms"
+    ],
+    "versions": [
+        "2.0.0"
+    ],
+    "licenses": [
+        {
+            "name": "GNU General Public License v2.0 or later",
+            "osi": "GPL-2.0-or-later",
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html#licenseText"
+        }
+    ],
+    "source": {
+        "type": "git",
+        "url": "https://git.drupalcode.org/project/similarterms.git",
+        "reference": "2.0.0"
+    },
+    "dist": {
+        "type": "zip",
+        "url": "https://ftp.drupal.org/files/projects/similarterms-2.0.0.zip",
+        "reference": "2.0.0"
+    },
+    "support": {
+        "source": "https://git.drupalcode.org/project/similarterms",
+        "issues": "https://www.drupal.org/project/issues/similarterms"
+    },
+    "requires": {
+        "drupal/core": "^10.3 || ^11 || ^12"
+    },
+    "devRequires": {
+        "drupal/taxonomy_entity_index": "*"
+    }
+}

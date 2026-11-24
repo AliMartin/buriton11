@@ -1,0 +1,14 @@
+{
+  "added": {},
+  "removed": {},
+  "updated": {
+    "drupal/fontawesome": {
+      "after": "3.0.0",
+      "before": "2.26.0"
+    },
+    "drupal/similarterms": {
+      "after": "2.0.0",
+      "before": "1.10.0"
+    }
+  }
+}

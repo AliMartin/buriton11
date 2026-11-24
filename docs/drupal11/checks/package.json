@@ -1,0 +1,9 @@
+{
+  "name": "buriton-drupal11-theme-checks",
+  "private": true,
+  "version": "1.0.0",
+  "description": "DOM regression checks using site theme scripts and explicitly supplied core jQuery assets",
+  "dependencies": {
+    "jsdom": "26.1.0"
+  }
+}

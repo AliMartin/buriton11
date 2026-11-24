@@ -1,0 +1,26 @@
+
+================================================================================
+Zircon, --
+Scanned on Sun, 18/10/2026 - 12:51pm
+
+FILE: themes/custom/zircon/zircon.info.yml
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 6    Value of core_version_requirement: ^9.5 || ^10 is not       
+                    compatible with the next major version of Drupal core. See  
+                    https://drupal.org/node/3070687.                            
+--------------------------------------------------------------------------------
+
+Buriton Bootstrap 5, --
+Scanned on Sun, 18/10/2026 - 12:51pm
+
+FILE: themes/custom/buriton5/buriton5.info.yml
+
+STATUS         LINE                           MESSAGE                           
+--------------------------------------------------------------------------------
+Check manually 4    Value of core_version_requirement: ^9.5 || ^10.1 is not     
+                    compatible with the next major version of Drupal core. See  
+                    https://drupal.org/node/3070687.                            
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,13 @@
+{
+  "reason": "Drush state:get --format=json wraps values by key; final check caught the wrapper being stored instead of its scalar value. Corrected before handover.",
+  "original_value": 0,
+  "command": [
+    "ddev",
+    "drush",
+    "state:set",
+    "system.maintenance_mode",
+    "0",
+    "--input-format=integer"
+  ],
+  "exit_code": 0
+}

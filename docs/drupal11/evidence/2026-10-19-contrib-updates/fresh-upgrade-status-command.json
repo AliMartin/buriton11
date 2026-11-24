@@ -1,0 +1,13 @@
+{
+  "command": [
+    "ddev",
+    "drush",
+    "upgrade_status:analyze",
+    "fontawesome",
+    "similarterms",
+    "tb_megamenu",
+    "--format=codeclimate"
+  ],
+  "exit_code": 1,
+  "note": "Exit 1 is expected if manual/static findings remain; review source and runtime results rather than suppressing them."
+}

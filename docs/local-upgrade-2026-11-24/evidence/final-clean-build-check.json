@@ -1,0 +1,15 @@
+{
+    "clean_build": "/tmp/buriton-clean-build-20261124",
+    "packages": {
+        "modules/custom/tb_megamenu": {
+            "matching_files": 60
+        },
+        "themes/custom/bootstrap5": {
+            "matching_files": 8421
+        },
+        "libraries/jquery.cycle": {
+            "matching_files": 3
+        }
+    },
+    "runtime_scaffold_present": true
+}

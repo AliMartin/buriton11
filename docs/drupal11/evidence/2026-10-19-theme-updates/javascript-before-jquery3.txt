@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "jquery": "3.7.1",
+  "bootstrap": "3.4.1",
+  "checks": [
+    "collapse",
+    "dropdown",
+    "modal",
+    "tooltip",
+    "smooth-scroll click",
+    "Slick filter/options/destroy",
+    "repeated/AJAX attachment",
+    "slideshow content",
+    "reduced motion",
+    "search placeholder",
+    "form handlers"
+  ]
+}

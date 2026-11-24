@@ -1,0 +1,395 @@
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+6 │ @import 'variables_drupal';
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    themes/custom/buriton5/scss/style.scss 6:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+10 │ @import 'variables_bootstrap';
+   │         ^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    themes/custom/buriton5/scss/style.scss 10:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+13 │ @import '../../bootstrap5/scss/style';
+   │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    themes/custom/buriton5/scss/style.scss 13:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+15 │ @import 'node';
+   │         ^^^^^^
+   ╵
+    themes/custom/buriton5/scss/style.scss 15:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+16 │ @import 'header';
+   │         ^^^^^^^^
+   ╵
+    themes/custom/buriton5/scss/style.scss 16:9  root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass($arg == "$value"): $value; else: $arg)
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+58 │       $_args: append($_args, if($arg == "$key", $key, if($arg == "$value", $value, $arg)));
+   │                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 58:55  @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 7:9     @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                              @import
+    themes/custom/buriton5/scss/style.scss 13:9                               root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass($arg == "$key"): $key; else: if($arg == "$value", $value, $arg))
+
+More info: https://sass-lang.com/d/if-function
+
+   ╷
+58 │       $_args: append($_args, if($arg == "$key", $key, if($arg == "$value", $value, $arg)));
+   │                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 58:30  @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 7:9     @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                              @import
+    themes/custom/buriton5/scss/style.scss 13:9                               root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass($l1 > $l2): divide($l1 + 0.05, $l2 + 0.05); else: divide($l2 + 0.05, $l1 + 0.05))
+
+More info: https://sass-lang.com/d/if-function
+
+    ╷
+177 │   @return if($l1 > $l2, divide($l1 + .05, $l2 + .05), divide($l2 + .05, $l1 + .05));
+    │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 177:11  @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 7:9      @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                               @import
+    themes/custom/buriton5/scss/style.scss 13:9                                root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass(divide($value, 255) < 0.04045): divide(divide($value, 255), 12.92); else: nth($_luminance-list, $value + 1))
+
+More info: https://sass-lang.com/d/if-function
+
+    ╷
+191 │     $value: if(divide($value, 255) < .04045, divide(divide($value, 255), 12.92), nth($_luminance-list, $value + 1));
+    │             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 191:13  @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 7:9      @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                               @import
+    themes/custom/buriton5/scss/style.scss 13:9                                root stylesheet
+
+DEPRECATION WARNING [if-function]: The Sass if() syntax is deprecated in favor of the modern CSS syntax.
+
+Suggestion: if(sass($weight > 0): shade-color($color, $weight); else: tint-color($color, -$weight))
+
+More info: https://sass-lang.com/d/if-function
+
+    ╷
+217 │   @return if($weight > 0, shade-color($color, $weight), tint-color($color, -$weight));
+    │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 217:11  @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 7:9      @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                               @import
+    themes/custom/buriton5/scss/style.scss 13:9                                root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use color.mix instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+207 │   @return mix(white, $color, $weight);
+    │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 207:11  tint-color()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_variables.scss 79:12   @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 8:9      @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                               @import
+    themes/custom/buriton5/scss/style.scss 13:9                                root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use color.mix instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+212 │   @return mix(black, $color, $weight);
+    │           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 212:11  shade-color()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_variables.scss 84:12   @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 8:9      @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                               @import
+    themes/custom/buriton5/scss/style.scss 13:9                                root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use color.mix instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+    ╷
+342 │ $light-bg-subtle:         mix($gray-100, $white) !default;
+    │                           ^^^^^^^^^^^^^^^^^^^^^^
+    ╵
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_variables.scss 342:27  @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 8:9      @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                               @import
+    themes/custom/buriton5/scss/style.scss 13:9                                root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use math.unit instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+11 │     @if $prev-num == null or unit($num) == "%" or unit($prev-num) == "%" {
+   │                              ^^^^^^^^^^
+   ╵
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 11:30  -assert-ascending()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_variables.scss 494:1  @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 8:9     @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                              @import
+    themes/custom/buriton5/scss/style.scss 13:9                               root stylesheet
+
+DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+Use math.unit instead.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+   ╷
+11 │     @if $prev-num == null or unit($num) == "%" or unit($prev-num) == "%" {
+   │                                                   ^^^^^^^^^^^^^^^
+   ╵
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 11:51  -assert-ascending()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_variables.scss 494:1  @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 8:9     @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                              @import
+    themes/custom/buriton5/scss/style.scss 13:9                               root stylesheet
+
+DEPRECATION WARNING [color-functions]: red() is deprecated. Suggestion:
+
+color.channel($color, "red", $space: rgb)
+
+More info: https://sass-lang.com/d/color-functions
+
+    ╷
+185 │     "r": red($color),
+    │          ^^^^^^^^^^^
+    ╵
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 185:10  luminance()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 174:8   contrast-ratio()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 159:22  color-contrast()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_variables.scss 846:42  @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 8:9      @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                               @import
+    themes/custom/buriton5/scss/style.scss 13:9                                root stylesheet
+
+DEPRECATION WARNING [color-functions]: green() is deprecated. Suggestion:
+
+color.channel($color, "green", $space: rgb)
+
+More info: https://sass-lang.com/d/color-functions
+
+    ╷
+186 │     "g": green($color),
+    │          ^^^^^^^^^^^^^
+    ╵
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 186:10  luminance()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 174:8   contrast-ratio()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 159:22  color-contrast()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_variables.scss 846:42  @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 8:9      @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                               @import
+    themes/custom/buriton5/scss/style.scss 13:9                                root stylesheet
+
+DEPRECATION WARNING [color-functions]: blue() is deprecated. Suggestion:
+
+color.channel($color, "blue", $space: rgb)
+
+More info: https://sass-lang.com/d/color-functions
+
+    ╷
+187 │     "b": blue($color)
+    │          ^^^^^^^^^^^^
+    ╵
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 187:10  luminance()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 174:8   contrast-ratio()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 159:22  color-contrast()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_variables.scss 846:42  @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 8:9      @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                               @import
+    themes/custom/buriton5/scss/style.scss 13:9                                root stylesheet
+
+DEPRECATION WARNING [color-functions]: red() is deprecated. Suggestion:
+
+color.channel($color, "red", $space: rgb)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+37 │   @return red($value), green($value), blue($value);
+   │           ^^^^^^^^^^^
+   ╵
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 37:11   to-rgb()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_variables.scss 846:31  @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 8:9      @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                               @import
+    themes/custom/buriton5/scss/style.scss 13:9                                root stylesheet
+
+DEPRECATION WARNING [color-functions]: green() is deprecated. Suggestion:
+
+color.channel($color, "green", $space: rgb)
+
+More info: https://sass-lang.com/d/color-functions
+
+   ╷
+37 │   @return red($value), green($value), blue($value);
+   │                        ^^^^^^^^^^^^^
+   ╵
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 37:24   to-rgb()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_variables.scss 846:31  @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 8:9      @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                               @import
+    themes/custom/buriton5/scss/style.scss 13:9                                root stylesheet
+
+WARNING: Found no color leading to 4.5:1 contrast ratio against #f01e0d...
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 168:3       color-contrast()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/mixins/_buttons.scss 10:11  button-variant()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_buttons.scss 152:7         @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 23:9         @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                                   @import
+    themes/custom/buriton5/scss/style.scss 13:9                                    root stylesheet
+
+WARNING: Found no color leading to 4.5:1 contrast ratio against #f01e0d...
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 168:3       color-contrast()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/mixins/_buttons.scss 19:20  button-variant()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_buttons.scss 152:7         @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 23:9         @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                                   @import
+    themes/custom/buriton5/scss/style.scss 13:9                                    root stylesheet
+
+WARNING: Found no color leading to 4.5:1 contrast ratio against #f01e0d...
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 168:3       color-contrast()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/mixins/_buttons.scss 41:17  button-outline-variant()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_buttons.scss 159:5         @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 23:9         @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                                   @import
+    themes/custom/buriton5/scss/style.scss 13:9                                    root stylesheet
+
+WARNING: Found no color leading to 4.5:1 contrast ratio against #f01e0d...
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 168:3       color-contrast()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/mixins/_buttons.scss 44:18  button-outline-variant()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_buttons.scss 159:5         @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 23:9         @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                                   @import
+    themes/custom/buriton5/scss/style.scss 13:9                                    root stylesheet
+
+WARNING: Found no color leading to 4.5:1 contrast ratio against #f01e0d...
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 168:3        color-contrast()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/helpers/_color-bg.scss 4:12  @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_helpers.scss 2:9            @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 48:9          @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                                    @import
+    themes/custom/buriton5/scss/style.scss 13:9                                     root stylesheet
+
+WARNING: Found no color leading to 4.5:1 contrast ratio against #f01e0d...
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 168:3              color-contrast()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/helpers/_colored-links.scss 10:26  @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_helpers.scss 3:9                  @import
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/bootstrap.scss 48:9                @import
+    themes/custom/bootstrap5/scss/style.scss 3:9                                          @import
+    themes/custom/buriton5/scss/style.scss 13:9                                           root stylesheet
+
+WARNING: Found no color leading to 4.5:1 contrast ratio against #f01e0d...
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 168:3       color-contrast()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/mixins/_buttons.scss 10:11  button-variant()
+    themes/custom/bootstrap5/scss/drupal/_buttons.scss 27:7                        @import
+    themes/custom/bootstrap5/scss/_drupal.scss 4:9                                 @import
+    themes/custom/bootstrap5/scss/style.scss 5:9                                   @import
+    themes/custom/buriton5/scss/style.scss 13:9                                    root stylesheet
+
+WARNING: Found no color leading to 4.5:1 contrast ratio against #f01e0d...
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 168:3       color-contrast()
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/mixins/_buttons.scss 19:20  button-variant()
+    themes/custom/bootstrap5/scss/drupal/_buttons.scss 27:7                        @import
+    themes/custom/bootstrap5/scss/_drupal.scss 4:9                                 @import
+    themes/custom/bootstrap5/scss/style.scss 5:9                                   @import
+    themes/custom/buriton5/scss/style.scss 13:9                                    root stylesheet
+
+WARNING: Found no color leading to 4.5:1 contrast ratio against #f01e0d...
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 168:3  color-contrast()
+    themes/custom/bootstrap5/scss/drupal/_buttons.scss 44:14                  @import
+    themes/custom/bootstrap5/scss/_drupal.scss 4:9                            @import
+    themes/custom/bootstrap5/scss/style.scss 5:9                              @import
+    themes/custom/buriton5/scss/style.scss 13:9                               root stylesheet
+
+WARNING: Found no color leading to 4.5:1 contrast ratio against #f01e0d...
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 168:3  color-contrast()
+    themes/custom/bootstrap5/scss/drupal/_buttons.scss 47:16                  @import
+    themes/custom/bootstrap5/scss/_drupal.scss 4:9                            @import
+    themes/custom/bootstrap5/scss/style.scss 5:9                              @import
+    themes/custom/buriton5/scss/style.scss 13:9                               root stylesheet
+
+WARNING: Found no color leading to 4.5:1 contrast ratio against #f01e0d...
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 168:3  color-contrast()
+    themes/custom/bootstrap5/scss/drupal/_buttons.scss 58:16                  @import
+    themes/custom/bootstrap5/scss/_drupal.scss 4:9                            @import
+    themes/custom/bootstrap5/scss/style.scss 5:9                              @import
+    themes/custom/buriton5/scss/style.scss 13:9                               root stylesheet
+
+WARNING: Found no color leading to 4.5:1 contrast ratio against #f01e0d...
+    themes/custom/bootstrap5/dist/bootstrap/5.3.8/scss/_functions.scss 168:3  color-contrast()
+    themes/custom/bootstrap5/scss/drupal/_buttons.scss 64:16                  @import
+    themes/custom/bootstrap5/scss/_drupal.scss 4:9                            @import
+    themes/custom/bootstrap5/scss/style.scss 5:9                              @import
+    themes/custom/buriton5/scss/style.scss 13:9                               root stylesheet
+
+DEPRECATION WARNING [abs-percent]: Passing percentage units to the global abs() function is deprecated.
+In the future, this will emit a CSS abs() function to be resolved by the browser.
+To preserve current behavior: math.abs(40%)
+To emit a CSS abs() now: abs(#{40%})
+More info: https://sass-lang.com/d/abs-percent
+
+  ╷
+6 │     $alert-color: mix($value, color-contrast($alert-background), abs($alert-color-scale));
+  │                                                                  ^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    themes/custom/bootstrap5/scss/drupal/_theme.scss 6:66  @import
+    themes/custom/bootstrap5/scss/_drupal.scss 16:9        @import
+    themes/custom/bootstrap5/scss/style.scss 5:9           @import
+    themes/custom/buriton5/scss/style.scss 13:9            root stylesheet
+
+WARNING: 344 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+

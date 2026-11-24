@@ -1,0 +1,61 @@
+{
+    "name": "drupal/recaptcha",
+    "description": "Protect your website from spam and abuse while letting real people pass through with ease.",
+    "keywords": [],
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/recaptcha",
+    "names": [
+        "drupal/recaptcha"
+    ],
+    "versions": [
+        "4.x-dev",
+        "3.x-dev",
+        "3.5.0",
+        "3.5.0-rc1",
+        "3.4.0",
+        "3.3.0",
+        "3.2.0",
+        "3.1.0",
+        "3.0.0",
+        "2.x-dev",
+        "2.5.0",
+        "2.4.0",
+        "2.3.0",
+        "2.2.0",
+        "2.1.0",
+        "2.0.0",
+        "2.0.0-rc1",
+        "1.x-dev",
+        "dev-4.x",
+        "dev-3.x",
+        "dev-2.x",
+        "dev-1.x"
+    ],
+    "licenses": [
+        {
+            "name": "GNU General Public License v2.0 or later",
+            "osi": "GPL-2.0-or-later",
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html#licenseText"
+        }
+    ],
+    "source": {
+        "type": "git",
+        "url": "https://git.drupalcode.org/project/recaptcha.git",
+        "reference": "8.x-3.5"
+    },
+    "dist": {
+        "type": "zip",
+        "url": "https://ftp.drupal.org/files/projects/recaptcha-8.x-3.5.zip",
+        "reference": "8.x-3.5"
+    },
+    "path": "/var/www/html/modules/contrib/recaptcha",
+    "support": {
+        "source": "https://git.drupalcode.org/project/recaptcha.git",
+        "issues": "https://www.drupal.org/project/issues/recaptcha"
+    },
+    "requires": {
+        "drupal/captcha": "^1.15 || ^2.0",
+        "drupal/core": "^10 || ^11",
+        "google/recaptcha": "^1.3"
+    }
+}

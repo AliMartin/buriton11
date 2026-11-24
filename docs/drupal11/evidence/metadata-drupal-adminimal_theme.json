@@ -1,0 +1,48 @@
+{
+    "name": "drupal/adminimal_theme",
+    "description": "Drupal administration theme with modern minimalist design.",
+    "keywords": [],
+    "type": "drupal-theme",
+    "homepage": "https://www.drupal.org/project/adminimal_theme",
+    "names": [
+        "drupal/adminimal_theme"
+    ],
+    "versions": [
+        "1.x-dev",
+        "1.7.0",
+        "1.6.0",
+        "1.5.0",
+        "1.4.0",
+        "1.3.0",
+        "1.2.0",
+        "1.1.0",
+        "1.0.0",
+        "dev-1.x"
+    ],
+    "licenses": [
+        {
+            "name": "GNU General Public License v2.0 or later",
+            "osi": "GPL-2.0+",
+            "url": "https://spdx.org/licenses/GPL-2.0+.html#licenseText"
+        }
+    ],
+    "source": {
+        "type": "git",
+        "url": "https://git.drupalcode.org/project/adminimal_theme.git",
+        "reference": "8.x-1.7"
+    },
+    "dist": {
+        "type": "zip",
+        "url": "https://ftp.drupal.org/files/projects/adminimal_theme-8.x-1.7.zip",
+        "reference": "8.x-1.7"
+    },
+    "path": "/var/www/html/themes/contrib/adminimal_theme",
+    "support": {
+        "source": "https://git.drupalcode.org/project/adminimal_theme",
+        "issues": "https://www.drupal.org/project/issues/adminimal_theme"
+    },
+    "requires": {
+        "drupal/core": "^9.3 || ^10",
+        "drupal/seven": "~1.0"
+    }
+}

@@ -1,0 +1,582 @@
+--- old/fontawesome.info.yml
++++ new/fontawesome.info.yml
+@@ -1,11 +1,12 @@
+ name: 'Font Awesome'
+ type: module
+ description: 'The most popular icon set and toolkit on the web.'
+-
+-core_version_requirement: ^9.4 || ^10
++# @todo Remove DeprecationHelper from src/Form/SettingsForm when minimum version
++# is 11.1.
++core_version_requirement: ^10.2 || ^11.0
+ configure: fontawesome.admin_settings
+ 
+-# Information added by Drupal.org packaging script on 2023-06-29
+-version: '8.x-2.26'
++# Information added by Drupal.org packaging script on 2025-01-21
++version: '3.0.0'
+ project: 'fontawesome'
+-datestamp: 1688063481
++datestamp: 1737497164
+--- old/modules/fontawesome_iconpicker_widget/fontawesome_iconpicker_widget.info.yml
++++ new/modules/fontawesome_iconpicker_widget/fontawesome_iconpicker_widget.info.yml
+@@ -2,11 +2,11 @@
+ type: module
+ description: 'Provides an iconpicker widget for Font Awesome'
+ 
+-core_version_requirement: ^9.4 || ^10
++core_version_requirement: ^10.2 || ^11.0
+ dependencies:
+   - fontawesome:fontawesome
+ 
+-# Information added by Drupal.org packaging script on 2023-06-29
+-version: '8.x-2.26'
++# Information added by Drupal.org packaging script on 2025-01-21
++version: '3.0.0'
+ project: 'fontawesome'
+-datestamp: 1688063481
++datestamp: 1737497164
+--- old/modules/fontawesome_iconpicker_widget/src/Commands/FontawesomeIconPickerCommands.php
++++ new/modules/fontawesome_iconpicker_widget/src/Commands/FontawesomeIconPickerCommands.php
+@@ -2,10 +2,15 @@
+ 
+ namespace Drupal\fontawesome_iconpicker_widget\Commands;
+ 
++use Drupal\Core\Archiver\ArchiverManager;
++use Drupal\Core\Asset\LibraryDiscoveryInterface;
++use Drupal\Core\File\Exception\FileException;
++use Drupal\Core\File\Exception\InvalidStreamWrapperException;
++use Drupal\Core\File\FileExists;
+ use Drupal\Core\File\FileSystemInterface;
+ use Drush\Commands\DrushCommands;
+-use Drupal\Core\Asset\LibraryDiscoveryInterface;
+-use Drupal\Core\Archiver\ArchiverManager;
++use GuzzleHttp\Client;
++use GuzzleHttp\Exception\TransferException;
+ 
+ /**
+  * A Drush commandfile for Font Awesome module.
+@@ -13,35 +18,15 @@
+ class FontawesomeIconPickerCommands extends DrushCommands {
+ 
+   /**
+-   * Library discovery service.
+-   *
+-   * @var \Drupal\Core\Asset\LibraryDiscoveryInterface
+-   */
+-  protected $libraryDiscovery;
+-
+-  /**
+-   * File system service.
+-   *
+-   * @var \Drupal\Core\File\FileSystemInterface
+-   */
+-  protected $fileSystem;
+-
+-  /**
+-   * Archive manager service.
+-   *
+-   * @var \Drupal\Core\Archiver\ArchiverManager
+-   */
+-  protected $archiverManager;
+-
+-  /**
+    * {@inheritdoc}
+    */
+-  public function __construct(LibraryDiscoveryInterface $library_discovery, FileSystemInterface $file_system, ArchiverManager $archiver_manager) {
++  public function __construct(
++    protected LibraryDiscoveryInterface $libraryDiscovery,
++    protected FileSystemInterface $fileSystem,
++    protected ArchiverManager $archiverManager,
++    protected Client $httpClient,
++  ) {
+     parent::__construct();
+-
+-    $this->libraryDiscovery = $library_discovery;
+-    $this->fileSystem = $file_system;
+-    $this->archiverManager = $archiver_manager;
+   }
+ 
+   /**
+@@ -76,8 +61,20 @@
+     if ($iconpicker_library = $this->libraryDiscovery->getLibraryByName('fontawesome_iconpicker_widget', 'fonticonpicker')) {
+ 
+       // Download the file.
++      $url = $iconpicker_library['remote'];
+       $destination = tempnam(sys_get_temp_dir(), 'file.') . "tar.gz";
+-      system_retrieve_file($iconpicker_library['remote'], $destination);
++
++      try {
++        $data = (string) $this->httpClient->get($url)->getBody();
++        $this->fileSystem->saveData($data, $destination, FileExists::Replace);
++      }
++      catch (TransferException $exception) {
++        $this->logger()->error(dt('Failed to fetch file due to error "%error"', ['%error' => $exception->getMessage()]));
++      }
++      catch (FileException | InvalidStreamWrapperException $e) {
++        $this->logger()->error(dt('Failed to save file due to error "%error"', ['%error' => $e->getMessage()]));
++      }
++
+       if (!file_exists($destination)) {
+         // Remove the directory.
+         $this->fileSystem->rmdir($path);
+--- old/modules/fontawesome_iconpicker_widget/src/IconManagerService.php
++++ new/modules/fontawesome_iconpicker_widget/src/IconManagerService.php
+@@ -52,14 +52,22 @@
+     $configuration_settings = $this->configFactory->get('fontawesome.settings');
+ 
+     // Determine which files we are using.
+-    $activeFiles = [
+-      'use_solid_file' => is_null($configuration_settings->get('use_solid_file')) === TRUE ? TRUE : $configuration_settings->get('use_solid_file'),
+-      'use_regular_file' => is_null($configuration_settings->get('use_regular_file')) === TRUE ? TRUE : $configuration_settings->get('use_regular_file'),
+-      'use_light_file' => is_null($configuration_settings->get('use_light_file')) === TRUE ? TRUE : $configuration_settings->get('use_light_file'),
+-      'use_brands_file' => is_null($configuration_settings->get('use_brands_file')) === TRUE ? TRUE : $configuration_settings->get('use_brands_file'),
+-      'use_duotone_file' => is_null($configuration_settings->get('use_duotone_file')) === TRUE ? TRUE : $configuration_settings->get('use_duotone_file'),
+-      'use_thin_file' => is_null($configuration_settings->get('use_thin_file')) === TRUE ? TRUE : $configuration_settings->get('use_thin_file'),
+-    ];
++    $activeFiles = [];
++    foreach ([
++      'solid',
++      'regular',
++      'light',
++      'brands',
++      'duotone',
++      'thin',
++      'sharpregular',
++      'sharplight',
++      'sharpsolid',
++      'custom',
++    ] as $type) {
++      $settingName = 'use_' . $type . '_file';
++      $activeFiles[$settingName] = is_null($configuration_settings->get($settingName)) === TRUE ? TRUE : $configuration_settings->get($settingName);
++    }
+ 
+     foreach ($iconData as $icon => $data) {
+       foreach ($iconData[$icon]['styles'] as $style) {
+@@ -67,50 +75,78 @@
+         switch ($style) {
+           case 'brands':
+             if (!$activeFiles['use_brands_file']) {
+-
+-              break;
+-            }
+-            $iconPrefix = 'fab';
++              break;
++            }
++            $iconPrefix = 'fa-brands';
+             break;
+ 
+           case 'light':
++            // Don't show if unavailable.
+             if (!$activeFiles['use_light_file']) {
+               break;
+             }
+-            $iconPrefix = 'fal';
++            $iconPrefix = 'fa-light';
+             break;
+ 
+           case 'regular':
++            // Don't show if unavailable.
+             if (!$activeFiles['use_regular_file']) {
+               break;
+             }
+-            $iconPrefix = 'far';
++            $iconPrefix = 'fa-regular';
++            break;
++
++          case 'duotone':
++            // Don't show if unavailable.
++            if (!$activeFiles['use_duotone_file']) {
++              break;
++            }
++            $iconPrefix = 'fa-duotone';
+             break;
+ 
+           case 'thin':
++            // Don't show if unavailable.
+             if (!$activeFiles['use_thin_file']) {
+               break;
+             }
+-            $iconPrefix = 'fat';
+-            break;
+-
+-          case 'duotone':
+-            if (!$activeFiles['use_duotone_file']) {
+-              break;
+-            }
+-            $iconPrefix = 'fad';
++            $iconPrefix = 'fa-thin';
++            break;
++
++          case 'sharpregular':
++            // Don't show if unavailable.
++            if (!$activeFiles['use_sharpregular_file']) {
++              break;
++            }
++            $iconPrefix = 'fa-sharp fa-regular';
++            break;
++
++          case 'sharpsolid':
++            // Don't show if unavailable.
++            if (!$activeFiles['use_sharpsolid_file']) {
++              break;
++            }
++            $iconPrefix = 'fa-sharp fa-solid';
++            break;
++
++          case 'sharplight':
++            // Don't show if unavailable.
++            if (!$activeFiles['use_sharplight_file']) {
++              break;
++            }
++            $iconPrefix = 'fa-sharp fa-light';
+             break;
+ 
+           case 'kit_uploads':
+-            $iconPrefix = 'fak';
++            $iconPrefix = 'fa-kit';
+             break;
+ 
+           default:
+           case 'solid':
++            // Don't show if unavailable.
+             if (!$activeFiles['use_solid_file']) {
+               break;
+             }
+-            $iconPrefix = 'fas';
++            $iconPrefix = 'fa-solid';
+             break;
+         }
+         if (!empty($iconPrefix)) {
+@@ -199,7 +235,7 @@
+    *   The base name for the icon.
+    */
+   public function getIconBaseNameFromClass($class) {
+-    [$prefix, $base] = explode('fa-', $class);
++    [$prefix, $base] = explode(' fa-', $class);
+     return $base;
+   }
+ 
+@@ -213,7 +249,7 @@
+    *   The icon prefix.
+    */
+   public function getIconPrefixFromClass($class) {
+-    [$prefix, $base] = explode('fa-', $class);
++    [$prefix, $base] = explode(' fa-', $class);
+     return trim($prefix);
+   }
+ 
+--- old/modules/fontawesome_media/fontawesome_media.info.yml
++++ new/modules/fontawesome_media/fontawesome_media.info.yml
+@@ -2,12 +2,12 @@
+ type: module
+ description: 'Adds a Font Awesome Media Entity Type.'
+ 
+-core_version_requirement: ^9.4 || ^10
++core_version_requirement: ^10.2 || ^11.0
+ dependencies:
+   - fontawesome:fontawesome
+   - drupal:svg_image
+ 
+-# Information added by Drupal.org packaging script on 2023-06-29
+-version: '8.x-2.26'
++# Information added by Drupal.org packaging script on 2025-01-21
++version: '3.0.0'
+ project: 'fontawesome'
+-datestamp: 1688063480
++datestamp: 1737497164
+--- old/src/Commands/FontawesomeCommands.php
++++ new/src/Commands/FontawesomeCommands.php
+@@ -2,46 +2,31 @@
+ 
+ namespace Drupal\fontawesome\Commands;
+ 
++use Drupal\Core\Archiver\ArchiverManager;
++use Drupal\Core\Asset\LibraryDiscoveryInterface;
++use Drupal\Core\File\Exception\FileException;
++use Drupal\Core\File\Exception\InvalidStreamWrapperException;
++use Drupal\Core\File\FileExists;
++use Drupal\Core\File\FileSystemInterface;
+ use Drush\Commands\DrushCommands;
+-use Drupal\Core\Asset\LibraryDiscoveryInterface;
+-use Drupal\Core\File\FileSystemInterface;
+-use Drupal\Core\Archiver\ArchiverManager;
++use GuzzleHttp\Client;
++use GuzzleHttp\Exception\TransferException;
+ 
+ /**
+- * A Drush commandfile for Font Awesome module.
++ * A Drush command file for Font Awesome module.
+  */
+ class FontawesomeCommands extends DrushCommands {
+ 
+   /**
+-   * Library discovery service.
+-   *
+-   * @var \Drupal\Core\Asset\LibraryDiscoveryInterface
+-   */
+-  protected $libraryDiscovery;
+-
+-  /**
+-   * File system interface.
+-   *
+-   * @var \Drupal\Core\File\FileSystemInterface
+-   */
+-  protected $fileSystem;
+-
+-  /**
+-   * Archive manager service.
+-   *
+-   * @var \Drupal\Core\Archiver\ArchiverManager
+-   */
+-  protected $archiverManager;
+-
+-  /**
+    * {@inheritdoc}
+    */
+-  public function __construct(LibraryDiscoveryInterface $library_discovery, FileSystemInterface $file_system, ArchiverManager $archiver_manager) {
++  public function __construct(
++    protected LibraryDiscoveryInterface $libraryDiscovery,
++    protected FileSystemInterface $fileSystem,
++    protected ArchiverManager $archiverManager,
++    protected Client $httpClient,
++  ) {
+     parent::__construct();
+-
+-    $this->libraryDiscovery = $library_discovery;
+-    $this->fileSystem = $file_system;
+-    $this->archiverManager = $archiver_manager;
+   }
+ 
+   /**
+@@ -76,8 +61,20 @@
+     if ($fontawesome_library = $this->libraryDiscovery->getLibraryByName('fontawesome', 'fontawesome.svg')) {
+ 
+       // Download the file.
++      $url = $fontawesome_library['remote'];
+       $destination = tempnam(sys_get_temp_dir(), 'file.') . "tar.gz";
+-      system_retrieve_file($fontawesome_library['remote'], $destination);
++
++      try {
++        $data = (string) $this->httpClient->get($url)->getBody();
++        $this->fileSystem->saveData($data, $destination, FileExists::Replace);
++      }
++      catch (TransferException $exception) {
++        $this->logger()->error(dt('Failed to fetch file due to error "%error"', ['%error' => $exception->getMessage()]));
++      }
++      catch (FileException | InvalidStreamWrapperException $e) {
++        $this->logger()->error(dt('Failed to save file due to error "%error"', ['%error' => $e->getMessage()]));
++      }
++
+       if (!file_exists($destination)) {
+         // Remove the directory.
+         $this->fileSystem->rmdir($path);
+@@ -105,9 +102,9 @@
+       $this->fileSystem->unlink($path . '/fontawesome.zip');
+ 
+       // Move the file.
+-      $this->fileSystem->move($path . '/fontawesome-free-' . $fontawesome_library['version'] . '-web', $this->fileSystem->getTempDirectory() . '/temp_fontawesome', FileSystemInterface::EXISTS_REPLACE);
++      $this->fileSystem->move($path . '/fontawesome-free-' . $fontawesome_library['version'] . '-web', $this->fileSystem->getTempDirectory() . '/temp_fontawesome', FileExists::Replace);
+       $this->fileSystem->rmdir($path);
+-      $this->fileSystem->move($this->fileSystem->getTempDirectory() . '/temp_fontawesome', $path, FileSystemInterface::EXISTS_REPLACE);
++      $this->fileSystem->move($this->fileSystem->getTempDirectory() . '/temp_fontawesome', $path, FileExists::Replace);
+ 
+       // Success.
+       $this->logger()->notice(dt('Fontawesome library has been successfully downloaded to @path.', [
+--- old/src/FontAwesomeManager.php
++++ new/src/FontAwesomeManager.php
+@@ -357,11 +357,11 @@
+    * @return string
+    *   A valid prefix for this icon.
+    */
+-  public function determinePrefix(array $styles, $default = 'fas') {
++  public function determinePrefix(array $styles, $default = 'solid') {
+     // Determine the icon style - brands behave differently.
+     foreach ($styles as $style) {
+       if ($style == 'brands') {
+-        return 'fab';
++        return 'brands';
+       }
+     }
+     return $default;
+--- old/src/Form/EditorIconDialog.php
++++ new/src/Form/EditorIconDialog.php
+@@ -65,10 +65,10 @@
+    *   Form array.
+    * @param \Drupal\Core\Form\FormStateInterface $form_state
+    *   Form state object.
+-   * @param \Drupal\editor\Entity\Editor $editor
++   * @param \Drupal\editor\Entity\Editor|null $editor
+    *   The text editor to which this dialog corresponds.
+    */
+-  public function buildForm(array $form, FormStateInterface $form_state, Editor $editor = NULL) {
++  public function buildForm(array $form, FormStateInterface $form_state, ?Editor $editor = NULL) {
+     // Load the configuration settings.
+     $configuration_settings = $this->configFactory->get('fontawesome.settings');
+ 
+@@ -488,53 +488,8 @@
+       }
+       // Determine the icon style - brands don't allow style.
+       $metadata = $this->fontAwesomeManager->getIconMetadata($item['icon_name']);
+-      $item['style'] = $this->fontAwesomeManager->determinePrefix($metadata['styles'], $item['settings']['style']);
++      $item['style'] = 'fa-' . $this->fontAwesomeManager->determinePrefix($metadata['styles'], $item['settings']['style']);
+       unset($item['settings']['style']);
+-
+-      // Determine the prefix.
+-      switch ($item['style']) {
+-
+-        case 'brands':
+-          $item['style'] = 'fa-brands';
+-          break;
+-
+-        case 'light':
+-          $item['style'] = 'fa-light';
+-          break;
+-
+-        case 'regular':
+-          $item['style'] = 'fa-regular';
+-          break;
+-
+-        case 'duotone':
+-          $item['style'] = 'fa-duotone';
+-          break;
+-
+-        case 'thin':
+-          $item['style'] = 'fa-thin';
+-          break;
+-
+-        case 'sharpregular':
+-          $item['style'] = 'fa-sharp fa-regular';
+-          break;
+-
+-        case 'sharpsolid':
+-          $item['style'] = 'fa-sharp fa-solid';
+-          break;
+-
+-        case 'sharplight':
+-          $item['style'] = 'fa-sharp fa-light';
+-          break;
+-
+-        case 'kit_uploads':
+-          $item['style'] = 'fa-kit';
+-          break;
+-
+-        default:
+-        case 'solid':
+-          $item['style'] = 'fa-solid';
+-          break;
+-      }
+ 
+       // Remove blank data.
+       $item['settings'] = array_filter($item['settings']);
+--- old/src/Form/SettingsForm.php
++++ new/src/Form/SettingsForm.php
+@@ -2,44 +2,34 @@
+ 
+ namespace Drupal\fontawesome\Form;
+ 
++use Drupal\Component\Utility\DeprecationHelper;
++use Drupal\Component\Utility\UrlHelper;
++use Drupal\Core\Asset\LibraryDiscoveryInterface;
++use Drupal\Core\Config\ConfigFactoryInterface;
++use Drupal\Core\Config\TypedConfigManagerInterface;
++use Drupal\Core\DependencyInjection\AutowireTrait;
+ use Drupal\Core\Form\ConfigFormBase;
+-use Drupal\Core\Config\ConfigFactoryInterface;
+ use Drupal\Core\Form\FormStateInterface;
+-use Drupal\Component\Utility\UrlHelper;
+-use Symfony\Component\DependencyInjection\ContainerInterface;
+-use Drupal\Core\Asset\LibraryDiscoveryInterface;
+ use Drupal\Core\Link;
+ use Drupal\Core\Url;
++use Symfony\Component\DependencyInjection\ContainerInterface;
+ 
+ /**
+  * Defines a form that configures fontawesome settings.
+  */
+ class SettingsForm extends ConfigFormBase {
+ 
+-  /**
+-   * Drupal LibraryDiscovery service container.
+-   *
+-   * @var \Drupal\Core\Asset\LibraryDiscoveryInterface
+-   */
+-  protected $libraryDiscovery;
+-
+-  /**
+-   * {@inheritdoc}
+-   */
+-  public function __construct(ConfigFactoryInterface $config_factory, LibraryDiscoveryInterface $library_discovery) {
+-    parent::__construct($config_factory);
+-
+-    $this->libraryDiscovery = $library_discovery;
+-  }
+-
+-  /**
+-   * {@inheritdoc}
+-   */
+-  public static function create(ContainerInterface $container) {
+-    return new static(
+-      $container->get('config.factory'),
+-      $container->get('library.discovery')
+-    );
++  use AutowireTrait;
++
++  /**
++   * {@inheritdoc}
++   */
++  public function __construct(
++    ConfigFactoryInterface $config_factory,
++    TypedConfigManagerInterface $typed_config_manager,
++    protected LibraryDiscoveryInterface $libraryDiscovery,
++  ) {
++    parent::__construct($config_factory, $typed_config_manager);
+   }
+ 
+   /**
+@@ -300,7 +290,13 @@
+     $fontawesome_library = $this->libraryDiscovery->getLibraryByName('fontawesome', 'fontawesome.svg');
+ 
+     // Clear the library cache so we use the updated information.
+-    $this->libraryDiscovery->clearCachedDefinitions();
++    // @todo Remove helper when minimum supported version is 11.1 or greater.
++    DeprecationHelper::backwardsCompatibleCall(
++      currentVersion: \Drupal::VERSION,
++      deprecatedVersion: '11.1',
++      currentCallable: fn() => $this->libraryDiscovery->clear(),
++      deprecatedCallable: fn() => $this->libraryDiscovery->clearCachedDefinitions(),
++    );
+ 
+     // Set external file defaults.
+     $default_location = 'https://use.fontawesome.com/releases/v' . $fontawesome_library['version'] . '/';
+--- old/src/Plugin/Field/FieldType/FontAwesomeIcon.php
++++ new/src/Plugin/Field/FieldType/FontAwesomeIcon.php
+@@ -14,7 +14,7 @@
+  *   id = "fontawesome_icon",
+  *   label = @Translation("Font Awesome Icon"),
+  *   module = "fontawesome",
+- *   category = @Translation("Icons"),
++ *   category = "fontawesome_icon",
+  *   description = @Translation("A Font Awesome icon"),
+  *   default_formatter = "fontawesome_icon_formatter",
+  *   default_widget = "fontawesome_icon_widget",
+--- old/src/Plugin/Field/FieldWidget/FontAwesomeIconWidget.php
++++ new/src/Plugin/Field/FieldWidget/FontAwesomeIconWidget.php
+@@ -607,7 +607,7 @@
+       }
+ 
+       if (!empty($item['settings']['masking']['style'])) {
+-        $item['settings']['masking']['style'] = isset($metadata[$item['icon_name']]['styles']) ? $this->fontAwesomeManager->determinePrefix($metadata[$item['icon_name']]['styles'], $item['settings']['masking']['style']) : 'fas';
++        $item['settings']['masking']['style'] = isset($metadata[$item['icon_name']]['styles']) ? ('fa-' . $this->fontAwesomeManager->determinePrefix($metadata[$item['icon_name']]['styles'], $item['settings']['masking']['style'])) : 'fa-solid';
+       }
+ 
+       // Massage rotate and flip values to make them format properly.
+@@ -636,7 +636,7 @@
+       }
+       else {
+         // Determine the icon style - brands don't allow style.
+-        $item['style'] = isset($metadata[$item['icon_name']]['styles']) ? $this->fontAwesomeManager->determinePrefix($metadata[$item['icon_name']]['styles'], $item['settings']['style']) : 'fas';
++        $item['style'] = isset($metadata[$item['icon_name']]['styles']) ? ('fa-' . $this->fontAwesomeManager->determinePrefix($metadata[$item['icon_name']]['styles'], $item['settings']['style'])) : 'fa-solid';
+       }
+       unset($item['settings']['style']);
+ 

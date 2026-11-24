@@ -1,0 +1,74 @@
+{
+  "counts": {
+    "node": {
+      "before": 1880,
+      "after": 1880,
+      "unchanged": true
+    },
+    "users": {
+      "before": 6,
+      "after": 6,
+      "unchanged": true
+    },
+    "file_managed": {
+      "before": 2018,
+      "after": 2018,
+      "unchanged": true
+    },
+    "taxonomy_term_data": {
+      "before": 122,
+      "after": 122,
+      "unchanged": true
+    },
+    "media": {
+      "before": 891,
+      "after": 891,
+      "unchanged": true
+    },
+    "webform_submission": {
+      "before": 443,
+      "after": 443,
+      "unchanged": true
+    },
+    "aggregator_feed": {
+      "before": 2,
+      "after": 2,
+      "unchanged": true
+    },
+    "aggregator_item": {
+      "before": 2307,
+      "after": 2307,
+      "unchanged": true
+    }
+  },
+  "fingerprints": {
+    "node": {
+      "unchanged": true
+    },
+    "users": {
+      "unchanged": true
+    },
+    "file_managed": {
+      "unchanged": true
+    },
+    "aggregator_feed": {
+      "unchanged": true
+    },
+    "aggregator_item": {
+      "unchanged": true
+    }
+  },
+  "modules_removed": [
+    "image_captcha",
+    "image_field_to_media",
+    "tour"
+  ],
+  "modules_added": [],
+  "same_installed_themes": true,
+  "same_editors": true,
+  "legacy_hash_accounts_before": 4,
+  "legacy_hash_accounts_after": 4,
+  "active_config_before": 540,
+  "active_config_after": 536,
+  "sync_config_after": 536
+}

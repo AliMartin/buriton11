@@ -1,0 +1,18 @@
+{
+  "purpose": "Execute the actual Bootstrap preamble with version-only jQuery stubs; not a browser test",
+  "source": "themes/custom/zircon/includes/bootstrap/js/bootstrap.js",
+  "sha256": "dbd2a35e72edc7d6bde483481a912f1c38aa57fab2747d9b071d317339ee03a2",
+  "target_core": "11.4.10",
+  "target_jquery": "4.0.0",
+  "results": [
+    {
+      "jquery": "3.7.1",
+      "preamble": "passed"
+    },
+    {
+      "jquery": "4.0.0",
+      "preamble": "throws",
+      "message": "Bootstrap's JavaScript requires jQuery version 1.9.1 or higher, but lower than version 4"
+    }
+  ]
+}

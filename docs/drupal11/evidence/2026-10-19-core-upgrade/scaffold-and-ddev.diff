@@ -1,0 +1,477 @@
+--- before/index.php
++++ after/index.php
+@@ -9,14 +9,9 @@
+  */
+ 
+ use Drupal\Core\DrupalKernel;
+-use Symfony\Component\HttpFoundation\Request;
+ 
+-$autoloader = require_once 'autoload.php';
++require_once 'autoload_runtime.php';
+ 
+-$kernel = new DrupalKernel('prod', $autoloader);
+-
+-$request = Request::createFromGlobals();
+-$response = $kernel->handle($request);
+-$response->send();
+-
+-$kernel->terminate($request, $response);
++return static function () {
++  return new DrupalKernel('prod', require 'autoload.php');
++};
+--- before/update.php
++++ after/update.php
+@@ -9,9 +9,8 @@
+  */
+ 
+ use Drupal\Core\Update\UpdateKernel;
+-use Symfony\Component\HttpFoundation\Request;
+ 
+-$autoloader = require_once 'autoload.php';
++require_once 'autoload_runtime.php';
+ 
+ // Disable garbage collection during test runs. Under certain circumstances the
+ // update path will create so many objects that garbage collection causes
+@@ -21,10 +20,6 @@
+   gc_disable();
+ }
+ 
+-$kernel = new UpdateKernel('prod', $autoloader, FALSE);
+-$request = Request::createFromGlobals();
+-
+-$response = $kernel->handle($request);
+-$response->send();
+-
+-$kernel->terminate($request, $response);
++return static function () {
++  return new UpdateKernel('prod', require 'autoload.php', FALSE);
++};
+--- before/.htaccess
++++ after/.htaccess
+@@ -3,7 +3,7 @@
+ #
+ 
+ # Protect files and directories from prying eyes.
+-<FilesMatch "\.(engine|inc|install|make|module|profile|po|sh|.*sql|theme|twig|tpl(\.php)?|xtmpl|yml)(~|\.sw[op]|\.bak|\.orig|\.save)?$|^(\.(?!well-known).*|Entries.*|Repository|Root|Tag|Template|composer\.(json|lock)|web\.config|yarn\.lock|package\.json)$|^#.*#$|\.php(~|\.sw[op]|\.bak|\.orig|\.save)$">
++<FilesMatch "\.(engine|inc|install|make|module|profile|po|sh|.*sql|theme|twig|tpl(\.php)?|xtmpl|yml)(~|\.sw[op]|\.bak|\.orig|\.save)?$|^(\.(?!well-known).*|Entries.*|Repository|Root|Tag|Template|composer\.(json|lock)|web\.config|yarn\.lock|package(-lock)?\.json)$|^#.*#$|\.php(~|\.sw[op]|\.bak|\.orig|\.save)$">
+   <IfModule mod_authz_core.c>
+     Require all denied
+   </IfModule>
+@@ -21,6 +21,9 @@
+ # Add correct encoding for SVGZ.
+ AddType image/svg+xml svg svgz
+ AddEncoding gzip svgz
++
++# Add correct encoding for webp.
++AddType image/webp .webp
+ 
+ # Most of the following PHP settings cannot be changed at runtime. See
+ # sites/default/default.settings.php and
+@@ -137,10 +140,7 @@
+   RewriteCond %{REQUEST_URI} !/core/[^/]*\.php$
+   # Allow access to test-specific PHP files:
+   RewriteCond %{REQUEST_URI} !/core/modules/system/tests/https?\.php
+-  # Allow access to Statistics module's custom front controller.
+-  # Copy and adapt this rule to directly execute PHP files in contributed or
+-  # custom modules or to run another PHP application in the same directory.
+-  RewriteCond %{REQUEST_URI} !/core/modules/statistics/statistics\.php$
++  RewriteCond %{REQUEST_URI} !/core/modules/system/tests/modules/legacy_front_controller_test/test_index.php
+   # Deny access to any other PHP files that do not match the rules above.
+   # Specifically, disallow autoload.php from being served directly.
+   RewriteRule "^(.+/.*|autoload)\.php($|/)" - [F]
+@@ -148,11 +148,21 @@
+   # Rules to correctly serve gzip compressed CSS and JS files.
+   # Requires both mod_rewrite and mod_headers to be enabled.
+   <IfModule mod_headers.c>
++    # Serve brotli compressed CSS files if they exist and the client accepts brotli.
++    RewriteCond %{HTTP:Accept-encoding} br
++    RewriteCond %{REQUEST_FILENAME}\.br -s
++    RewriteRule ^(.*css_[a-zA-Z0-9-_]+)\.css$ $1\.css\.br [QSA]
++
+     # Serve gzip compressed CSS files if they exist and the client accepts gzip.
+     RewriteCond %{HTTP:Accept-encoding} gzip
+     RewriteCond %{REQUEST_FILENAME}\.gz -s
+     RewriteRule ^(.*css_[a-zA-Z0-9-_]+)\.css$ $1\.css\.gz [QSA]
+ 
++    # Serve brotli compressed JS files if they exist and the client accepts brotli.
++    RewriteCond %{HTTP:Accept-encoding} br
++    RewriteCond %{REQUEST_FILENAME}\.br -s
++    RewriteRule ^(.*js_[a-zA-Z0-9-_]+)\.js$ $1\.js\.br [QSA]
++
+     # Serve gzip compressed JS files if they exist and the client accepts gzip.
+     RewriteCond %{HTTP:Accept-encoding} gzip
+     RewriteCond %{REQUEST_FILENAME}\.gz -s
+@@ -161,11 +171,20 @@
+     # Serve correct content types, and prevent double compression.
+     RewriteRule \.css\.gz$ - [T=text/css,E=no-gzip:1,E=no-brotli:1]
+     RewriteRule \.js\.gz$ - [T=text/javascript,E=no-gzip:1,E=no-brotli:1]
++    RewriteRule \.css\.br$ - [T=text/css,E=no-gzip:1,E=no-brotli:1]
++    RewriteRule \.js\.br$ - [T=text/javascript,E=no-gzip:1,E=no-brotli:1]
+ 
+     <FilesMatch "(\.js\.gz|\.css\.gz)$">
+       # Serve correct encoding type.
+       Header set Content-Encoding gzip
+       # Force proxies to cache gzipped & non-gzipped css/js files separately.
++      Header append Vary Accept-Encoding
++    </FilesMatch>
++
++    <FilesMatch "(\.js\.br|\.css\.br)$">
++      # Serve correct encoding type.
++      Header set Content-Encoding br
++      # Force proxies to cache compressed & non-compressed css/js files separately.
+       Header append Vary Accept-Encoding
+     </FilesMatch>
+   </IfModule>
+--- before/sites/default/default.settings.php
++++ after/sites/default/default.settings.php
+@@ -67,10 +67,10 @@
+  * during the same request.
+  *
+  * One example of the simplest connection array is shown below. To use the
+- * sample settings, copy and uncomment the code below between the @code and
+- * @endcode lines and paste it after the $databases declaration. You will need
+- * to replace the database username and password and possibly the host and port
+- * with the appropriate credentials for your database system.
++ * sample settings, copy and uncomment the code below and paste it after the
++ * $databases declaration. You will need to replace the database username and
++ * password and possibly the host and port with the appropriate credentials for
++ * your database system.
+  *
+  * The next section describes how to customize the $databases array for more
+  * specific needs.
+@@ -144,7 +144,7 @@
+  * in deadlocks, the other two options are 'READ UNCOMMITTED' and 'SERIALIZABLE'.
+  * They are available but not supported; use them at your own risk. For more
+  * info:
+- * https://dev.mysql.com/doc/refman/5.7/en/innodb-transaction-isolation-levels.html
++ * https://dev.mysql.com/doc/refman/8.0/en/innodb-transaction-isolation-levels.html
+  *
+  * On your settings.php, change the isolation level:
+  * @code
+@@ -312,7 +312,7 @@
+ $settings['update_free_access'] = FALSE;
+ 
+ /**
+- * Fallback to HTTP for Update Manager and for fetching security advisories.
++ * Fallback to HTTP for Update Status and for fetching security advisories.
+  *
+  * If your site fails to connect to updates.drupal.org over HTTPS (either when
+  * fetching data on available updates, or when fetching the feed of critical
+@@ -476,30 +476,6 @@
+ # $settings['class_loader_auto_detect'] = FALSE;
+ 
+ /**
+- * Authorized file system operations:
+- *
+- * The Update Manager module included with Drupal provides a mechanism for
+- * site administrators to securely install missing updates for the site
+- * directly through the web user interface. On securely-configured servers,
+- * the Update manager will require the administrator to provide SSH or FTP
+- * credentials before allowing the installation to proceed; this allows the
+- * site to update the new files as the user who owns all the Drupal files,
+- * instead of as the user the webserver is running as. On servers where the
+- * webserver user is itself the owner of the Drupal files, the administrator
+- * will not be prompted for SSH or FTP credentials (note that these server
+- * setups are common on shared hosting, but are inherently insecure).
+- *
+- * Some sites might wish to disable the above functionality, and only update
+- * the code directly via SSH or FTP themselves. This setting completely
+- * disables all functionality related to these authorized file operations.
+- *
+- * @see https://www.drupal.org/node/244924
+- *
+- * Remove the leading hash signs to disable.
+- */
+-# $settings['allow_authorize_operations'] = FALSE;
+-
+-/**
+  * Default mode for directories and files written by Drupal.
+  *
+  * Value should be in PHP Octal Notation, with leading zero.
+@@ -515,6 +491,15 @@
+  * the Drupal installation directory and be accessible over the web.
+  */
+ # $settings['file_assets_path'] = 'sites/default/files';
++
++/**
++ * Asset aggregate garbage collection threshold.
++ *
++ * During cache clears, JavaScript and CSS aggregates older than this threshold
++ * will be deleted. Set this to 0 to immediately delete all files, e.g. during
++ * development.
++ */
++# $settings['aggregate_gc_threshold'] = 86400 * 45;
+ 
+ /**
+  * Public file base URL:
+@@ -626,6 +611,18 @@
+ # $settings['file_temp_path'] = '/tmp';
+ 
+ /**
++ * Automatically create an Apache HTTP .htaccess file in writable directories.
++ *
++ * This setting can be disabled if you are not using Apache HTTP server, or if
++ * you have a web server configuration that protects the various writable file
++ * directories.
++ *
++ * @see \Drupal\Component\FileSecurity\FileSecurity::writeHtaccess()
++ * @see https://www.drupal.org/docs/administering-a-drupal-site/security-in-drupal/securing-file-permissions-and-ownership
++ */
++# $settings['auto_create_htaccess'] = FALSE;
++
++/**
+  * Session write interval:
+  *
+  * Set the minimum interval between each session write to database.
+@@ -647,7 +644,7 @@
+  */
+ # $settings['locale_custom_strings_en'][''] = [
+ #   'Home' => 'Front page',
+-#   '@count min' => '@count minutes',
++#   'Last run @time ago' => 'Last run was done @time ago',
+ # ];
+ 
+ /**
+@@ -711,6 +708,24 @@
+ # $config['user.settings']['anonymous'] = 'Visitor';
+ 
+ /**
++ * Enable HTML5 form validation.
++ *
++ * Drupal 12 will disable HTML5 form validation by default due to issues with
++ * usability and accessibility.  Setting this to TRUE will allow user agents to
++ * continue performing client-side HTML5 validation. This prevents Drupal's
++ * Form API (FAPI) validation from executing, so FAPI validation error messages
++ * may not be displayed including those for required elements.
++ *
++ * Setting this to FALSE will cause HTML5 validation to be disabled on all
++ * forms. Only Drupal's server-side validation will be executed.
++ *
++ * This setting will be removed in Drupal 13.
++ *
++ * @see https://www.drupal.org/node/3537128
++ */
++# $settings['enable_html5_validation'] = TRUE;
++
++/**
+  * Load services definition file.
+  */
+ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
+@@ -723,17 +738,6 @@
+  * to test a service container that throws an exception.
+  */
+ # $settings['container_base_class'] = '\Drupal\Core\DependencyInjection\Container';
+-
+-/**
+- * Override the default yaml parser class.
+- *
+- * Provide a fully qualified class name here if you would like to provide an
+- * alternate implementation YAML parser. The class must implement the
+- * \Drupal\Component\Serialization\SerializationInterface interface.
+- *
+- * This setting is deprecated in Drupal 10.3 and removed in Drupal 11.
+- */
+-# $settings['yaml_parser_class'] = NULL;
+ 
+ /**
+  * Trusted host configuration.
+@@ -808,16 +812,6 @@
+  * retained after a successful entity update process.
+  */
+ $settings['entity_update_backup'] = TRUE;
+-
+-/**
+- * State caching.
+- *
+- * State caching uses the cache collector pattern to cache all requested keys
+- * from the state API in a single cache entry, which can greatly reduce the
+- * amount of database queries. However, some sites may use state with a
+- * lot of dynamic keys which could result in a very large cache.
+- */
+-$settings['state_cache'] = TRUE;
+ 
+ /**
+  * Node migration type.
+--- before/sites/default/default.services.yml
++++ after/sites/default/default.services.yml
+@@ -38,6 +38,10 @@
+     # To maximize compatibility and normalize the behavior across user agents,
+     # the cookie domain should start with a dot.
+     #
++    # Sessions themselves will only be synchronized across subdomains if they
++    # are all served from the same Drupal installation or if some other session
++    # sharing mechanism is implemented.
++    #
+     # @default none
+     # cookie_domain: '.example.com'
+     #
+@@ -47,23 +51,6 @@
+     # information.
+     # @default no value
+     cookie_samesite: Lax
+-    #
+-    # Set the session ID string length. The length can be between 22 to 256. The
+-    # PHP recommended value is 48. See
+-    # https://www.php.net/manual/session.security.ini.php for more information.
+-    # This value should be kept in sync with
+-    # \Drupal\Core\Session\SessionConfiguration::__construct()
+-    # @default 48
+-    sid_length: 48
+-    #
+-    # Set the number of bits in encoded session ID character. The possible
+-    # values are '4' (0-9, a-f), '5' (0-9, a-v), and '6' (0-9, a-z, A-Z, "-",
+-    # ","). The PHP recommended value is 6. See
+-    # https://www.php.net/manual/session.security.ini.php for more information.
+-    # This value should be kept in sync with
+-    # \Drupal\Core\Session\SessionConfiguration::__construct()
+-    # @default 6
+-    sid_bits_per_character: 6
+     # By default, Drupal generates a session cookie name based on the full
+     # domain name. Set the name_suffix to a short random string to ensure this
+     # session cookie name is unique on different installations on the same
+@@ -216,24 +203,54 @@
+   # Note: By default the configuration is disabled.
+   cors.config:
+     enabled: false
+-    # Specify allowed headers, like 'x-allowed-header'.
++    # Specifies allowed headers and sets the Access-Control-Allow-Headers
++    # header. For example, ['X-Custom-Header']. See
++    # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Headers
+     allowedHeaders: []
+-    # Specify allowed request methods, specify ['*'] to allow all possible ones.
++    # Specifies allowed request methods and sets the
++    # Access-Control-Allow-Methods header. For example, ['POST', 'GET',
++    # 'OPTIONS'] or ['*'] to allow all. Note the wildcard is not yet implemented
++    # in all browsers. See
++    # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Methods
+     allowedMethods: []
+-    # Configure requests allowed from specific origins. Do not include trailing
+-    # slashes with URLs.
++    # Configure requests allowed from specific origins and sets the
++    # Access-Control-Allow-Origin header. For example,
++    # ['https://www.drupal.org'] or ['*'] to allow any origin to access your
++    # resource. See
++    # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin
+     allowedOrigins: ['*']
+     # Configure requests allowed from origins, matching against regex patterns.
+     allowedOriginsPatterns: []
+-    # Sets the Access-Control-Expose-Headers header.
++    # Sets the Access-Control-Expose-Headers header. The default is false which
++    # means the header will not be set. To set the header use a comma delimited
++    # list within square brackets. For example, ['Content-Type', 'Expires'] or
++    # ['*'] to expose all headers. Setting exposedHeaders: ['*'] will result in
++    # a Access-Control-Expose-Headers: * response header. See
++    # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Expose-Headers
+     exposedHeaders: false
+-    # Sets the Access-Control-Max-Age header.
++    # Setting Access-Control-Max-Age header value to '0' or false will omit this
++    # from the response. However, setting it to '-1' will explicitly disable
++    # caching. For example, setting the value to 600 will cache results of a
++    # preflight request for 10 minutes. See
++    # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Max-Age
+     maxAge: false
+-    # Sets the Access-Control-Allow-Credentials header.
++    # Sets the Access-Control-Allow-Credentials header if set to true. See
++    # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials
+     supportsCredentials: false
++
++  # The maximum number of entities stored in memory. Lowering this number can
++  # reduce the amount of memory used in long-running processes like migrations,
++  # however will also increase requests to the database or entity cache backend.
++  entity.memory_cache.slots: 1000
+ 
+   queue.config:
+     # The maximum number of seconds to wait if a queue is temporarily suspended.
+     # This is not applicable when a queue is suspended but does not specify
+     # how long to wait before attempting to resume.
+     suspendMaximumWait: 30
++
++  # Can be argon2i, argon2id or 2y (bcrypt). Setting to NULL (~) will use PASSWORD_DEFAULT.
++  # See https://www.php.net/password_hash
++  password.algorithm: ~
++  # Options passed to password_hash. See https://www.php.net/password_hash
++  password.options: [ ]
+--- before/robots.txt
++++ after/robots.txt
+@@ -19,20 +19,24 @@
+ Allow: /core/*.css?
+ Allow: /core/*.js$
+ Allow: /core/*.js?
++Allow: /core/*.avif
+ Allow: /core/*.gif
+ Allow: /core/*.jpg
+ Allow: /core/*.jpeg
+ Allow: /core/*.png
+ Allow: /core/*.svg
++Allow: /core/*.webp
+ Allow: /profiles/*.css$
+ Allow: /profiles/*.css?
+ Allow: /profiles/*.js$
+ Allow: /profiles/*.js?
++Allow: /profiles/*.avif
+ Allow: /profiles/*.gif
+ Allow: /profiles/*.jpg
+ Allow: /profiles/*.jpeg
+ Allow: /profiles/*.png
+ Allow: /profiles/*.svg
++Allow: /profiles/*.webp
+ # Directories
+ Disallow: /core/
+ Disallow: /profiles/
+@@ -46,13 +50,13 @@
+ Disallow: /modules/README.txt
+ Disallow: /sites/README.txt
+ Disallow: /themes/README.txt
+-Disallow: /web.config
+ # Paths (clean URLs)
+ Disallow: /admin/
+ Disallow: /comment/reply/
+ Disallow: /filter/tips
+ Disallow: /node/add/
+ Disallow: /search/
++Disallow: /search?
+ Disallow: /user/register
+ Disallow: /user/password
+ Disallow: /user/login
+@@ -65,6 +69,7 @@
+ Disallow: /index.php/filter/tips
+ Disallow: /index.php/node/add/
+ Disallow: /index.php/search/
++Disallow: /index.php/search?
+ Disallow: /index.php/user/password
+ Disallow: /index.php/user/register
+ Disallow: /index.php/user/login
+--- before/.ddev/config.yaml
++++ after/.ddev/config.yaml
+@@ -1,5 +1,5 @@
+ name: buriton11
+-type: drupal10
++type: drupal11
+ docroot: ""
+ php_version: "8.4"
+ webserver_type: nginx-fpm
+--- /dev/null
++++ after/autoload_runtime.php
+@@ -0,0 +1,22 @@
++<?php
++
++/**
++ * @file
++ * Includes the autoload_runtime created by the Symfony Runtime component.
++ *
++ * This file was generated by drupal-scaffold.
++ *
++ * @see composer.json
++ * @see index.php
++ * @see core/install.php
++ * @see core/rebuild.php
++ */
++
++use Drupal\Core\Runtime\DrupalRuntime;
++
++// By default, the symfony/runtime component would load SymfonyRuntime as its
++// runtime. However, Drupal's Kernel has a lot of runtime components that it
++// expects to be prepared. Thus, we default Drupal applications to DrupalRuntime
++// instead to make this easily accessible.
++$_ENV['APP_RUNTIME'] ??= $_SERVER['APP_RUNTIME'] ?? DrupalRuntime::class;
++return require __DIR__ . '/vendor/autoload_runtime.php';

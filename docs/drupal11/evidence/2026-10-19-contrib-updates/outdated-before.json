@@ -1,0 +1,102 @@
+{
+    "installed": [
+        {
+            "name": "drupal/core",
+            "direct-dependency": false,
+            "homepage": null,
+            "source": "https://github.com/drupal/core/tree/10.6.19",
+            "version": "10.6.19",
+            "release-age": "from this week",
+            "release-date": "2026-10-14T10:58:22+00:00",
+            "latest": "11.4.10",
+            "latest-status": "update-possible",
+            "latest-release-date": "2026-10-14T10:58:06+00:00",
+            "description": "Drupal is an open source content management platform powering millions of websites and applications.",
+            "abandoned": false
+        },
+        {
+            "name": "drupal/core-composer-scaffold",
+            "direct-dependency": true,
+            "homepage": "https://www.drupal.org/project/drupal",
+            "source": "https://github.com/drupal/core-composer-scaffold/tree/10.6.19",
+            "version": "10.6.19",
+            "release-age": "2 years old",
+            "release-date": "2024-08-22T14:31:30+00:00",
+            "latest": "11.4.10",
+            "latest-status": "update-possible",
+            "latest-release-date": "2026-07-09T23:23:24+00:00",
+            "description": "A flexible Composer project scaffold builder.",
+            "abandoned": false
+        },
+        {
+            "name": "drupal/core-project-message",
+            "direct-dependency": true,
+            "homepage": "https://www.drupal.org/project/drupal",
+            "source": "https://github.com/drupal/core-project-message/tree/11.1.10",
+            "version": "10.6.19",
+            "release-age": "3 years old",
+            "release-date": "2023-07-24T07:55:25+00:00",
+            "latest": "11.4.10",
+            "latest-status": "update-possible",
+            "latest-release-date": "2026-01-07T19:00:53+00:00",
+            "description": "Adds a message after Composer installation.",
+            "abandoned": false
+        },
+        {
+            "name": "drupal/core-recommended",
+            "direct-dependency": true,
+            "homepage": null,
+            "source": "https://github.com/drupal/core-recommended/tree/10.6.19",
+            "version": "10.6.19",
+            "release-age": "from this week",
+            "release-date": "2026-10-14T10:58:22+00:00",
+            "latest": "11.4.10",
+            "latest-status": "update-possible",
+            "latest-release-date": "2026-10-14T10:58:06+00:00",
+            "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
+            "abandoned": false
+        },
+        {
+            "name": "drupal/core-vendor-hardening",
+            "direct-dependency": true,
+            "homepage": "https://www.drupal.org/project/drupal",
+            "source": "https://github.com/drupal/core-vendor-hardening/tree/10.6.19",
+            "version": "10.6.19",
+            "release-age": "1 year old",
+            "release-date": "2024-11-11T20:19:58+00:00",
+            "latest": "11.4.10",
+            "latest-status": "update-possible",
+            "latest-release-date": "2026-01-07T19:00:53+00:00",
+            "description": "Hardens the vendor directory for when it's in the docroot.",
+            "abandoned": false
+        },
+        {
+            "name": "drupal/fontawesome",
+            "direct-dependency": true,
+            "homepage": "https://www.drupal.org/project/fontawesome",
+            "source": "https://git.drupalcode.org/project/fontawesome",
+            "version": "2.26.0",
+            "release-age": "",
+            "release-date": "",
+            "latest": "3.0.0",
+            "latest-status": "update-possible",
+            "latest-release-date": "",
+            "description": "The web's most popular icon set and toolkit.",
+            "abandoned": false
+        },
+        {
+            "name": "drupal/similarterms",
+            "direct-dependency": true,
+            "homepage": "https://www.drupal.org/project/similarterms",
+            "source": "https://git.drupalcode.org/project/similarterms",
+            "version": "1.10.0",
+            "release-age": "",
+            "release-date": "",
+            "latest": "2.0.0",
+            "latest-status": "update-possible",
+            "latest-release-date": "",
+            "description": "Displays similar content based on shared taxonomy terms.",
+            "abandoned": false
+        }
+    ]
+}

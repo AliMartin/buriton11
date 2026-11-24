@@ -1,0 +1,75 @@
+[
+  {
+    "step": "maintenance-on",
+    "command": [
+      "ddev",
+      "drush",
+      "state:set",
+      "system.maintenance_mode",
+      "1",
+      "--input-format=integer"
+    ],
+    "exit_code": 0
+  },
+  {
+    "step": "update-install",
+    "command": [
+      "ddev",
+      "composer",
+      "update",
+      "drupal/admin_toolbar",
+      "drupal/aggregator",
+      "drupal/backup_migrate",
+      "drupal/captcha",
+      "drupal/ctools",
+      "drupal/entity_clone",
+      "drupal/fitvids",
+      "drupal/fontawesome",
+      "drupal/honeypot",
+      "drupal/pathauto",
+      "drupal/recaptcha",
+      "drupal/redirect",
+      "drupal/rules",
+      "drupal/similarterms",
+      "drupal/tb_megamenu",
+      "drupal/token",
+      "drupal/typed_data",
+      "drupal/upgrade_status",
+      "drupal/views_slideshow",
+      "drupal/webform",
+      "--with-all-dependencies",
+      "--minimal-changes",
+      "--no-interaction"
+    ],
+    "exit_code": 0
+  },
+  {
+    "step": "patches-repatch",
+    "command": [
+      "ddev",
+      "composer",
+      "patches-repatch",
+      "--no-interaction"
+    ],
+    "exit_code": 0
+  },
+  {
+    "step": "database-updates",
+    "command": [
+      "ddev",
+      "drush",
+      "updatedb",
+      "--yes"
+    ],
+    "exit_code": 0
+  },
+  {
+    "step": "cache-rebuild",
+    "command": [
+      "ddev",
+      "drush",
+      "cache:rebuild"
+    ],
+    "exit_code": 0
+  }
+]

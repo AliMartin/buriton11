@@ -1,0 +1,7 @@
+{
+  "command": "ddev drush updatedb:status --format=json",
+  "exit_code": 0,
+  "pending_updates": false,
+  "stderr": "[success] No database updates required.",
+  "note": "No JSON body emitted by Drush when no updates exist."
+}

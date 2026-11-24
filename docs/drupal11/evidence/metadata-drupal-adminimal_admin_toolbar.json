@@ -1,0 +1,55 @@
+{
+    "name": "drupal/adminimal_admin_toolbar",
+    "description": "Adminimal styling brought to admin toolbar.",
+    "keywords": [],
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/adminimal_admin_toolbar",
+    "names": [
+        "drupal/adminimal_admin_toolbar"
+    ],
+    "versions": [
+        "2.0.x-dev",
+        "2.0.0",
+        "1.x-dev",
+        "1.11.0",
+        "1.10.0",
+        "1.9.0",
+        "1.8.0",
+        "1.7.0",
+        "1.6.0",
+        "1.5.0",
+        "1.4.0",
+        "1.3.0",
+        "1.2.0",
+        "1.1.0",
+        "1.0.0",
+        "dev-2.0.x",
+        "dev-1.x"
+    ],
+    "licenses": [
+        {
+            "name": "GNU General Public License v2.0 or later",
+            "osi": "GPL-2.0-or-later",
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html#licenseText"
+        }
+    ],
+    "source": {
+        "type": "git",
+        "url": "https://git.drupalcode.org/project/adminimal_admin_toolbar.git",
+        "reference": "2.0.0"
+    },
+    "dist": {
+        "type": "zip",
+        "url": "https://ftp.drupal.org/files/projects/adminimal_admin_toolbar-2.0.0.zip",
+        "reference": "2.0.0"
+    },
+    "path": "/var/www/html/modules/contrib/adminimal_admin_toolbar",
+    "support": {
+        "source": "http://cgit.drupalcode.org/adminimal_admin_toolbar",
+        "issues": "https://www.drupal.org/project/issues/adminimal_admin_toolbar"
+    },
+    "requires": {
+        "drupal/admin_toolbar": "*",
+        "drupal/core": "^8 || ^9 || ^10"
+    }
+}

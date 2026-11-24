@@ -1,0 +1,7 @@
+Only in sync: .htaccess
+Only in sync: core.entity_view_mode.tour.token.yml
+Files sync/core.extension.yml and /tmp/buriton11-module-cleanup-config-20261019/core.extension.yml differ
+Files sync/entity_clone.cloneable_entities.yml and /tmp/buriton11-module-cleanup-config-20261019/entity_clone.cloneable_entities.yml differ
+Only in sync: image_captcha.settings.yml
+Only in sync: tour.tour.honeypot.yml
+Only in sync: tour.tour.views-ui.yml

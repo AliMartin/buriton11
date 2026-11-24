@@ -1,0 +1,6 @@
+{
+    "core": "11.4.13",
+    "php": "8.4.27",
+    "automatic_cron_interval": 0,
+    "sync": "\/var\/www\/html\/sync"
+}

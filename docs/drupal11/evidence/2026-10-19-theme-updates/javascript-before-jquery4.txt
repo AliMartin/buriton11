@@ -1,0 +1,17 @@
+<anonymous_script>:15
+    throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher, but lower than version 4')
+    ^
+
+Error: Bootstrap's JavaScript requires jQuery version 1.9.1 or higher, but lower than version 4
+    at eval (eval at load (/Users/aam/Sites/GitHub/buriton11/docs/drupal11/checks/check-zircon.cjs:29:23), <anonymous>:15:11)
+    at eval (eval at load (/Users/aam/Sites/GitHub/buriton11/docs/drupal11/checks/check-zircon.cjs:29:23), <anonymous>:17:2)
+    at eval (<anonymous>)
+    at load (/Users/aam/Sites/GitHub/buriton11/docs/drupal11/checks/check-zircon.cjs:29:23)
+    at Object.<anonymous> (/Users/aam/Sites/GitHub/buriton11/docs/drupal11/checks/check-zircon.cjs:35:5)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+
+Node.js v24.14.0

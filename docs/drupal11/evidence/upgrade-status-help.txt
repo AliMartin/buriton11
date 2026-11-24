@@ -1,0 +1,26 @@
+Analyze projects and output results in selected format.
+
+Arguments:
+ [projects]... List of projects to analyze. 
+
+Options:
+ --all                                         Analyze all projects.                                          
+ --skip-existing                               Return results from a previous scan of a project if available, 
+                                               otherwise start a new one.                                     
+ --ignore-uninstalled                          Ignore uninstalled projects.                                   
+ --ignore-contrib                              Ignore contributed projects.                                   
+ --ignore-custom                               Ignore custom projects.                                        
+ --ignore-list[=IGNORE-LIST]                   Ignore a list of comma-separated projects.                     
+ --phpstan-memory-limit[=PHPSTAN-MEMORY-LIMIT] Set memory limit for PHPStan. [default: 1500M]                 
+ --format[=FORMAT]                             Set the format: plain, checkstyle or codeclimate. [default:    
+                                               plain]                                                         
+
+Global options:
+-v|vv|vvv, --verbose Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 
+                     for debug                                                                                
+-y, --yes            Auto-accept the default for all user prompts. Equivalent to --no-interaction.            
+-l, --uri=URI        A base URL for building links and selecting a multi-site. Defaults to                    
+                     https://default.                                                                         
+                     To see all global options, run `drush topic` and pick the first choice.                  
+
+Aliases: us-a

@@ -1,0 +1,46 @@
+[
+  {
+    "path": "sites/default/settings.php",
+    "ignored": false
+  },
+  {
+    "path": "sites/default/settings.ddev.php",
+    "ignored": true
+  },
+  {
+    "path": "sites/default/files/example.txt",
+    "ignored": false
+  },
+  {
+    "path": "private-files/example.txt",
+    "ignored": false
+  },
+  {
+    "path": ".ddev/upgrade-study-archive/example.sql.gz",
+    "ignored": false
+  },
+  {
+    "path": "themes/custom/zircon/ftpsync.settings",
+    "ignored": false
+  },
+  {
+    "path": ".vscode/sftp.json",
+    "ignored": false
+  },
+  {
+    "path": "database/example.sql.gz",
+    "ignored": false
+  },
+  {
+    "path": "core/lib/Drupal.php",
+    "ignored": false
+  },
+  {
+    "path": "composer.lock",
+    "ignored": false
+  },
+  {
+    "path": "composer.libraries.json",
+    "ignored": false
+  }
+]

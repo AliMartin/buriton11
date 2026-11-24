@@ -1,0 +1,31 @@
+{
+  "findings": 139,
+  "severity_counts": {
+    "minor": 137,
+    "info": 1,
+    "major": 1
+  },
+  "by_project": {
+    "fontawesome": 5,
+    "similarterms": 128,
+    "tb_megamenu": 6
+  },
+  "major_non_test": [
+    {
+      "type": "issue",
+      "check_name": "PHPStan",
+      "categories": [
+        "Compatibility"
+      ],
+      "description": "tb_megamenu - Call to deprecated method getContentType() of class Symfony\\Component\\HttpFoundation\\Request: since Symfony 6.2, use getContentTypeFormat() instead",
+      "fingerprint": "96e5237175332f38a97cb131000636294a43ed5907f380c5bb00ebcee2986336",
+      "severity": "major",
+      "location": {
+        "path": "modules/contrib/tb_megamenu/src/Controller/TBMegaMenuAdminController.php",
+        "lines": {
+          "begin": 84
+        }
+      }
+    }
+  ]
+}

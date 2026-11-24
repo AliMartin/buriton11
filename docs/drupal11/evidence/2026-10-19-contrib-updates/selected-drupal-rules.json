@@ -1,0 +1,39 @@
+{
+    "name": "drupal/rules",
+    "description": "React on events and conditionally evaluate actions.",
+    "keywords": [],
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/rules",
+    "names": [
+        "drupal/rules"
+    ],
+    "versions": [
+        "4.0.1"
+    ],
+    "licenses": [
+        {
+            "name": "GNU General Public License v2.0 or later",
+            "osi": "GPL-2.0-or-later",
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html#licenseText"
+        }
+    ],
+    "source": {
+        "type": "git",
+        "url": "https://git.drupalcode.org/project/rules.git",
+        "reference": "4.0.1"
+    },
+    "dist": {
+        "type": "zip",
+        "url": "https://ftp.drupal.org/files/projects/rules-4.0.1.zip",
+        "reference": "4.0.1"
+    },
+    "path": "/var/www/html/modules/contrib/rules",
+    "support": {
+        "source": "https://git.drupalcode.org/project/rules",
+        "issues": "https://www.drupal.org/project/issues/rules"
+    },
+    "requires": {
+        "drupal/core": "^10.3 || ^11",
+        "drupal/typed_data": "^2.1"
+    }
+}

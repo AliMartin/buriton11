@@ -1,0 +1,60 @@
+{
+    "zircon": {
+        "date": 1795499782,
+        "data": {
+            "totals": {
+                "errors": 0,
+                "file_errors": 0,
+                "upgrade_status_test_classes_skipped": false,
+                "upgrade_status_split": {
+                    "declared_ready": true
+                },
+                "upgrade_status_next": "relax"
+            },
+            "files": [],
+            "errors": []
+        },
+        "versions": {
+            "drupal/upgrade_status": "5.0.0",
+            "phpstan/phpstan": "2.3.7",
+            "mglaman/phpstan-drupal": "2.4.0",
+            "phpstan/phpstan-deprecation-rules": "2.0.6"
+        }
+    },
+    "buriton5": {
+        "date": 1795499782,
+        "data": {
+            "totals": {
+                "errors": 1,
+                "file_errors": 1,
+                "upgrade_status_test_classes_skipped": false,
+                "upgrade_status_split": {
+                    "declared_ready": true
+                },
+                "upgrade_status_next": "relax",
+                "upgrade_status_category": {
+                    "ignore": 1
+                }
+            },
+            "files": {
+                "themes/custom/buriton5/config/optional/block.block.buriton5_search_form.yml": {
+                    "messages": [
+                        {
+                            "message": "The page_id setting of the search block in block.block.buriton5_search_form is an empty string. Deprecated in drupal:11.1.0 and is removed from drupal:12.0.0. Use null for the default search page. See https://www.drupal.org/node/3463132.",
+                            "line": 19,
+                            "analyzer": "ConfigSchemaDeprecationAnalyzer",
+                            "upgrade_status_category": "ignore"
+                        }
+                    ]
+                }
+            },
+            "errors": []
+        },
+        "versions": {
+            "drupal/upgrade_status": "5.0.0",
+            "phpstan/phpstan": "2.3.7",
+            "mglaman/phpstan-drupal": "2.4.0",
+            "phpstan/phpstan-deprecation-rules": "2.0.6"
+        }
+    }
+}

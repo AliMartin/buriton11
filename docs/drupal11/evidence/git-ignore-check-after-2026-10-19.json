@@ -1,0 +1,328 @@
+{
+  "date": "2026-10-19",
+  "checks": [
+    {
+      "path": "sites/default/settings.php",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/sites/*/*settings*.php"
+    },
+    {
+      "path": "sites/default/settings.local.php",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/sites/*/*settings*.php"
+    },
+    {
+      "path": "sites/default/settings.ddev.php",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/settings.ddev.php"
+    },
+    {
+      "path": "sites/default/services.yml",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/sites/*/*services*.yml"
+    },
+    {
+      "path": "sites/default/drushrc.php",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/drushrc.php"
+    },
+    {
+      "path": "sites/default/files/example.txt",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/sites/*/files/"
+    },
+    {
+      "path": "sites/default/private/example.txt",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/sites/*/private/"
+    },
+    {
+      "path": "private-files/example.txt",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/private-files/"
+    },
+    {
+      "path": ".ddev/upgrade-study-archive/example.sql.gz",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/.ddev/upgrade-study-archive/"
+    },
+    {
+      "path": ".ddev/db_snapshots/example.sql.gz",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/db_snapshots"
+    },
+    {
+      "path": "database/example.sql.gz",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/database/"
+    },
+    {
+      "path": "tmp/example.json",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/tmp/"
+    },
+    {
+      "path": "core/lib/Drupal.php",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/core/"
+    },
+    {
+      "path": "vendor/autoload.php",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/vendor/"
+    },
+    {
+      "path": "modules/contrib/webform/webform.module",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/modules/contrib/"
+    },
+    {
+      "path": "themes/contrib/bootstrap5/bootstrap5.info.yml",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/themes/contrib/"
+    },
+    {
+      "path": "profiles/contrib/example/example.info.yml",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/profiles/contrib/"
+    },
+    {
+      "path": "libraries/fitvids/jquery.fitvids.js",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/libraries/"
+    },
+    {
+      "path": "themes/custom/zircon/includes/flexslider/node_modules/jquery/dist/jquery.js",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "node_modules/"
+    },
+    {
+      "path": "docs/feasibility-study/checks/node_modules/jsdom/package.json",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/node_modules/"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/.vscode/"
+    },
+    {
+      "path": "themes/custom/zircon/ftpsync.settings",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "ftpsync.settings"
+    },
+    {
+      "path": ".DS_Store",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": ".DS_Store"
+    },
+    {
+      "path": ".env",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/.env"
+    },
+    {
+      "path": ".env.local",
+      "expected_ignored": true,
+      "ignored": true,
+      "passed": true,
+      "rule": "/.env.*"
+    },
+    {
+      "path": "composer.json",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": null
+    },
+    {
+      "path": "composer.lock",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": null
+    },
+    {
+      "path": "composer.libraries.json",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": null
+    },
+    {
+      "path": "patches.lock.json",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": null
+    },
+    {
+      "path": "patches/bootstrap5-preserve-required-base-themes.patch",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": null
+    },
+    {
+      "path": "themes/custom/zircon/zircon.info.yml",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": null
+    },
+    {
+      "path": "themes/custom/zircon/includes/bootstrap/js/bootstrap.js",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": null
+    },
+    {
+      "path": "themes/custom/buriton5/css/style.css",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": null
+    },
+    {
+      "path": "modules/custom/example/example.module",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": null
+    },
+    {
+      "path": "sync/core.extension.yml",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": null
+    },
+    {
+      "path": "sync/admin_toolbar_search.settings.yml",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": null
+    },
+    {
+      "path": "docs/README.md",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": null
+    },
+    {
+      "path": "docs/drupal11/check-baseline.php",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": null
+    },
+    {
+      "path": "docs/feasibility-study/reference-files/composer.initial-drupal9.lock",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": null
+    },
+    {
+      "path": "tools/check-theme.php",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": null
+    },
+    {
+      "path": ".ddev/config.yaml",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": null
+    },
+    {
+      "path": ".ddev/nginx/config-sync.conf",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": null
+    },
+    {
+      "path": ".htaccess",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": null
+    },
+    {
+      "path": ".env.example",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": "!/.env.example"
+    },
+    {
+      "path": "sites/default/default.settings.php",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": "!/sites/default/default.settings.php"
+    },
+    {
+      "path": "sites/default/default.services.yml",
+      "expected_ignored": false,
+      "ignored": false,
+      "passed": true,
+      "rule": "!/sites/default/default.services.yml"
+    }
+  ],
+  "passed": true
+}

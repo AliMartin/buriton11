@@ -1,0 +1,13 @@
+{
+  "updated": [
+    "core.extension",
+    "entity_clone.cloneable_entities"
+  ],
+  "removed": [
+    "core.entity_view_mode.tour.token",
+    "image_captcha.settings",
+    "tour.tour.honeypot",
+    "tour.tour.views-ui"
+  ],
+  "other_config_changes": []
+}

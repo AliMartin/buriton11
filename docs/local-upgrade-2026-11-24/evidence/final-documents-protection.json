@@ -1,0 +1,30 @@
+{
+    "documents": [
+        {
+            "fid": 2742,
+            "status": 200,
+            "bytes": 108208,
+            "sha256_matches_disk": true
+        },
+        {
+            "fid": 2740,
+            "status": 200,
+            "bytes": 106452,
+            "sha256_matches_disk": true
+        },
+        {
+            "fid": 2739,
+            "status": 200,
+            "bytes": 62344,
+            "sha256_matches_disk": true
+        }
+    ],
+    "protected_paths": {
+        "/sync/core.extension.yml": 403,
+        "/_upgrade-poc/buriton11-poc/composer.json": 403,
+        "/docs/upgrade-progress.md": 403,
+        "/tools/check-http.php": 403,
+        "/tmp/upgrade-final-config/core.extension.yml": 403,
+        "/private-files/[existing file]": 403
+    }
+}

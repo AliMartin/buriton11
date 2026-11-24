@@ -1,0 +1,2226 @@
+[
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "fontawesome - Avoid calling Symfony\\Component\\Yaml\\Yaml::parse() directly. Use Drupal\\Component\\Serialization\\Yaml::decode() instead, which handles exceptions consistently and applies the correct parse flags.",
+        "fingerprint": "c5c9feba75b2e6dbd5c092328841778a4dba75a3d69283ee0d81339abdbd911f",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/fontawesome\/src\/FontAwesomeManager.php",
+            "lines": {
+                "begin": 295
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "fontawesome - Avoid calling Symfony\\Component\\Yaml\\Yaml::parse() directly. Use Drupal\\Component\\Serialization\\Yaml::decode() instead, which handles exceptions consistently and applies the correct parse flags.",
+        "fingerprint": "fd65cd8a1cf97853d236575fbc5eccd1afdd453c71eb6ec9874756d05dd0a333",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/fontawesome\/src\/FontAwesomeManager.php",
+            "lines": {
+                "begin": 338
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "fontawesome - Call to an undefined method Drupal\\Tests\\fontawesome\\Kernel\\FontawesomeMigrationTest::assertNotEquals().",
+        "fingerprint": "0cbdc55dd1fa61af5fef1dbdacf6e79d75feb70f533719b65d22c895d7b271b0",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/fontawesome\/tests\/src\/Kernel\/FontawesomeMigrationTest.php",
+            "lines": {
+                "begin": 50
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "fontawesome - Call to an undefined method Drupal\\Tests\\fontawesome\\Kernel\\FontawesomeMigrationTest::assertEquals().",
+        "fingerprint": "fd9a839604a4371d6745addfcd0e916cff0f6acae53b51ce2746074502b5e9ea",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/fontawesome\/tests\/src\/Kernel\/FontawesomeMigrationTest.php",
+            "lines": {
+                "begin": 53
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "LibraryDeprecationAnalyzer",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "fontawesome - The 'fontawesome_iconpicker_widget\/fontawesome-iconpicker' library is not defined because the defining extension is not installed. Cannot decide if it is deprecated or not.",
+        "fingerprint": "321fba3ea534fe660e53c886fcc7b3b79ecf4d5af4b073daf292319238c1a31b",
+        "severity": "info",
+        "location": {
+            "path": "modules\/contrib\/fontawesome\/modules\/fontawesome_iconpicker_widget\/src\/Plugin\/Field\/FieldWidget\/FontAwesomeIconpickerWidget.php",
+            "lines": {
+                "begin": 110
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Attribute class Drupal\\Core\\Hook\\Attribute\\Hook does not exist.",
+        "fingerprint": "eff29071ac451e7142da1cbbb2f4b0f433f765b9a491eef86294812450b11fe2",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/src\/Hook\/SimilartermsHooks.php",
+            "lines": {
+                "begin": 36
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Attribute class Drupal\\Core\\Hook\\Attribute\\Hook does not exist.",
+        "fingerprint": "c16fbd7596107302f89c92660a8b65d63e8ceb60ab84ad79a4781b3f2e21fed3",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/src\/Hook\/SimilartermsHooks.php",
+            "lines": {
+                "begin": 55
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Attribute class PHPUnit\\Framework\\Attributes\\Group does not exist.",
+        "fingerprint": "f70b3a6c39d5af9ae72510bc9222bca58407e1848d095f1ec1602138ef0dedb8",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 17
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::markTestSkipped().",
+        "fingerprint": "e2779c7b5e190b3a8d96ee2064ea8531a002938c23691a7c836743c9d71d7b5f",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 27
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertTrue().",
+        "fingerprint": "bcb0cb6a2cf4a14ea4eb7ec726cb9948e5e84071700753089bd56a5d84b9e46d",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 39
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertEmpty().",
+        "fingerprint": "9cf73d5e3b375500eb73657f19e4c01c0b45d0cf6ff3a7feeeb2cf4684ad2a96",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 42
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::markTestSkipped().",
+        "fingerprint": "020d667cd8756e695018bec0a9b05c318b856df7bb3c8b91fec87edb338da417",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 52
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertTrue().",
+        "fingerprint": "cb47b80dd30f6211332fbebb91b8c00c7f54ad9fafcd60c8bbb9a53b78e7bd6a",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 64
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertCount().",
+        "fingerprint": "41b055714848ec358da72c12c7eeb1e2c41f05724d7347f0db96730bf5dfc0a4",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 67
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertArrayHasKey().",
+        "fingerprint": "ad924c1e4e9d045e264859673f6b64f0cf53d9bdb298d5d1bd145c989b7f8129",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 72
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertArrayHasKey().",
+        "fingerprint": "abbba5e5d9818fb0ad929037562c3b00e028cb855661ce68b1b8dae775990a8c",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 73
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::markTestSkipped().",
+        "fingerprint": "52db451c4e47bf0e60c7082df7a1fa30f34cad4e5933bfaab83c1b4458001e7f",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 84
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertNotEmpty().",
+        "fingerprint": "1ede2e99a47b8431ced2ef8254631ff5754f8cb5519a390655fd75b576836eef",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 95
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertTrue().",
+        "fingerprint": "358f43886b94a5177a35252b10b2b972bc03e4e4ba2fb0965ab12eb71e728b21",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 105
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::markTestSkipped().",
+        "fingerprint": "7eb1fcd764fdb0ab8798cc89a7b7b49fa996fc8f92d8744944ee0e6fcd7613a0",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 116
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertFalse().",
+        "fingerprint": "7e43ea6cf2bf7430f83834f7ef03ccbdfd13903da5d38365596abec3f2314568",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 131
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertTrue().",
+        "fingerprint": "d648e1bebed4a9dc771c5cf30d1822073e97b8bc3bf2c4bcbc75edaef4ead708",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 146
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::markTestSkipped().",
+        "fingerprint": "ba0814002f319499df053cf786f7c9f8845b2028c1c0ccb14168631007fa075e",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 212
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertSame().",
+        "fingerprint": "2da049aec9de7ba6005d8c4eb00f7a4091d446b2e31f187cf077ce13c9930d47",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 229
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertFalse().",
+        "fingerprint": "fe47998a861a6f7f1af47ba007ab34ad45bf65abdd71b4a1114850b83164b677",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 234
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::markTestSkipped().",
+        "fingerprint": "d4c119d414d3e28e03c2f3ebdd0023f8b14395292f27c666d3e7ed871413d437",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 245
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertTrue().",
+        "fingerprint": "cfadb2057913a57485514f6e26d6577fbaaecb6779f366ac3d6f8349ee1e2817",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 261
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertFalse().",
+        "fingerprint": "a4497ccb24751f5809c543c5ce844f5412d957ad087c314e5d22600ac2b26d4e",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 265
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertFalse().",
+        "fingerprint": "935d827ebe327282b0470aa5b4fcf52deb45a8c6860313a19f20d20d5b912426",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 269
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::markTestSkipped().",
+        "fingerprint": "16bf86e1889d79e9767862924ebdc7cfa2a4dbcc364f878eee1c49dcfe0cefcb",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 280
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertTrue().",
+        "fingerprint": "60dd328c6a55157b6061ad386296245288e9b7426a72a2d5dd2a5cfaf0dde205",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 295
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertFalse().",
+        "fingerprint": "55567ce68c6efaec20553f67a8b14d9001a16d7df0978c133321b421d27ee12a",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 300
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::markTestSkipped().",
+        "fingerprint": "0f226d495a06a3394f317284b8413632af97c9478276799bc074bb595d12a939",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 311
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertEmpty().",
+        "fingerprint": "a8d97bee7c6b5589abc93afbd8ac9ceffc12487b43af0460bd743230ca7fb897",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 327
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::markTestSkipped().",
+        "fingerprint": "25d6a3fe3c9d85b6238fbd65091a8422758e73a9bf3b6a1a1341a6f0d6006bdb",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 343
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertNotEmpty().",
+        "fingerprint": "03af16ef5f096bb63e0afe6409ae24ae33f3208527e214642b4f17b9465077a7",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 354
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertTrue().",
+        "fingerprint": "981536be31026754468fdf3ab677bbaea156cc5befd272776f15ef4dff3fafc4",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 359
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsArgumentTest::assertSame().",
+        "fingerprint": "ae87dcc210725092a5919ee11c64fd8ff07fd90ce0781fd1ef318dc779f12ec6",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsArgumentTest.php",
+            "lines": {
+                "begin": 371
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Attribute class PHPUnit\\Framework\\Attributes\\Group does not exist.",
+        "fingerprint": "ce855a2f2fbc21d20084f815d5f86b0b88819ad8e2e4bbbe4efbf2e277e7d6a4",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 22
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertArrayHasKey().",
+        "fingerprint": "112335e482759f939527cf026ba0eb2978d7965574f3e4048483ad939f623640",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 162
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertSame().",
+        "fingerprint": "3b1602c96b3702aeb97964af94f99892353f31e580167ed0aea7bbc1566adc35",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 163
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertSame().",
+        "fingerprint": "8794eac122008d30288c7763803b23a926d4254e0ad0b8c90cd0f0320908539f",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 164
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertArrayHasKey().",
+        "fingerprint": "c783b987ef683f93936ba27df86941bebec80e1c4ebb23dfea36ad856964e385",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 165
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertSame().",
+        "fingerprint": "b1f502442c5e2bba0596074af695254e0eb2f6f06f22af4af81ea9ebb61f2976",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 166
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertArrayHasKey().",
+        "fingerprint": "b85c56a015d145135418924732a5ca7a2cb5995739570d5a67ebed39b0899eb2",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 171
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertArrayHasKey().",
+        "fingerprint": "11375a030cc5481e373d3c6d2f4be5acc9ef43c632a30f571dd97eb49694879b",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 172
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertSame().",
+        "fingerprint": "1847779b49bf2fe9decc05dd5be43b094a8e23c9d7c937a32a584d1e429511ae",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 173
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertTrue().",
+        "fingerprint": "d18ae41addf3b9d3222688e8036b0e4b34537d4f5e172eee3fbdfbdab1b5dd33",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 185
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertCount().",
+        "fingerprint": "75c1c48ac403c28e44fee7e1bd74042a8e6a3a2fac59c5cf45f20d1b0a893d98",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 188
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertArrayHasKey().",
+        "fingerprint": "acb0663ad636b3f70d74c4abfe29e6548d9ab9a343f1a8514a4451a7d9b3c168",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 189
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertArrayHasKey().",
+        "fingerprint": "308779dab732d4d54d4545cfb97dc411b29e2c4fbb868b4b971265940a832a94",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 190
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertNotEmpty().",
+        "fingerprint": "90caa9421eef0a5515dbebd8a324ecf985a58fa8d2a311388cfd224676ccd571",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 202
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertFalse().",
+        "fingerprint": "90631d2ce285894fd1a770249a8646e0bc358f4050730c98cb6ab8702d2c6314",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 208
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertCount().",
+        "fingerprint": "1494ce57aa2ea2eb8d7e651f981e94bec75538f4fd4d32668c767d8e77b37329",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 209
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertSame().",
+        "fingerprint": "6ccd90873f266294cf6b2866ce406175fe690cc234e9638ed1ee79df086484f9",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 212
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertSame().",
+        "fingerprint": "c8d880197fc43dfc221ccaa8b6728b2136653b1250bcc224da0f3b3b0b1a1e57",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 223
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertSame().",
+        "fingerprint": "c5602ac13a2cb8abfa0dc62824a22b5e77802c1877eb78a1214a0ffcee1242dc",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 224
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertSame().",
+        "fingerprint": "e237c5fc7ea4b5be7c9b5d18b7505eba0c9aebb67d8c394cf636b1541a0aa0a3",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 225
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertNotEmpty().",
+        "fingerprint": "e070dfa3c8b6c368ebf697e0a1d5855d3c1804f8faee7d521a5f477cbff3e963",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 237
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertFalse().",
+        "fingerprint": "b00d2e32e6f3c7d1d99972773aa3e02f511f1bef4a72521abc2aef0812b424f5",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 240
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertTrue().",
+        "fingerprint": "9bcca687c9a17d388b43a64163b7cefab8baefdf8ee3ea04cae453bbbcd89693",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 241
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsEntityIndexTest::assertSame().",
+        "fingerprint": "eda48697b4c6970f770ab68c366783ba954c8601e48c5bba429b2f7a8c71a028",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsEntityIndexTest.php",
+            "lines": {
+                "begin": 244
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Attribute class PHPUnit\\Framework\\Attributes\\Group does not exist.",
+        "fingerprint": "929637ae65c183c2b8e8eeb01b09ee089cffcdaf304ff70d3c31f11d92655f42",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 14
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::markTestSkipped().",
+        "fingerprint": "7814bc574917c458a9b4f7f72a6e365252d82aabeacfd39e8264a6f91d7dc255",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 24
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::assertNotEmpty().",
+        "fingerprint": "b36d9e6c30c0b9355255a53666e4941e92e0b89d624ddec58d882e662ea22d25",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 40
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::assertEquals().",
+        "fingerprint": "2b589160e4ebfd0878c6f14a6b0a8342676fab64e2d2583f52231ba9879a6f22",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 47
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::markTestSkipped().",
+        "fingerprint": "98855b33096d08423557f3536bc4e4745827f5da0c654f62b70901ff4b1353e8",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 59
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::assertNotEmpty().",
+        "fingerprint": "2ac6feb1aadad12bac7a0e597c9a91e527b1ad28e9a198f14a0d97641a79b2a6",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 76
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::assertSame().",
+        "fingerprint": "df180814dcac89adc2cd8d0c17fbe4c5f0bb3be69c696c4efebb2dc8daed6656",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 83
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::markTestSkipped().",
+        "fingerprint": "b58e04de02e5dc404bd21816c02ac86cf980df2a5c9be658d72d9279cee5d05c",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 95
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::assertEquals().",
+        "fingerprint": "92998363ddadfbce9d901b16e2ee5ca90859a8699850669b394b70ca76fc1878",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 116
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::markTestSkipped().",
+        "fingerprint": "c9aa6c447523a55b3e842a6524105071ec9c5b6a7c2bb7900c6f9270c7977330",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 128
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::assertSame().",
+        "fingerprint": "18fd778e18d3642333eefc2af743884a06b19063b8a354161e8975c4539a65d1",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 148
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::markTestSkipped().",
+        "fingerprint": "857a483be77d18e6abcb26c12524ef4168d86c4ab54daede2cda27bbf6af8d4c",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 160
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::assertEquals().",
+        "fingerprint": "8d40ce5a762803ee1c8d3cf61fdda8094b193666c6ca863cece0b0061bf8616b",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 182
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::markTestSkipped().",
+        "fingerprint": "7b8825056615ff20bb4cd78c52464b163fffbdd217dadec418a19bc1b51db707",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 195
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::markTestSkipped().",
+        "fingerprint": "c435421aae98faaa4334db31dd028ba6d86bc8cbea6e1fae936ad3b05edde4d2",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 203
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::assertEquals().",
+        "fingerprint": "eb2202b202aed13a49ccf52b744fb8947f4b56cce5d6d3f144d2a0368176df37",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 217
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::markTestSkipped().",
+        "fingerprint": "6c57c975d08d3c3d54477fbf377b0c9008c49b6b7a84c0fd0e5f273068bd354b",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 232
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::markTestSkipped().",
+        "fingerprint": "4edcb64fa130566f283306e6ee442f4fd962d9c36a268e4f35a6d33be26df99d",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 240
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::assertSame().",
+        "fingerprint": "73003674313fc5526b4b398dbb23a1c7f423c07f111c4f82025478820da9f2c9",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 247
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::assertEquals().",
+        "fingerprint": "0f7daee14319a8230df6f98f8ec528c9016ae35932837e68c9ec3aadfc327ab6",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 251
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsFieldTest::assertSame().",
+        "fingerprint": "3b49265c963db191a744152cb13fe61566bbb525afe928499ee3e7e3c41dec2e",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsFieldTest.php",
+            "lines": {
+                "begin": 255
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Attribute class PHPUnit\\Framework\\Attributes\\Group does not exist.",
+        "fingerprint": "4ce38fd84ee256b4ccd0e350c55ba0fae29254d4a44f5bd638f9ac3066783670",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 15
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertSame().",
+        "fingerprint": "767ec0859934f6eb18ce4f181c39b04277fc4f8339f34f5e66914e1e5eb73feb",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 122
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertSame().",
+        "fingerprint": "4aaab872d4f2bb60fa436d8a978a69f71fef1c0c2a1719a79467500ab0a2da9a",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 123
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertSame().",
+        "fingerprint": "355fc2e2f272f516045590a61643f1b4ebcf5bc7b30b482115add0f9868845d0",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 124
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertSame().",
+        "fingerprint": "30c167d5628d4c820ecf26865b39f000943ef605c0f657f44e7230310cbd33d8",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 125
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertSame().",
+        "fingerprint": "ab30895ab82149d99a95a94d760fec700c4c1d7ad37dc9fe76db0521fc9a3476",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 126
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::markTestSkipped().",
+        "fingerprint": "d07b23132a6879aab35b1cbaf2daf6ea0790488d694c67d2445c1a97442b279e",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 136
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertNotEmpty().",
+        "fingerprint": "51bfea230f891798f66a876c89f6d8d7b672018138b9150e64fb2924cf7d1693",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 176
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertNotEmpty().",
+        "fingerprint": "f4a873b3c0b998e7601b077133bab1771b70644c2987a5d93145dceb70a30fef",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 177
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::markTestSkipped().",
+        "fingerprint": "7889416760a241afa660b215772607cff7cc3758eabf9e4eeb3acdb213776912",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 187
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertNotEmpty().",
+        "fingerprint": "3b74b6e0dcfe27a01730e9486d8474ad16fdb59a9801449090d8495ae1abf16e",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 199
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertTrue().",
+        "fingerprint": "a9279204c2fe4d32e304eb8ba6a1fca8ade60740afa1433cbf2c0b3882c0a88f",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 217
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertTrue().",
+        "fingerprint": "1a8ada7bd96a46b2b2283f9af64e22e67c7ead7e6ad6be77b304730b6b529d67",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 218
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::markTestSkipped().",
+        "fingerprint": "bfbc4409e76e0b00f6cb3a1758a31ecf508c5e5d0f115fc2f90792801c85c210",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 228
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertTrue().",
+        "fingerprint": "a3472d04623fc8cb5c3355f3580bf7618708f931d5c1e2c1dcbf97aa2525f112",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 246
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::markTestSkipped().",
+        "fingerprint": "bbad790ef458f8ae76364a36a73f555db0be99df4bff7901067dda028ef857ff",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 257
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertSame().",
+        "fingerprint": "4c398e10d591670236ff8f03e69667fec10fdb4e89d82d4129666997e2279b0e",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 284
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertSame().",
+        "fingerprint": "42dc9176bb7669652ab4a609721ec6b033663e19937148e7a066abb2e01b3831",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 299
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertNotFalse().",
+        "fingerprint": "f54adc5e9a572e89cf06284ff7a25c9f339d51656f03ac262db98c223fc55f1d",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 308
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertNotFalse().",
+        "fingerprint": "1d10d2e1fe27e500b294565ed0f6910d3b01aa3ca610706e069cc99804512090",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 309
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertLessThan().",
+        "fingerprint": "07d55dcba956dfb3f1618494317560c21b23b9b961e344a0ace586edd04117df",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 310
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::markTestSkipped().",
+        "fingerprint": "c946df2c13eaef437c0c33348f31207bb227be7164a84ceb60c703961e2d752d",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 321
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::markTestSkipped().",
+        "fingerprint": "aca4afd31c391e1107402e7822f26000a250f869bcbffa92b69ce39f6056ef9e",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 330
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertEquals().",
+        "fingerprint": "1b6dc46487af97d63f368443b30213a057687f263978dd6f2e3b7776b839141b",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 342
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertEquals().",
+        "fingerprint": "18da7c1dcd00a1fb05267c350856a12a08e494abfa4e8d11f37941eddbf52f69",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 351
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertEquals().",
+        "fingerprint": "d89bb2be17941e2d54862ccd61f98b837963dff808b2a85e93d149d9979dd803",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 360
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::markTestSkipped().",
+        "fingerprint": "62cdf2fca765b7b4ece47adbd48dd3bef8604c64727fd0116276466dd2206ad2",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 373
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::markTestSkipped().",
+        "fingerprint": "f29a50f5e036adaf18007e181b3c7a0e94d0c0da039d8b72fbd2cb92d0e66850",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 382
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertEquals().",
+        "fingerprint": "5983c4a254e3a6b40f4fb8d05d42d5e7d2d7b80de2f1011548e9769d6fe22adb",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 395
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::markTestSkipped().",
+        "fingerprint": "950538b851e4a255e748fd0c5620bcf947887eb3c7a151bcd9aac41b0e79ed8c",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 408
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertNotEmpty().",
+        "fingerprint": "8bc7a7db8990ec3d5a6646328d4da1d22b4d1203d5df799fca7385577b8c29d7",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 422
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertSame().",
+        "fingerprint": "9eea087f5b0b2f7dc6b4a6c0a5bc417321f2fb38a9e07b8768327bd93fc24883",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 426
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::markTestSkipped().",
+        "fingerprint": "79747a509de5b3fa6f6d417304bb2313f2e530c3fc3be15c28170cc187d29d89",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 437
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::markTestSkipped().",
+        "fingerprint": "2a32df393bd1b9e8928ee3ae9d49474b7604b35e0b84b0f41213424fb3d899e8",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 445
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertSame().",
+        "fingerprint": "a6a52cd46be8c727035eaab37c4a955b368fbaf2e922e49a9c70c45b32dbb203",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 461
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertSame().",
+        "fingerprint": "b94c4bd43dd4c4262597b668258a02ef0213d9ff2ee64592101ca4bc8d22f07c",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 470
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::markTestSkipped().",
+        "fingerprint": "985ee489a8944356c81c10751d5905f89bca6877cb450551d780f91c967ee513",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 483
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::markTestSkipped().",
+        "fingerprint": "2afa7a275900c49067998bd12511e8943dbb5e6dfe71b3912ef6bf70c57721f8",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 491
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertEquals().",
+        "fingerprint": "689dab232d9725c737cde67d12d369c701f6ed64a3b52460a1415b4114a741e1",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 506
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertEquals().",
+        "fingerprint": "ba06ade5c06604c868a1ca72f1481bb5e5020db44e007c71bc351054af3163c8",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 515
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::markTestSkipped().",
+        "fingerprint": "53d55ca7b5715bf75879743e688fc3c4f28091eca80373855255704162c36c0a",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 528
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertIsArray().",
+        "fingerprint": "d54de8f73485a44b59cb93d312f935a633f5b9ed6b85848c0512862026c662da",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 541
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::markTestSkipped().",
+        "fingerprint": "a3b4375bde0111cd408bdad9df14007ef1d7235487ab541d2a2167d9f43f0a6e",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 551
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertLessThan().",
+        "fingerprint": "23b2ac715e0e86b5260bc103b3568a4bedc1fe07528516489b51408b9de6510d",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 571
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::markTestSkipped().",
+        "fingerprint": "c6814b1c19715ffa6f75f7994ae030ce604267c2a21834d5e499adfb128fbb2d",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 583
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertTrue().",
+        "fingerprint": "0cb14872e7e847513d9d444aa345e8a05220e3e45fcbebf719bf6bb6364b641d",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 598
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::markTestSkipped().",
+        "fingerprint": "d80fea8bf45fa3f35518e896edc784e82fa5b167a618338c3724342c0511342f",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 613
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::markTestSkipped().",
+        "fingerprint": "9dcbe35257435bd6a828e14b114c975c208dc1700ee3af14be2fabf6c0415c27",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 621
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertSame().",
+        "fingerprint": "51626154b5996b7d6255d9f6006c857f2af6b468871a1269c45f1bda58d2e6e0",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 628
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "similarterms - Call to an undefined method Drupal\\Tests\\similarterms\\Kernel\\SimilarTermsWeightTest::assertSame().",
+        "fingerprint": "cf682eddb419ee3ee0236d33c7f5b531dce1e91fc9834ec31306d0c51f8e1b0f",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/similarterms\/tests\/src\/Kernel\/SimilarTermsWeightTest.php",
+            "lines": {
+                "begin": 632
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "tb_megamenu - Call to deprecated method getContentType() of class Symfony\\Component\\HttpFoundation\\Request: since Symfony 6.2, use getContentTypeFormat() instead",
+        "fingerprint": "96e5237175332f38a97cb131000636294a43ed5907f380c5bb00ebcee2986336",
+        "severity": "major",
+        "location": {
+            "path": "modules\/contrib\/tb_megamenu\/src\/Controller\/TBMegaMenuAdminController.php",
+            "lines": {
+                "begin": 84
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "tb_megamenu - Method Drupal\\tb_megamenu\\Form\\MegaMenuAdd::save() should return int but return statement is missing.",
+        "fingerprint": "b5a762c86c2f7237dd1621a9885ed7890435f98321b17128a33b610b32038a52",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/tb_megamenu\/src\/Form\/MegaMenuAdd.php",
+            "lines": {
+                "begin": 157
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "tb_megamenu - Access to an undefined property Drupal\\tb_megamenu\\Form\\MegaMenuAdd::$entityQuery.",
+        "fingerprint": "818a11e177cbb0490181b0ba8511f699175ada83353297d137803df8461bf3e3",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/tb_megamenu\/src\/Form\/MegaMenuAdd.php",
+            "lines": {
+                "begin": 164
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "tb_megamenu - Drupal\\Core\\DependencyInjection\\DependencySerializationTrait does not support private properties.",
+        "fingerprint": "7c20197fd9fbc53bd1b3c230a0855f7ee02f134791753a2a0d9a26f5f3d14ec0",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/tb_megamenu\/src\/Plugin\/Block\/TBMegaMenuBlock.php",
+            "lines": {
+                "begin": 30
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "tb_megamenu - Drupal\\Core\\DependencyInjection\\DependencySerializationTrait does not support private properties.",
+        "fingerprint": "88652f3049de2173671a2a25279cadb953f5f4945cdc8c04bf3409164ecd069f",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/tb_megamenu\/src\/Plugin\/Block\/TBMegaMenuBlock.php",
+            "lines": {
+                "begin": 46
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "tb_megamenu - Drupal\\Core\\DependencyInjection\\DependencySerializationTrait does not support private properties.",
+        "fingerprint": "88652f3049de2173671a2a25279cadb953f5f4945cdc8c04bf3409164ecd069f",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/tb_megamenu\/src\/Plugin\/Block\/TBMegaMenuBlock.php",
+            "lines": {
+                "begin": 46
+            }
+        }
+    }
+]

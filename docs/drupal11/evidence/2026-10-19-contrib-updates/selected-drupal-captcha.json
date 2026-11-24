@@ -1,0 +1,38 @@
+{
+    "name": "drupal/captcha",
+    "description": "The CAPTCHA module provides this feature to virtually any user facing web form on a Drupal site.",
+    "keywords": [],
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/captcha",
+    "names": [
+        "drupal/captcha"
+    ],
+    "versions": [
+        "2.0.10"
+    ],
+    "licenses": [
+        {
+            "name": "GNU General Public License v2.0 or later",
+            "osi": "GPL-2.0-or-later",
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html#licenseText"
+        }
+    ],
+    "source": {
+        "type": "git",
+        "url": "https://git.drupalcode.org/project/captcha.git",
+        "reference": "2.0.10"
+    },
+    "dist": {
+        "type": "zip",
+        "url": "https://ftp.drupal.org/files/projects/captcha-2.0.10.zip",
+        "reference": "2.0.10"
+    },
+    "path": "/var/www/html/modules/contrib/captcha",
+    "support": {
+        "source": "https://git.drupalcode.org/project/captcha",
+        "issues": "https://www.drupal.org/project/issues/captcha"
+    },
+    "requires": {
+        "drupal/core": "^9.5 || ^10 || ^11"
+    }
+}

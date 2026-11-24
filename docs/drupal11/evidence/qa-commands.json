@@ -1,0 +1,54 @@
+[
+  {
+    "file": "theme-zircon.json",
+    "command": [
+      "ddev",
+      "exec",
+      "env",
+      "THEME_QA_THEME=zircon",
+      "THEME_QA_BASE_URL=https://buriton11.ddev.site",
+      "vendor/bin/drush",
+      "php:script",
+      "tools/check-theme.php"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "theme-buriton5.json",
+    "command": [
+      "ddev",
+      "exec",
+      "env",
+      "THEME_QA_THEME=buriton5",
+      "THEME_QA_BASE_URL=https://buriton11.ddev.site",
+      "vendor/bin/drush",
+      "php:script",
+      "tools/check-theme.php"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "theme-claro.json",
+    "command": [
+      "ddev",
+      "exec",
+      "env",
+      "THEME_QA_THEME=claro",
+      "THEME_QA_BASE_URL=https://buriton11.ddev.site",
+      "vendor/bin/drush",
+      "php:script",
+      "tools/check-theme.php"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "libraries.json",
+    "command": [
+      "ddev",
+      "drush",
+      "php:script",
+      "tools/check-libraries.php"
+    ],
+    "exit_code": 0
+  }
+]

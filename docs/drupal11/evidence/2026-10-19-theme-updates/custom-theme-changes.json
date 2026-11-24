@@ -1,0 +1,47 @@
+[
+  {
+    "path": "themes/custom/buriton5/README.md",
+    "before_sha256": "ec0ab924370d0fdfeb2fc46a06494d43a17248d07ada64ef60036710beb8c105",
+    "after_sha256": "67e12d90e68e4f8d57674da5051d73602f398cb8514344198dc47a9f1c6fb2de"
+  },
+  {
+    "path": "themes/custom/buriton5/buriton5.info.yml",
+    "before_sha256": "983520ab4cbbbc8269d91e0d336f628af96fd780d6ca28e147042afb582f5d6a",
+    "after_sha256": "67b608a6644a8fb78f81e42480f68c9b1d49297b98280799aa4af7466a00d915"
+  },
+  {
+    "path": "themes/custom/zircon/README.md",
+    "before_sha256": "cb3b3910746d5f1fa94e2d5b7eef3adc740eafa3c29eb56c3dedd849b39ab4d3",
+    "after_sha256": "d366fdc02c4a41332b2570f5a50eb7c813b369f108328caff498a3917d46c74e"
+  },
+  {
+    "path": "themes/custom/zircon/includes/bootstrap/js/bootstrap.js",
+    "before_sha256": "dbd2a35e72edc7d6bde483481a912f1c38aa57fab2747d9b071d317339ee03a2",
+    "after_sha256": "6cb98415383d43d56ed734668c34f225f10196461496366f2e9b630a8c096b76"
+  },
+  {
+    "path": "themes/custom/zircon/includes/bootstrap/js/bootstrap.min.js",
+    "before_sha256": "9ee2fcff6709e4d0d24b09ca0fc56aade12b4961ed9c43fd13b03248bfb57afe",
+    "after_sha256": "5815181eb52e659ace0188587c6773ae74b181789ba635fb8df8d03e8224d02b"
+  },
+  {
+    "path": "themes/custom/zircon/includes/slick/slick/slick.js",
+    "before_sha256": "9baa573e4378873b7ac81ccb1d954ce9bb2b1a933947ad3012263ddc604d8505",
+    "after_sha256": "65c7548f4968899e7e6918f5b2da1c5cf3fe5fae7062044f8f55443be7dbf6ec"
+  },
+  {
+    "path": "themes/custom/zircon/includes/slick/slick/slick.min.js",
+    "before_sha256": "0c7178cc6ca34fb18e30f070a5e7a1c287b2d7ccfcba2cfdf06e0f46eda55740",
+    "after_sha256": "199058790a57e453adbd414ca84cf51e9a8393e6530c4eff65bddaddbba0da0e"
+  },
+  {
+    "path": "themes/custom/zircon/zircon.info.yml",
+    "before_sha256": "8cfa4ea27b2d803b4bf380ec7a72052719954bc90c7161d77c0483bd8d78eb13",
+    "after_sha256": "93ca14d04d15788b76da15219570775277ac7fa906190c8b44a5ae05f1c62d42"
+  },
+  {
+    "path": "themes/custom/zircon/zircon.libraries.yml",
+    "before_sha256": "010f6968dc98723519ccb19a46b12875e32c230adb88da5002916f867e8ad97b",
+    "after_sha256": "4e1e87e7a9fca189ec4a489390bb2d874ff74406c4ecf7120cb3fcf704ac9a6d"
+  }
+]

@@ -1,0 +1,4 @@
+ [notice] Processing /var/www/html/modules/contrib/fontawesome.
+ [notice] Processing /var/www/html/modules/contrib/similarterms.
+ [notice] Processing /var/www/html/modules/contrib/tb_megamenu.
+Failed to run drush upgrade_status:analyze fontawesome similarterms tb_megamenu --format=codeclimate: exit status 3

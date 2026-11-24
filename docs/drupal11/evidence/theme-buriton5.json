@@ -1,0 +1,13 @@
+{
+    "core": "10.6.19",
+    "theme": "buriton5",
+    "compiled_twig_templates": 3,
+    "routes": {
+        "\/user\/login": 200,
+        "\/user\/password": 200
+    },
+    "css_assets": 23,
+    "javascript_assets": 1,
+    "missing_assets": [],
+    "warnings": []
+}

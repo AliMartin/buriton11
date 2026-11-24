@@ -1,0 +1,9 @@
+{
+    "drupal-version": "10.6.19",
+    "php-version": "8.4.18",
+    "drush-version": "13.8.0.0",
+    "bootstrap": "Successful",
+    "db-status": "Connected",
+    "theme": "zircon",
+    "admin-theme": "claro"
+}

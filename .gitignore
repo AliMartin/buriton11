@@ -1,60 +1,54 @@
-# gitignore template for Drupal 8 projects
-#
-# earlier versions of Drupal are tracked in `community/PHP/`
-#
-# follows official upstream conventions:
-# https://www.drupal.org/docs/develop/using-composer
+# Drupal legacy-project layout: composer.json and the web root are here.
+# Keep Composer manifests/locks, patches, custom code, sync exports and docs.
+# Keep root scaffold files (especially .htaccess) visible for review/versioning.
 
-# Ignore configuration files that may contain sensitive information
-/web/sites/*/*settings*.php
-/web/sites/*/*services*.yml
+# Site credentials and local environment overrides.
+/sites/*/*settings*.php
+!/sites/default/default.settings.php
+/sites/*/*services*.yml
+!/sites/default/default.services.yml
+/sites/*/drushrc.php
+/sites/development.services.yml
+/.env
+/.env.*
+!/.env.example
+!/.env.dist
+/.aws/
 
-# Ignore paths that may contain user-generated content
-/web/sites/*/files
-/web/sites/*/public
-/web/sites/*/private
-/web/sites/*/files-public
-/web/sites/*/files-private
+# Uploaded content, private storage, database backups and temporary files.
+/sites/*/files/
+/sites/*/public/
+/sites/*/private/
+/sites/*/files-public/
+/sites/*/files-private/
+/sites/*/translations/
+/sites/*/tmp/
+/sites/*/cache/
+/private-files/
+/database/
+/tmp/
+/.ddev/upgrade-study-archive/
+/.ddev/db_snapshots/
+/.ddev/.env
+/.ddev/.env.*
+*.sql
+*.sql.gz
 
-# Ignore paths that may contain temporary files
-/web/sites/*/translations
-/web/sites/*/tmp
-/web/sites/*/cache
+# Composer-managed code and browser libraries; rebuild from the locked manifest.
+/vendor/
+/core/
+/modules/contrib/
+/profiles/contrib/
+/themes/contrib/
+# Patched upstream packages installed here by Composer; patches/locks are source.
+/modules/custom/tb_megamenu/
+/themes/custom/bootstrap5/
+/libraries/
 
-# Ignore drupal core (if not versioning drupal sources)
-/web/vendor
-/web/core
-/web/modules/README.txt
-/web/modules/contrib
-/web/profiles/README.txt
-/web/profiles/contrib
-/web/sites/development.services.yml
-/web/sites/example.settings.local.php
-/web/sites/example.sites.php
-/web/sites/README.txt
-/web/themes/README.txt
-/web/themes/contrib
-/web/.csslintrc
-/web/.editorconfig
-/web/.eslintignore
-/web/.eslintrc.json
-/web/.gitattributes
-/web/.htaccess
-/web/.ht.router.php
-/web/autoload.php
-/web/composer.json
-/web/composer.lock
-/web/example.gitignore
-/web/index.php
-/web/INSTALL.txt
-/web/LICENSE.txt
-/web/README.txt
-/web/robots.txt
-/web/update.php
-/web/web.config
-
-# Ignore vendor dependencies and scripts
-/vendor
+# Downloaded tooling and frontend build dependencies at any depth.
+node_modules/
+bower_components/
+.sass-cache/
 /composer.phar
 /composer
 /robo.phar
@@ -63,3 +57,19 @@
 /drush
 /drupal.phar
 /drupal
+
+# Workstation/editor state and FTP connection settings.
+.DS_Store
+/.vscode/
+ftpsync.settings
+*.swp
+*.swo
+/autoload.php
+
+# DDEV generates routes and local TLS material for current and copied projects.
+/.ddev/traefik/
+
+# Immutable local upgrade reference builds (contain settings and backups).
+/_upgrade-poc/
+# Local DDEV generated project state.
+/.ddev/

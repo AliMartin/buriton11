@@ -1,0 +1,82 @@
+[
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "fontawesome - Avoid calling Symfony\\Component\\Yaml\\Yaml::parse() directly. Use Drupal\\Component\\Serialization\\Yaml::decode() instead, which handles exceptions consistently and applies the correct parse flags.",
+        "fingerprint": "c5c9feba75b2e6dbd5c092328841778a4dba75a3d69283ee0d81339abdbd911f",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/fontawesome\/src\/FontAwesomeManager.php",
+            "lines": {
+                "begin": 295
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "fontawesome - Avoid calling Symfony\\Component\\Yaml\\Yaml::parse() directly. Use Drupal\\Component\\Serialization\\Yaml::decode() instead, which handles exceptions consistently and applies the correct parse flags.",
+        "fingerprint": "fd65cd8a1cf97853d236575fbc5eccd1afdd453c71eb6ec9874756d05dd0a333",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/fontawesome\/src\/FontAwesomeManager.php",
+            "lines": {
+                "begin": 338
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "fontawesome - Call to an undefined method Drupal\\Tests\\fontawesome\\Kernel\\FontawesomeMigrationTest::assertNotEquals().",
+        "fingerprint": "0cbdc55dd1fa61af5fef1dbdacf6e79d75feb70f533719b65d22c895d7b271b0",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/fontawesome\/tests\/src\/Kernel\/FontawesomeMigrationTest.php",
+            "lines": {
+                "begin": 50
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "PHPStan",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "fontawesome - Call to an undefined method Drupal\\Tests\\fontawesome\\Kernel\\FontawesomeMigrationTest::assertEquals().",
+        "fingerprint": "fd9a839604a4371d6745addfcd0e916cff0f6acae53b51ce2746074502b5e9ea",
+        "severity": "minor",
+        "location": {
+            "path": "modules\/contrib\/fontawesome\/tests\/src\/Kernel\/FontawesomeMigrationTest.php",
+            "lines": {
+                "begin": 53
+            }
+        }
+    },
+    {
+        "type": "issue",
+        "check_name": "LibraryDeprecationAnalyzer",
+        "categories": [
+            "Compatibility"
+        ],
+        "description": "fontawesome - The 'fontawesome_iconpicker_widget\/fontawesome-iconpicker' library is not defined because the defining extension is not installed. Cannot decide if it is deprecated or not.",
+        "fingerprint": "321fba3ea534fe660e53c886fcc7b3b79ecf4d5af4b073daf292319238c1a31b",
+        "severity": "info",
+        "location": {
+            "path": "modules\/contrib\/fontawesome\/modules\/fontawesome_iconpicker_widget\/src\/Plugin\/Field\/FieldWidget\/FontAwesomeIconpickerWidget.php",
+            "lines": {
+                "begin": 110
+            }
+        }
+    }
+]

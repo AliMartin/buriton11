@@ -1,0 +1,18 @@
+{
+    "written": [
+        "core.extension",
+        "entity_clone.cloneable_entities",
+        "entity_clone.settings",
+        "honeypot.settings",
+        "user.role.anonymous",
+        "user.role.authenticated"
+    ],
+    "deleted": [
+        "captcha.captcha_point.contact_message_feedback_form",
+        "captcha.captcha_point.contact_message_personal_form",
+        "contact.form.feedback",
+        "contact.form.personal",
+        "contact.settings",
+        "core.entity_view_mode.contact_message.token"
+    ]
+}

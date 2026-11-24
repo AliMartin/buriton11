@@ -1,0 +1,2 @@
+ [notice] Processing /var/www/html/modules/contrib/fontawesome.
+Failed to run drush upgrade_status:analyze fontawesome --format=codeclimate: exit status 3

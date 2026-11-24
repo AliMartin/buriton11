@@ -1,0 +1,10 @@
+{
+  "deprecated_themes": {
+    "title": "Deprecated themes installed",
+    "severity": "Warning"
+  },
+  "enable_html5_validation": {
+    "title": "HTML5 validation",
+    "severity": "Warning"
+  }
+}

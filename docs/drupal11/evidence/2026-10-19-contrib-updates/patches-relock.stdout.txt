@@ -1,0 +1,3 @@
+  - Resolving patches from root package.
+  - Resolving patches from dependencies.
+  - patches.lock.json has been recreated successfully.

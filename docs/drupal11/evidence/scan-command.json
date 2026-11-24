@@ -1,0 +1,12 @@
+{
+  "command": [
+    "ddev",
+    "drush",
+    "upgrade_status:analyze",
+    "--all",
+    "--ignore-uninstalled",
+    "--ignore-custom",
+    "--format=codeclimate"
+  ],
+  "exit_code": 1
+}

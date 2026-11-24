@@ -1,0 +1,13 @@
+{
+    "core": "11.4.13",
+    "theme": "zircon",
+    "compiled_twig_templates": 7,
+    "routes": {
+        "\/user\/login": 200,
+        "\/user\/password": 200
+    },
+    "css_assets": 45,
+    "javascript_assets": 21,
+    "missing_assets": [],
+    "warnings": []
+}

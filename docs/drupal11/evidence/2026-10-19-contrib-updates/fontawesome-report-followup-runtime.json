@@ -1,0 +1,17 @@
+{
+    "fontawesome": {
+        "name": "fontawesome",
+        "status": "Enabled",
+        "version": "3.0.0"
+    },
+    "fontawesome_iconpicker_widget": {
+        "name": "fontawesome_iconpicker_widget",
+        "status": "Disabled",
+        "version": "3.0.0"
+    },
+    "fontawesome_media": {
+        "name": "fontawesome_media",
+        "status": "Disabled",
+        "version": "3.0.0"
+    }
+}

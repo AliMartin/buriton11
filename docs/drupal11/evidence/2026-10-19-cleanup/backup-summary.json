@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-19",
+  "location": "Private host temporary directory; actual path recorded in ignored tmp/drush13-backup-path.txt",
+  "database_export_exit": 0,
+  "database_bytes": 4897438,
+  "source_archive_bytes": 5416902,
+  "scope": "Matching database, manifests, configuration, custom themes and selected settings. Uploaded files were not copied; this task does not alter file storage.",
+  "gzip_integrity": "passed",
+  "source_archive_members": 1102,
+  "restore_exercised": false
+}

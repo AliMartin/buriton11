@@ -1,0 +1,35 @@
+{
+  "all_baseline_sections_except_installed_theme_metadata_unchanged": true,
+  "changed_theme_metadata": {
+    "zircon": {
+      "before": {
+        "version": null,
+        "base_theme": "classy",
+        "core_version_requirement": "^9.5 || ^10"
+      },
+      "after": {
+        "version": null,
+        "base_theme": "classy",
+        "core_version_requirement": "^9.5 || ^10 || ^11"
+      }
+    },
+    "buriton5": {
+      "before": {
+        "version": null,
+        "base_theme": "bootstrap5",
+        "core_version_requirement": "^9.5 || ^10.1"
+      },
+      "after": {
+        "version": null,
+        "base_theme": "bootstrap5",
+        "core_version_requirement": "^9.5 || ^10.1 || ^11"
+      }
+    }
+  },
+  "composer_package_inventories_unchanged": true,
+  "composer_lock_changed_keys": [
+    "content-hash"
+  ],
+  "config_sync": "no differences",
+  "custom_theme_scan_findings": []
+}

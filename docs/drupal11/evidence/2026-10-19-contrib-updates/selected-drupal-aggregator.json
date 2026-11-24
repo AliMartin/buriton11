@@ -1,0 +1,38 @@
+{
+    "name": "drupal/aggregator",
+    "description": "Ingest RSS feeds into your Drupal site",
+    "keywords": [],
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/aggregator",
+    "names": [
+        "drupal/aggregator"
+    ],
+    "versions": [
+        "2.2.6"
+    ],
+    "licenses": [
+        {
+            "name": "GNU General Public License v2.0 or later",
+            "osi": "GPL-2.0-or-later",
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html#licenseText"
+        }
+    ],
+    "source": {
+        "type": "git",
+        "url": "https://git.drupalcode.org/project/aggregator.git",
+        "reference": "2.2.6"
+    },
+    "dist": {
+        "type": "zip",
+        "url": "https://ftp.drupal.org/files/projects/aggregator-2.2.6.zip",
+        "reference": "2.2.6"
+    },
+    "path": "/var/www/html/modules/contrib/aggregator",
+    "support": {
+        "source": "https://git.drupalcode.org/project/aggregator"
+    },
+    "requires": {
+        "drupal/core": "^10.2 || ^11 || ^12",
+        "laminas/laminas-feed": "^2.17"
+    }
+}

@@ -1,0 +1,752 @@
+{
+    "core": "9.5.11",
+    "php": "8.2.35",
+    "database_version": "11.8.9-MariaDB-ubu2404-log",
+    "themes": {
+        "_core": {
+            "default_config_hash": "fOjer9hADYYnbCJVZMFZIIM1azTFWyg84ZkFDHfAbUg"
+        },
+        "admin": "claro",
+        "default": "zircon"
+    },
+    "modules": {
+        "admin_toolbar": {
+            "version": "3.6.2",
+            "core_version_requirement": "^9.5 || ^10 || ^11"
+        },
+        "admin_toolbar_links_access_filter": {
+            "version": "3.6.2",
+            "core_version_requirement": "^9.5 || ^10 || ^11"
+        },
+        "admin_toolbar_search": {
+            "version": "3.6.2",
+            "core_version_requirement": "^9.5 || ^10 || ^11"
+        },
+        "admin_toolbar_tools": {
+            "version": "3.6.2",
+            "core_version_requirement": "^9.5 || ^10 || ^11"
+        },
+        "aggregator": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "automated_cron": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "backup_migrate": {
+            "version": "5.1.0",
+            "core_version_requirement": "^9.5 || ^10 || ^11"
+        },
+        "block": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "block_content": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "breakpoint": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "captcha": {
+            "version": "8.x-1.16",
+            "core_version_requirement": "^9.5 || ^10 || ^11"
+        },
+        "ckeditor5": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "comment": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "config": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "contact": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "contextual": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "ctools": {
+            "version": "4.1.0",
+            "core_version_requirement": "^9.5 || ^10 || ^11"
+        },
+        "datetime": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "dynamic_page_cache": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "editor": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "entity_clone": {
+            "version": "2.1.0-beta1",
+            "core_version_requirement": "^9 || ^10 || ^11"
+        },
+        "field": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "field_ui": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "file": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "filter": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "fitvids": {
+            "version": "2.1.0",
+            "core_version_requirement": "^8 || ^9 || ^10 || ^11"
+        },
+        "fontawesome": {
+            "version": "8.x-2.26",
+            "core_version_requirement": "^9.4 || ^10"
+        },
+        "help": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "history": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "honeypot": {
+            "version": "2.1.4",
+            "core_version_requirement": "^9.2 || ^10"
+        },
+        "image": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "image_captcha": {
+            "version": "8.x-1.16",
+            "core_version_requirement": "^9.5 || ^10 || ^11"
+        },
+        "image_field_to_media": {
+            "version": "1.0.2",
+            "core_version_requirement": "^8 || ^9"
+        },
+        "link": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "media": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "media_library": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "menu_ui": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "mysql": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "node": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "options": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "page_cache": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "path": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "path_alias": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "recaptcha": {
+            "version": "8.x-3.2",
+            "core_version_requirement": "^8.9 || ^9 || ^10"
+        },
+        "redirect": {
+            "version": "8.x-1.11",
+            "core_version_requirement": "^9.2 || ^10 || ^11"
+        },
+        "responsive_image": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "rules": {
+            "version": "8.x-3.0-alpha9",
+            "core_version_requirement": "^9.1 || ^10"
+        },
+        "search": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "shortcut": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "similarterms": {
+            "version": "8.x-1.9",
+            "core_version_requirement": "^8 || ^9 || ^10 || ^11"
+        },
+        "system": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "taxonomy": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "tb_megamenu": {
+            "version": "8.x-1.9",
+            "core_version_requirement": "^8 || ^9 || ^10 || ^11"
+        },
+        "text": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "token": {
+            "version": "8.x-1.15",
+            "core_version_requirement": "^9.2 || ^10 || ^11"
+        },
+        "toolbar": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "tour": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "typed_data": {
+            "version": "2.0.0",
+            "core_version_requirement": "^9.1 || ^10"
+        },
+        "update": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "user": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "views_slideshow": {
+            "version": "5.0.1",
+            "core_version_requirement": "^9 || ^10 || ^11"
+        },
+        "views_slideshow_cycle": {
+            "version": "5.0.1",
+            "core_version_requirement": "^9 || ^10 || ^11"
+        },
+        "views_ui": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "webform": {
+            "version": "6.2.6",
+            "core_version_requirement": "^9.4 || ^10"
+        },
+        "webform_ui": {
+            "version": "6.2.6",
+            "core_version_requirement": "^9.4 || ^10"
+        },
+        "menu_link_content": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "pathauto": {
+            "version": "8.x-1.13",
+            "core_version_requirement": "^9.4 || ^10 || ^11"
+        },
+        "views": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        },
+        "standard": {
+            "version": "9.5.11",
+            "core_version_requirement": "9.5.11"
+        }
+    },
+    "installed_themes": {
+        "stable": {
+            "version": "9.5.11",
+            "base_theme": null,
+            "core_version_requirement": "9.5.11"
+        },
+        "classy": {
+            "version": "9.5.11",
+            "base_theme": "stable",
+            "core_version_requirement": "9.5.11"
+        },
+        "zircon": {
+            "version": "8.x-1.0-rc1",
+            "base_theme": "classy",
+            "core_version_requirement": "^8 || ^9"
+        },
+        "bootstrap5": {
+            "version": "2.0.10",
+            "base_theme": "classy",
+            "core_version_requirement": "^9.4"
+        },
+        "buriton5": {
+            "version": null,
+            "base_theme": "bootstrap5",
+            "core_version_requirement": "^8.9 || ^9"
+        },
+        "claro": {
+            "version": "9.5.11",
+            "base_theme": null,
+            "core_version_requirement": "9.5.11"
+        }
+    },
+    "counts": {
+        "node": 1894,
+        "users": 6,
+        "file_managed": 2035,
+        "taxonomy_term_data": 122,
+        "media": 897,
+        "webform_submission": 447,
+        "aggregator_feed": 2,
+        "aggregator_item": 2190
+    },
+    "fingerprints": {
+        "node": {
+            "fields": [
+                "nid",
+                "uuid",
+                "type"
+            ],
+            "sha256": "a37737d0c45bb2240ab9a772490ad2ad2940a3cd84ec6f4c2db98ef5e3c42862"
+        },
+        "users": {
+            "fields": [
+                "uid",
+                "uuid"
+            ],
+            "sha256": "336e84c5abc730763882047614324ec307a49326b4b00bae0142b0e7315391f1"
+        },
+        "file_managed": {
+            "fields": [
+                "fid",
+                "uuid",
+                "uri",
+                "filesize"
+            ],
+            "sha256": "5437e24d89c37a1ba58da89f9e7e66e89867bc092e7910649f436683dd1aaf1b"
+        },
+        "aggregator_feed": {
+            "fields": [
+                "fid",
+                "uuid",
+                "title",
+                "url",
+                "refresh"
+            ],
+            "sha256": "a39d098c6c29ae54a17baf2aa4bed1c0b606741b139a635276b75285364f2977"
+        },
+        "aggregator_item": {
+            "fields": [
+                "iid",
+                "fid",
+                "title",
+                "link",
+                "author",
+                "description",
+                "timestamp",
+                "guid"
+            ],
+            "sha256": "adbbf880f8563feb3aeb1ee90e822db7742bfefd008dff4f843e67dc7de64d41"
+        }
+    },
+    "legacy_password_accounts": 5,
+    "content_types": [
+        "event",
+        "files",
+        "news",
+        "page",
+        "parish_council",
+        "quickevent",
+        "webform"
+    ],
+    "editors": {
+        "basic_html": {
+            "editor": "ckeditor5",
+            "toolbar": [
+                "bold",
+                "italic",
+                "|",
+                "link",
+                "|",
+                "bulletedList",
+                "numberedList",
+                "|",
+                "blockQuote",
+                "drupalInsertImage",
+                "|",
+                "heading",
+                "|",
+                "sourceEditing",
+                "|",
+                "code"
+            ]
+        },
+        "full_html": {
+            "editor": "ckeditor5",
+            "toolbar": [
+                "bold",
+                "italic",
+                "strikethrough",
+                "superscript",
+                "subscript",
+                "removeFormat",
+                "|",
+                "link",
+                "|",
+                "bulletedList",
+                "numberedList",
+                "|",
+                "blockQuote",
+                "drupalMedia",
+                "insertTable",
+                "horizontalLine",
+                "|",
+                "heading",
+                "|",
+                "sourceEditing",
+                "|",
+                "code",
+                "codeBlock"
+            ]
+        },
+        "restricted_html": {
+            "editor": "ckeditor5",
+            "toolbar": [
+                "bold",
+                "italic",
+                "|",
+                "bulletedList",
+                "numberedList",
+                "|",
+                "blockQuote",
+                "code",
+                "sourceEditing"
+            ]
+        },
+        "webform_default": {
+            "editor": "ckeditor5",
+            "toolbar": [
+                "heading",
+                "|",
+                "bold",
+                "italic",
+                "subscript",
+                "superscript",
+                "|",
+                "specialCharacters",
+                "|",
+                "numberedList",
+                "bulletedList",
+                "|",
+                "link",
+                "|",
+                "indent",
+                "outdent",
+                "|",
+                "blockQuote",
+                "|",
+                "sourceEditing"
+            ]
+        }
+    },
+    "filters": {
+        "basic_html": [
+            "filter_html",
+            "filter_align",
+            "filter_caption",
+            "filter_html_image_secure",
+            "editor_file_reference"
+        ],
+        "code": [],
+        "filtered_html": [
+            "filter_html",
+            "filter_autop",
+            "filter_url",
+            "filter_htmlcorrector"
+        ],
+        "full_html": [
+            "filter_htmlcorrector",
+            "filter_autop",
+            "filter_url",
+            "filter_html",
+            "media_embed"
+        ],
+        "php_code": [],
+        "plain_text": [
+            "filter_html_escape",
+            "filter_url",
+            "filter_autop"
+        ],
+        "restricted_html": [
+            "filter_html",
+            "filter_autop",
+            "filter_url",
+            "filter_html_image_secure"
+        ],
+        "webform_default": []
+    },
+    "webforms": [
+        "contact",
+        "contact_buriton_village_hall",
+        "test_webform"
+    ],
+    "rules_config_names": [
+        "rules.reaction.new_comment",
+        "rules.settings"
+    ],
+    "views": {
+        "aggregator_rss_feed": {
+            "enabled": true,
+            "paths": [
+                "aggregator/rss"
+            ]
+        },
+        "aggregator_sources": {
+            "enabled": true,
+            "paths": [
+                "aggregator/opml",
+                "aggregator/sources"
+            ]
+        },
+        "archive": {
+            "enabled": false,
+            "paths": [
+                "archive"
+            ]
+        },
+        "block_content": {
+            "enabled": true,
+            "paths": [
+                "admin/structure/block/block-content"
+            ]
+        },
+        "comment": {
+            "enabled": true,
+            "paths": [
+                "admin/content/comment",
+                "admin/content/comment/approval"
+            ]
+        },
+        "comments_recent": {
+            "enabled": true,
+            "paths": []
+        },
+        "content": {
+            "enabled": true,
+            "paths": [
+                "admin/content/node"
+            ]
+        },
+        "content_recent": {
+            "enabled": true,
+            "paths": []
+        },
+        "county_councillor_reports": {
+            "enabled": true,
+            "paths": [
+                "county-councillor-reports"
+            ]
+        },
+        "covid_19_news": {
+            "enabled": true,
+            "paths": []
+        },
+        "district_councillor_reports": {
+            "enabled": true,
+            "paths": [
+                "district-councillor-reports"
+            ]
+        },
+        "events": {
+            "enabled": true,
+            "paths": [
+                "events"
+            ]
+        },
+        "events_block": {
+            "enabled": true,
+            "paths": []
+        },
+        "files": {
+            "enabled": true,
+            "paths": [
+                "admin/content/files",
+                "admin/content/files/usage/%"
+            ]
+        },
+        "frontpage": {
+            "enabled": true,
+            "paths": [
+                "rss.xml",
+                "node"
+            ]
+        },
+        "glossary": {
+            "enabled": false,
+            "paths": [
+                "glossary"
+            ]
+        },
+        "home": {
+            "enabled": true,
+            "paths": [
+                "home",
+                "news"
+            ]
+        },
+        "media": {
+            "enabled": true,
+            "paths": [
+                "admin/content/media"
+            ]
+        },
+        "media_library": {
+            "enabled": true,
+            "paths": [
+                "admin/content/media-grid",
+                "admin/content/media-widget",
+                "admin/content/media-widget-table"
+            ]
+        },
+        "news": {
+            "enabled": true,
+            "paths": []
+        },
+        "news_block": {
+            "enabled": true,
+            "paths": []
+        },
+        "parish_council_agenda": {
+            "enabled": true,
+            "paths": [
+                "parish-council-agendas"
+            ]
+        },
+        "parish_council_annual_reports": {
+            "enabled": true,
+            "paths": [
+                "parish-council-annual-reports"
+            ]
+        },
+        "parish_council_finance": {
+            "enabled": true,
+            "paths": [
+                "parish-council-finances"
+            ]
+        },
+        "parish_council_financial_reports": {
+            "enabled": true,
+            "paths": [
+                "parish-council-financial-reports"
+            ]
+        },
+        "parish_council_minutes": {
+            "enabled": true,
+            "paths": [
+                "parish-council-minutes"
+            ]
+        },
+        "parish_council_national_park_reports": {
+            "enabled": true,
+            "paths": [
+                "national-park-reports"
+            ]
+        },
+        "parish_council_other_information": {
+            "enabled": true,
+            "paths": [
+                "parish-council-other-information"
+            ]
+        },
+        "parish_council_update_reports": {
+            "enabled": true,
+            "paths": [
+                "update-reports"
+            ]
+        },
+        "planning_committee_agenda": {
+            "enabled": true,
+            "paths": [
+                "planning-committee-agendas"
+            ]
+        },
+        "planning_committee_minutes": {
+            "enabled": true,
+            "paths": [
+                "planning-committee-minutes"
+            ]
+        },
+        "redirect": {
+            "enabled": true,
+            "paths": [
+                "admin/config/search/redirect"
+            ]
+        },
+        "slideshow": {
+            "enabled": true,
+            "paths": []
+        },
+        "taxonomy_term": {
+            "enabled": true,
+            "paths": [
+                "taxonomy/term/%/feed",
+                "taxonomy/term/%"
+            ]
+        },
+        "user_admin_people": {
+            "enabled": true,
+            "paths": [
+                "admin/people/list"
+            ]
+        },
+        "webform_submissions": {
+            "enabled": true,
+            "paths": []
+        },
+        "who_s_new": {
+            "enabled": true,
+            "paths": []
+        },
+        "who_s_online": {
+            "enabled": true,
+            "paths": []
+        },
+        "ww1_heritage_bank_stories": {
+            "enabled": true,
+            "paths": []
+        }
+    },
+    "active_config_count": 535,
+    "sync_config_count": 0,
+    "config_sync_directory": "sites/default/files/config_OK8gtUING6vNc4uAmikaGOd_TP4YupAeByChh-TyGpMh3t_TZCnbU4Uw1z4ClxbdprpONrPmtA/sync",
+    "private_file_path": "/var/www/html/private-files"
+}

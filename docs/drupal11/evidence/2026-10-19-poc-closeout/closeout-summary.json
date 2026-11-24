@@ -1,0 +1,28 @@
+{
+  "technical_poc_status": "complete at owner request; production rehearsal/workflow acceptance separate",
+  "core": "11.4.10",
+  "php": "8.4.18",
+  "counts": {
+    "node": 1880,
+    "users": 6,
+    "file_managed": 2018,
+    "taxonomy_term_data": 122,
+    "media": 891,
+    "webform_submission": 443,
+    "aggregator_feed": 2,
+    "aggregator_item": 2310
+  },
+  "active_config_count": 534,
+  "sync_config_count": 534,
+  "counts_match_preceding_tested_checkpoint": true,
+  "fingerprints_match_preceding_tested_checkpoint": true,
+  "legacy_password_accounts": 4,
+  "maintenance_mode": 0,
+  "status_errors": [],
+  "status_warnings": [
+    "configuration_files",
+    "deprecated_modules",
+    "deprecated_themes",
+    "enable_html5_validation"
+  ]
+}

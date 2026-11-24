@@ -1,0 +1,3 @@
+ [notice] Processing /var/www/html/themes/custom/zircon.
+ [notice] Processing /var/www/html/themes/custom/buriton5.
+Failed to run drush upgrade_status:analyze zircon buriton5: exit status 3

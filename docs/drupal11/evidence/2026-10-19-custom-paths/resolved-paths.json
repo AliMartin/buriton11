@@ -1,0 +1,6 @@
+{
+    "tb_megamenu": "modules\/custom\/tb_megamenu",
+    "bootstrap5": "themes\/custom\/bootstrap5",
+    "composer_tb_megamenu": "\/var\/www\/html\/modules\/custom\/tb_megamenu",
+    "composer_bootstrap5": "\/var\/www\/html\/themes\/custom\/bootstrap5"
+}

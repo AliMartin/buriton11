@@ -1,0 +1,967 @@
+{
+    "core": "11.4.13",
+    "status_report": 200,
+    "theme": "claro",
+    "tour_installed": false,
+    "obsolete_tour_libraries": [],
+    "libraries": [
+        "admin_toolbar/toolbar.tree.hoverintent",
+        "admin_toolbar_search/admin_toolbar_search.keyboard_shortcut",
+        "admin_toolbar_tools/toolbar.icon",
+        "claro/global-styling",
+        "contextual/drupal.contextual-toolbar",
+        "core/drupal.active-link",
+        "core/drupal.collapse",
+        "core/drupal.item-list",
+        "core/normalize",
+        "fitvids/fitvids",
+        "fitvids/init",
+        "fontawesome/fontawesome.webfonts",
+        "fontawesome/fontawesome.webfonts.shim",
+        "shortcut/claro.shortcut.backport",
+        "shortcut/drupal.shortcut",
+        "system/status.report",
+        "toolbar/toolbar.escapeAdmin",
+        "user/drupal.user.icons"
+    ],
+    "local_assets": [
+        {
+            "path": "/core/themes/claro/css/components/dropbutton-noscript.css",
+            "status": 200,
+            "bytes": 428,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/views-ui-noscript.css",
+            "status": 200,
+            "bytes": 338,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/assets/vendor/normalize-css/normalize.css",
+            "status": 200,
+            "bytes": 6138,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/assets/vendor/jquery.ui/themes/base/core.css",
+            "status": 200,
+            "bytes": 1532,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/assets/vendor/jquery.ui/themes/base/autocomplete.css",
+            "status": 200,
+            "bytes": 319,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/assets/vendor/jquery.ui/themes/base/menu.css",
+            "status": 200,
+            "bytes": 989,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/autocomplete-loading.module.css",
+            "status": 200,
+            "bytes": 4375,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/modules/system/css/components/align.module.css",
+            "status": 200,
+            "bytes": 484,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/modules/system/css/components/container-inline.module.css",
+            "status": 200,
+            "bytes": 275,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/modules/system/css/components/clearfix.module.css",
+            "status": 200,
+            "bytes": 307,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/modules/system/css/components/hidden.module.css",
+            "status": 200,
+            "bytes": 1366,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/modules/system/css/components/js.module.css",
+            "status": 200,
+            "bytes": 662,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/misc/components/progress.module.css",
+            "status": 200,
+            "bytes": 825,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/ajax-progress.module.css",
+            "status": 200,
+            "bytes": 2608,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/toolbar.module.css",
+            "status": 200,
+            "bytes": 8021,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/modules/contextual/css/contextual.module.css",
+            "status": 200,
+            "bytes": 318,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/modules/contextual/css/contextual.toolbar.css",
+            "status": 200,
+            "bytes": 671,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/misc/components/item-list.module.css",
+            "status": 200,
+            "bytes": 287,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/state/toolbar.menu.css",
+            "status": 200,
+            "bytes": 2757,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/theme/toolbar.theme.css",
+            "status": 200,
+            "bytes": 5210,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/theme/toolbar.icons.theme.css",
+            "status": 200,
+            "bytes": 26819,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/modules/contrib/admin_toolbar/css/admin.toolbar.css",
+            "status": 200,
+            "bytes": 3774,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/modules/contrib/admin_toolbar/admin_toolbar_search/css/admin_toolbar_search.css",
+            "status": 200,
+            "bytes": 3800,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/modules/contrib/admin_toolbar/admin_toolbar_tools/css/admin_toolbar_tools.css",
+            "status": 200,
+            "bytes": 1076,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/modules/contextual/css/contextual.theme.css",
+            "status": 200,
+            "bytes": 2312,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/modules/contextual/css/contextual.icons.theme.css",
+            "status": 200,
+            "bytes": 3399,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/modules/shortcut/css/backport-themes/claro/shortcut.css",
+            "status": 200,
+            "bytes": 3619,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/modules/shortcut/css/shortcut.theme.css",
+            "status": 200,
+            "bytes": 1297,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/modules/shortcut/css/shortcut.icons.theme.css",
+            "status": 200,
+            "bytes": 17093,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/modules/user/css/user.icons.admin.css",
+            "status": 200,
+            "bytes": 1648,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/base/variables.css",
+            "status": 200,
+            "bytes": 11903,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/base/elements.css",
+            "status": 200,
+            "bytes": 4011,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/base/typography.css",
+            "status": 200,
+            "bytes": 617,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/base/print.css",
+            "status": 200,
+            "bytes": 1720,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/layout/system-admin--layout.css",
+            "status": 200,
+            "bytes": 2066,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/layout/breadcrumb.css",
+            "status": 200,
+            "bytes": 246,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/layout/local-actions.css",
+            "status": 200,
+            "bytes": 963,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/layout/layout.css",
+            "status": 200,
+            "bytes": 441,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/system-admin--admin-list.css",
+            "status": 200,
+            "bytes": 1783,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/system-admin--links.css",
+            "status": 200,
+            "bytes": 581,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/system-admin--modules.css",
+            "status": 200,
+            "bytes": 4887,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/system-admin--panel.css",
+            "status": 200,
+            "bytes": 603,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/jquery.ui/theme.css",
+            "status": 200,
+            "bytes": 15888,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/progress.css",
+            "status": 200,
+            "bytes": 2360,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/layout/card-list.css",
+            "status": 200,
+            "bytes": 3877,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/card.css",
+            "status": 200,
+            "bytes": 3363,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/classy/components/container-inline.css",
+            "status": 200,
+            "bytes": 481,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/classy/components/exposed-filters.css",
+            "status": 200,
+            "bytes": 905,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/classy/components/field.css",
+            "status": 200,
+            "bytes": 526,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/classy/components/icons.css",
+            "status": 200,
+            "bytes": 427,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/classy/components/inline-form.css",
+            "status": 200,
+            "bytes": 741,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/classy/components/link.css",
+            "status": 200,
+            "bytes": 217,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/classy/components/links.css",
+            "status": 200,
+            "bytes": 343,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/classy/components/menu.css",
+            "status": 200,
+            "bytes": 681,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/classy/components/more-link.css",
+            "status": 200,
+            "bytes": 171,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/classy/components/textarea.css",
+            "status": 200,
+            "bytes": 169,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/classy/components/ui-dialog.css",
+            "status": 200,
+            "bytes": 199,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/accordion.css",
+            "status": 200,
+            "bytes": 1508,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/action-link.css",
+            "status": 200,
+            "bytes": 34542,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/content-header.css",
+            "status": 200,
+            "bytes": 318,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/ckeditor5.css",
+            "status": 200,
+            "bytes": 203,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/container-inline.css",
+            "status": 200,
+            "bytes": 309,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/container-inline.module.css",
+            "status": 200,
+            "bytes": 374,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/breadcrumb.css",
+            "status": 200,
+            "bytes": 1480,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/button.css",
+            "status": 200,
+            "bytes": 3942,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/details.css",
+            "status": 200,
+            "bytes": 12935,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/divider.css",
+            "status": 200,
+            "bytes": 234,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/messages.css",
+            "status": 200,
+            "bytes": 3419,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/entity-meta.css",
+            "status": 200,
+            "bytes": 1883,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/fieldset.css",
+            "status": 200,
+            "bytes": 2984,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/form.css",
+            "status": 200,
+            "bytes": 4590,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/form--checkbox-radio.css",
+            "status": 200,
+            "bytes": 5786,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/form--field-multiple.css",
+            "status": 200,
+            "bytes": 324,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/form--managed-file.css",
+            "status": 200,
+            "bytes": 5003,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/form--text.css",
+            "status": 200,
+            "bytes": 4010,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/form--select.css",
+            "status": 200,
+            "bytes": 1694,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/help.css",
+            "status": 200,
+            "bytes": 237,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/image-preview.css",
+            "status": 200,
+            "bytes": 1230,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/menus-and-lists.css",
+            "status": 200,
+            "bytes": 832,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/modules-page.css",
+            "status": 200,
+            "bytes": 1280,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/node.css",
+            "status": 200,
+            "bytes": 180,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/page-title.css",
+            "status": 200,
+            "bytes": 677,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/pager.css",
+            "status": 200,
+            "bytes": 4593,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/skip-link.css",
+            "status": 200,
+            "bytes": 1072,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/tables.css",
+            "status": 200,
+            "bytes": 3023,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/table--file-multiple-widget.css",
+            "status": 200,
+            "bytes": 2105,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/search-admin-settings.css",
+            "status": 200,
+            "bytes": 383,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/tableselect.css",
+            "status": 200,
+            "bytes": 2581,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/tabs.css",
+            "status": 200,
+            "bytes": 7042,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/classy/components/item-list.css",
+            "status": 200,
+            "bytes": 546,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/system-status-report-general-info.css",
+            "status": 200,
+            "bytes": 13961,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/system-status-report.css",
+            "status": 200,
+            "bytes": 7569,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/system-status-report-counters.css",
+            "status": 200,
+            "bytes": 691,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/system-status-counter.css",
+            "status": 200,
+            "bytes": 4180,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/theme/colors.css",
+            "status": 200,
+            "bytes": 366,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/misc/touchevents-test.js",
+            "status": 200,
+            "bytes": 261,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/modules/toolbar/js/toolbar.anti-flicker.js",
+            "status": 200,
+            "bytes": 2643,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/jquery/jquery.min.js",
+            "status": 200,
+            "bytes": 78748,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/underscore/underscore-min.js",
+            "status": 200,
+            "bytes": 19668,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/once/once.min.js",
+            "status": 200,
+            "bytes": 1357,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/backbone/backbone-min.js",
+            "status": 200,
+            "bytes": 25690,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/misc/drupalSettingsLoader.js",
+            "status": 200,
+            "bytes": 691,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/misc/drupal.js",
+            "status": 200,
+            "bytes": 20512,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/misc/drupal.init.js",
+            "status": 200,
+            "bytes": 960,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/jquery.ui/ui/version-min.js",
+            "status": 200,
+            "bytes": 206,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/jquery.ui/ui/data-min.js",
+            "status": 200,
+            "bytes": 465,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/jquery.ui/ui/disable-selection-min.js",
+            "status": 200,
+            "bytes": 653,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/jquery.ui/ui/jquery-patch-min.js",
+            "status": 200,
+            "bytes": 621,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/jquery.ui/ui/scroll-parent-min.js",
+            "status": 200,
+            "bytes": 724,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/jquery.ui/ui/unique-id-min.js",
+            "status": 200,
+            "bytes": 590,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/jquery.ui/ui/focusable-min.js",
+            "status": 200,
+            "bytes": 906,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/jquery.ui/ui/keycode-min.js",
+            "status": 200,
+            "bytes": 526,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/jquery.ui/ui/plugin-min.js",
+            "status": 200,
+            "bytes": 500,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/jquery.ui/ui/widget-min.js",
+            "status": 200,
+            "bytes": 8682,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/jquery.ui/ui/labels-min.js",
+            "status": 200,
+            "bytes": 722,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/jquery.ui/ui/widgets/autocomplete-min.js",
+            "status": 200,
+            "bytes": 8401,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/jquery.ui/ui/widgets/menu-min.js",
+            "status": 200,
+            "bytes": 10213,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/modules/contextual/js/contextual.js",
+            "status": 200,
+            "bytes": 16916,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/tabbable/index.umd.min.js",
+            "status": 200,
+            "bytes": 6198,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/misc/autocomplete.js",
+            "status": 200,
+            "bytes": 8590,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/misc/progress.js",
+            "status": 200,
+            "bytes": 5269,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/loadjs/loadjs.min.js",
+            "status": 200,
+            "bytes": 1830,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/misc/debounce.js",
+            "status": 200,
+            "bytes": 1488,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/misc/announce.js",
+            "status": 200,
+            "bytes": 4306,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/misc/message.js",
+            "status": 200,
+            "bytes": 8417,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/themes/claro/js/messages.js",
+            "status": 200,
+            "bytes": 1369,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/misc/ajax.js",
+            "status": 200,
+            "bytes": 66212,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/themes/claro/js/ajax.js",
+            "status": 200,
+            "bytes": 1381,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/misc/displace.js",
+            "status": 200,
+            "bytes": 7915,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/modules/toolbar/js/toolbar.menu.js",
+            "status": 200,
+            "bytes": 8490,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/modules/toolbar/js/toolbar.js",
+            "status": 200,
+            "bytes": 13649,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/modules/toolbar/js/models/MenuModel.js",
+            "status": 200,
+            "bytes": 574,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/modules/toolbar/js/models/ToolbarModel.js",
+            "status": 200,
+            "bytes": 4227,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/modules/toolbar/js/views/BodyVisualView.js",
+            "status": 200,
+            "bytes": 1440,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/modules/toolbar/js/views/MenuVisualView.js",
+            "status": 200,
+            "bytes": 1665,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/modules/toolbar/js/views/ToolbarAuralView.js",
+            "status": 200,
+            "bytes": 2405,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/modules/toolbar/js/views/ToolbarVisualView.js",
+            "status": 200,
+            "bytes": 14568,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/modules/contrib/admin_toolbar/js/admin_toolbar.js",
+            "status": 200,
+            "bytes": 2371,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/modules/contrib/admin_toolbar/js/jquery.hoverIntent.js",
+            "status": 200,
+            "bytes": 7225,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/modules/contrib/admin_toolbar/js/admin_toolbar.hoverintent.js",
+            "status": 200,
+            "bytes": 1356,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/misc/position.js",
+            "status": 200,
+            "bytes": 22555,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/themes/claro/js/autocomplete.js",
+            "status": 200,
+            "bytes": 1194,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/modules/contrib/admin_toolbar/admin_toolbar_search/js/admin_toolbar_search.js",
+            "status": 200,
+            "bytes": 11982,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/modules/contrib/admin_toolbar/admin_toolbar_search/js/admin_toolbar_search.keyboard_shortcut.js",
+            "status": 200,
+            "bytes": 2741,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/misc/tabbingmanager.js",
+            "status": 200,
+            "bytes": 13704,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/modules/contextual/js/toolbar/contextualToolbarModelView.js",
+            "status": 200,
+            "bytes": 5142,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/modules/contextual/js/contextual.toolbar.js",
+            "status": 200,
+            "bytes": 1745,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/misc/active-link.js",
+            "status": 200,
+            "bytes": 2765,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/misc/form.js",
+            "status": 200,
+            "bytes": 10894,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/misc/details-summarized-content.js",
+            "status": 200,
+            "bytes": 2949,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/misc/details-aria.js",
+            "status": 200,
+            "bytes": 713,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/misc/details.js",
+            "status": 200,
+            "bytes": 1304,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/themes/claro/js/details.js",
+            "status": 200,
+            "bytes": 1434,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/libraries/fitvids/jquery.fitvids.js",
+            "status": 200,
+            "bytes": 2698,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/modules/contrib/fitvids/js/init-fitvids.js",
+            "status": 200,
+            "bytes": 525,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/modules/toolbar/js/escapeAdmin.js",
+            "status": 200,
+            "bytes": 1440,
+            "content_type": "text/javascript"
+        }
+    ],
+    "warnings": [],
+    "limit": "Fresh server-rendered page and HTTP assets; an existing browser tab/cache is not inspected."
+}

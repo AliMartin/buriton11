@@ -1,0 +1,81 @@
+{
+    "core": "11.4.10",
+    "status_report": 200,
+    "theme": "claro",
+    "tour_installed": false,
+    "obsolete_tour_libraries": [],
+    "libraries": [
+        "admin_toolbar/toolbar.tree",
+        "admin_toolbar/toolbar.tree.hoverintent",
+        "admin_toolbar_search/admin_toolbar_search",
+        "admin_toolbar_search/admin_toolbar_search.keyboard_shortcut",
+        "admin_toolbar_tools/toolbar.icon",
+        "claro/global-styling",
+        "contextual/drupal.contextual-toolbar",
+        "core/drupal.active-link",
+        "core/drupal.collapse",
+        "core/drupal.item-list",
+        "core/normalize",
+        "fitvids/fitvids",
+        "fitvids/init",
+        "fontawesome/fontawesome.webfonts",
+        "fontawesome/fontawesome.webfonts.shim",
+        "shortcut/claro.shortcut.backport",
+        "shortcut/drupal.shortcut",
+        "system/status.report",
+        "toolbar/toolbar.escapeAdmin",
+        "user/drupal.user.icons"
+    ],
+    "local_assets": [
+        {
+            "path": "/core/themes/claro/css/components/dropbutton-noscript.css",
+            "status": 200,
+            "bytes": 428,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/core/themes/claro/css/components/views-ui-noscript.css",
+            "status": 200,
+            "bytes": 338,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/sites/default/files/css/css_bAVrF7uEcYpvg5K5LOL4RAikMpfrVR81xVEs6--Wyww.css",
+            "status": 200,
+            "bytes": 56159,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/sites/default/files/css/css_vFhYcU0lIWFR95MQ1QlHbg8xLrX1QuUxWP1YjhFK6pU.css",
+            "status": 200,
+            "bytes": 22410,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/sites/default/files/css/css_SWQ-tmFYvDtM5ngMghqJd3zuSMttczPzCjlpUmIICt8.css",
+            "status": 200,
+            "bytes": 152713,
+            "content_type": "text/css"
+        },
+        {
+            "path": "/sites/default/files/js/js_csBqig3ciKle-G8r5Yd0NuAuQRHBl0VmqxNUVHVlJLA.js",
+            "status": 200,
+            "bytes": 1904,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/core/assets/vendor/jquery/jquery.min.js",
+            "status": 200,
+            "bytes": 78748,
+            "content_type": "text/javascript"
+        },
+        {
+            "path": "/sites/default/files/js/js_c-I1AeA0qNA-ZQ0hoN12RxRI19fZ7OTV6vKBRNtT9To.js",
+            "status": 200,
+            "bytes": 186342,
+            "content_type": "text/javascript"
+        }
+    ],
+    "warnings": [],
+    "limit": "Fresh server-rendered page and HTTP assets; an existing browser tab/cache is not inspected."
+}

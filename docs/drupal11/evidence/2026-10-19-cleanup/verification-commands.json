@@ -1,0 +1,144 @@
+[
+  {
+    "file": "after-runtime.json",
+    "command": [
+      "ddev",
+      "drush",
+      "status",
+      "--fields=drupal-version,php-version,drush-version,bootstrap,db-status,theme,admin-theme",
+      "--format=json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "after-baseline.json",
+    "command": [
+      "ddev",
+      "drush",
+      "php:script",
+      "docs/drupal11/check-baseline.php"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "after-config-status.json",
+    "command": [
+      "ddev",
+      "drush",
+      "config:status",
+      "--format=json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "after-updates.txt",
+    "command": [
+      "ddev",
+      "drush",
+      "updatedb:status"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "composer-validation.txt",
+    "command": [
+      "ddev",
+      "composer",
+      "validate",
+      "--no-check-publish"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "composer-platform.txt",
+    "command": [
+      "ddev",
+      "composer",
+      "check-platform-reqs"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "composer-audit.json",
+    "command": [
+      "ddev",
+      "composer",
+      "audit",
+      "--format=json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "composer-install-dry-run.txt",
+    "command": [
+      "ddev",
+      "composer",
+      "install",
+      "--dry-run",
+      "--no-interaction"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "libraries.json",
+    "command": [
+      "ddev",
+      "drush",
+      "php:script",
+      "tools/check-libraries.php"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "after-requirements.json",
+    "command": [
+      "ddev",
+      "drush",
+      "core:requirements",
+      "--format=json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "theme-zircon.json",
+    "command": [
+      "ddev",
+      "exec",
+      "env",
+      "THEME_QA_THEME=zircon",
+      "THEME_QA_BASE_URL=https://buriton11.ddev.site",
+      "vendor/bin/drush",
+      "php:script",
+      "tools/check-theme.php"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "theme-buriton5.json",
+    "command": [
+      "ddev",
+      "exec",
+      "env",
+      "THEME_QA_THEME=buriton5",
+      "THEME_QA_BASE_URL=https://buriton11.ddev.site",
+      "vendor/bin/drush",
+      "php:script",
+      "tools/check-theme.php"
+    ],
+    "exit_code": 0
+  },
+  {
+    "file": "theme-claro.json",
+    "command": [
+      "ddev",
+      "exec",
+      "env",
+      "THEME_QA_THEME=claro",
+      "THEME_QA_BASE_URL=https://buriton11.ddev.site",
+      "vendor/bin/drush",
+      "php:script",
+      "tools/check-theme.php"
+    ],
+    "exit_code": 0
+  }
+]

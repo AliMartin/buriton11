@@ -1,0 +1,55 @@
+{
+    "name": "drupal/ckeditor_iframe",
+    "description": "Adds the iFrame dialog plugin to CKEditor.",
+    "keywords": [
+        "Drupal"
+    ],
+    "type": "drupal-module",
+    "homepage": "http://drupal.org/project/ckeditor_iframe",
+    "names": [
+        "drupal/ckeditor_iframe"
+    ],
+    "versions": [
+        "3.1.2",
+        "3.1.1",
+        "3.0.x-dev",
+        "3.0.0-beta3",
+        "3.0.0-beta2",
+        "3.0.0-beta1",
+        "3.0.0-alpha1",
+        "2.x-dev",
+        "2.2.0",
+        "2.1.0",
+        "2.0.0",
+        "2.0.0-beta1",
+        "dev-3.0.x",
+        "dev-2.x"
+    ],
+    "licenses": [
+        {
+            "name": "GNU General Public License v2.0 or later",
+            "osi": "GPL-2.0+",
+            "url": "https://spdx.org/licenses/GPL-2.0+.html#licenseText"
+        }
+    ],
+    "source": {
+        "type": "git",
+        "url": "https://git.drupalcode.org/project/ckeditor_iframe.git",
+        "reference": "8.x-2.2"
+    },
+    "dist": {
+        "type": "zip",
+        "url": "https://ftp.drupal.org/files/projects/ckeditor_iframe-8.x-2.2.zip",
+        "reference": "8.x-2.2"
+    },
+    "path": "/var/www/html/modules/contrib/ckeditor_iframe",
+    "support": {
+        "source": "https://git.drupalcode.org/project/ckeditor_iframe",
+        "issues": "https://drupal.org/project/issues/ckeditor_iframe"
+    },
+    "requires": {
+        "drupal/ckeditor": "*",
+        "drupal/fakeobjects": "^1.0",
+        "drupal/core": "^8 || ^9 || ^10"
+    }
+}

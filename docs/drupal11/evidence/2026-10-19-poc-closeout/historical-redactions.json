@@ -1,0 +1,9 @@
+{
+  "action_token_links_redacted_at_closeout": [
+    "docs/drupal11/evidence/requirements.json",
+    "docs/drupal11/evidence/2026-10-19-contrib-updates/after-requirements.json",
+    "docs/drupal11/evidence/2026-10-19-cleanup/after-requirements.json"
+  ],
+  "working_site_configuration_changed": false,
+  "historical_checksum_note": "Earlier manifests represent their capture dates; final source manifest hashes the redacted copies."
+}

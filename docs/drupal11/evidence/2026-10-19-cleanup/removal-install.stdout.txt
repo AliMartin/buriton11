@@ -1,0 +1,50 @@
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 0 installs, 0 updates, 12 removals
+  - Removing drupal-ckeditor-libraries-group/fakeobjects (4.22.1)
+  - Removing drupal-ckeditor-libraries-group/iframe (4.22.1)
+  - Removing drupal/adminimal_admin_toolbar (2.0.0)
+  - Removing drupal/adminimal_theme (1.7.0)
+  - Removing drupal/ckeditor (1.0.2)
+  - Removing drupal/ckeditor_iframe (2.2.0)
+  - Removing drupal/fakeobjects (1.3.0)
+  - Removing drupal/google_analytics (4.0.3)
+  - Removing drupal/httpswww (2.1.3)
+  - Removing drupal/image_field_to_media (2.0.2)
+  - Removing drupal/seven (1.0.0)
+  - Removing drupal/taxonomy_menu (3.9.0)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 0 installs, 0 updates, 12 removals
+  - Removing drupal/taxonomy_menu (3.9.0)
+  - Removing drupal/seven (1.0.0)
+  - Removing drupal/image_field_to_media (2.0.2)
+  - Removing drupal/httpswww (2.1.3)
+  - Removing drupal/google_analytics (4.0.3)
+  - Removing drupal/fakeobjects (1.3.0)
+  - Removing drupal/ckeditor_iframe (2.2.0)
+  - Removing drupal/ckeditor (1.0.2)
+  - Removing drupal/adminimal_theme (1.7.0)
+  - Removing drupal/adminimal_admin_toolbar (2.0.0)
+  - Removing drupal-ckeditor-libraries-group/iframe (4.22.1)
+  - Removing drupal-ckeditor-libraries-group/fakeobjects (4.22.1)
+ 0/2 [>---------------------------]   0%
+ 2/2 [============================] 100%
+Generating autoload files
+Hardening vendor directory with .htaccess and web.config files.
+50 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+Cleaning installed packages.
+No security vulnerability advisories found.
+Deleting /var/www/html/modules/contrib/taxonomy_menu - deleted
+Deleting /var/www/html/themes/contrib/seven - deleted
+Deleting /var/www/html/modules/contrib/image_field_to_media - deleted
+Deleting /var/www/html/modules/contrib/httpswww - deleted
+Deleting /var/www/html/modules/contrib/google_analytics - deleted
+Deleting /var/www/html/modules/contrib/fakeobjects - deleted
+Deleting /var/www/html/modules/contrib/ckeditor_iframe - deleted
+Deleting /var/www/html/modules/contrib/ckeditor - deleted
+Deleting /var/www/html/themes/contrib/adminimal_theme - deleted
+Deleting /var/www/html/modules/contrib/adminimal_admin_toolbar - deleted
+Deleting /var/www/html/libraries/iframe - deleted
+Deleting /var/www/html/libraries/fakeobjects - deleted

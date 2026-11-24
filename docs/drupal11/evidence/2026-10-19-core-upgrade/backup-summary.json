@@ -1,0 +1,16 @@
+{
+  "source_archive_bytes": 1825955840,
+  "archived_regular_files": 6289,
+  "includes": [
+    "source",
+    "settings",
+    "public files",
+    "private files"
+  ],
+  "excludes_rebuildable_dependencies": true,
+  "archive_readback": "passed",
+  "private_location_note": "Ignored tmp/core11-backup-location.txt; archive is outside web root",
+  "selected_source_settings_uploads_restore": "passed byte comparisons",
+  "restored_sample_files": 7,
+  "database_restore": "imported into separate verification database; active site database untouched"
+}

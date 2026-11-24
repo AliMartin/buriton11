@@ -1,0 +1,87 @@
+{
+    "core": "11.4.13",
+    "routes": {
+        "/": {
+            "status": 200,
+            "bytes": 44785,
+            "content_type": "text/html; charset=utf-8"
+        },
+        "/user/login": {
+            "status": 200,
+            "bytes": 28974,
+            "content_type": "text/html; charset=utf-8"
+        },
+        "/user/password": {
+            "status": 200,
+            "bytes": 30674,
+            "content_type": "text/html; charset=utf-8"
+        },
+        "/search/node?keys=Buriton": {
+            "status": 200,
+            "bytes": 40564,
+            "content_type": "text/html; charset=utf-8"
+        },
+        "/events": {
+            "status": 200,
+            "bytes": 36524,
+            "content_type": "text/html; charset=utf-8"
+        },
+        "/county-councillor-reports": {
+            "status": 200,
+            "bytes": 30229,
+            "content_type": "text/html; charset=utf-8"
+        },
+        "/aggregator/rss": {
+            "status": 200,
+            "bytes": 2165,
+            "content_type": "application/rss+xml; charset=utf-8"
+        },
+        "/parish-council-minutes": {
+            "status": 200,
+            "bytes": 71772,
+            "content_type": "text/html; charset=utf-8"
+        },
+        "/parish-council-agendas": {
+            "status": 200,
+            "bytes": 71287,
+            "content_type": "text/html; charset=utf-8"
+        },
+        "/parish-council-finances": {
+            "status": 200,
+            "bytes": 29001,
+            "content_type": "text/html; charset=utf-8"
+        },
+        "/parish-council-financial-reports": {
+            "status": 200,
+            "bytes": 37324,
+            "content_type": "text/html; charset=utf-8"
+        },
+        "/planning-committee-minutes": {
+            "status": 200,
+            "bytes": 71422,
+            "content_type": "text/html; charset=utf-8"
+        },
+        "/district-councillor-reports": {
+            "status": 200,
+            "bytes": 29702,
+            "content_type": "text/html; charset=utf-8"
+        },
+        "/rss.xml": {
+            "status": 200,
+            "bytes": 11263,
+            "content_type": "application/rss+xml; charset=utf-8"
+        },
+        "/form/contact": {
+            "status": 200,
+            "bytes": 34976,
+            "content_type": "text/html; charset=utf-8"
+        },
+        "/form/contact-buriton-village-hall": {
+            "status": 200,
+            "bytes": 35190,
+            "content_type": "text/html; charset=utf-8"
+        }
+    },
+    "method": "anonymous GET only",
+    "browser_execution": false
+}

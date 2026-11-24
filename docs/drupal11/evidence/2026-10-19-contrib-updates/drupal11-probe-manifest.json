@@ -1,0 +1,47 @@
+{
+    "name": "buriton/contrib-compatibility-probe",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "php": "8.4.*",
+        "drupal/core-recommended": "11.4.10",
+        "drush/drush": "13.8.0",
+        "drupal/admin_toolbar": "3.6.3",
+        "drupal/aggregator": "2.2.6",
+        "drupal/backup_migrate": "5.1.5",
+        "drupal/bootstrap5": "4.0.8",
+        "drupal/captcha": "2.0.10",
+        "drupal/classy": "2.0.3",
+        "drupal/ctools": "4.1.1",
+        "drupal/entity_clone": "2.2.0-beta1",
+        "drupal/fitvids": "2.1.0",
+        "drupal/fontawesome": "3.0.0",
+        "drupal/honeypot": "2.2.2",
+        "drupal/pathauto": "1.15.0",
+        "drupal/recaptcha": "3.5.0",
+        "drupal/redirect": "1.13.0",
+        "drupal/rules": "4.0.1",
+        "drupal/similarterms": "2.0.0",
+        "drupal/stable": "2.1.0",
+        "drupal/tb_megamenu": "1.10.0",
+        "drupal/token": "1.17.0",
+        "drupal/typed_data": "2.1.1",
+        "drupal/upgrade_status": "4.3.10",
+        "drupal/views_slideshow": "5.0.1",
+        "drupal/webform": "6.3.1"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": false,
+        "platform": {
+            "php": "8.4.18"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+  "command": [
+    "ddev",
+    "composer",
+    "update",
+    "drupal/admin_toolbar",
+    "drupal/aggregator",
+    "drupal/backup_migrate",
+    "drupal/captcha",
+    "drupal/ctools",
+    "drupal/entity_clone",
+    "drupal/fitvids",
+    "drupal/fontawesome",
+    "drupal/honeypot",
+    "drupal/pathauto",
+    "drupal/recaptcha",
+    "drupal/redirect",
+    "drupal/rules",
+    "drupal/similarterms",
+    "drupal/tb_megamenu",
+    "drupal/token",
+    "drupal/typed_data",
+    "drupal/upgrade_status",
+    "drupal/views_slideshow",
+    "drupal/webform",
+    "--with-all-dependencies",
+    "--minimal-changes",
+    "--no-interaction"
+  ],
+  "dry_run_exit": 0
+}

@@ -1,0 +1,4 @@
+PHP Deprecated:  Consolidation\Config\Config::__construct(): Implicitly marking parameter $data as nullable is deprecated, the explicit nullable type must be used instead in /var/www/html/vendor/consolidation/config/src/Config.php on line 33
+PHP Deprecated:  Robo\Common\IO::restoreState(): Implicitly marking parameter $input as nullable is deprecated, the explicit nullable type must be used instead in /var/www/html/vendor/consolidation/robo/src/Common/IO.php on line 48
+PHP Deprecated:  Robo\Common\IO::restoreState(): Implicitly marking parameter $output as nullable is deprecated, the explicit nullable type must be used instead in /var/www/html/vendor/consolidation/robo/src/Common/IO.php on line 48
+PHP Deprecated:  Robo\Common\IO::restoreState(): Implicitly marking parameter $io as nullable is deprecated, the explicit nullable type must be used instead in /var/www/html/vendor/consolidation/robo/src/Common/IO.php on line 48

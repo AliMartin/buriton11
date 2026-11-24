@@ -1,0 +1,38 @@
+{
+    "name": "drupal/views_slideshow",
+    "description": "Describes relationships between entities.",
+    "keywords": [],
+    "type": "drupal-module",
+    "homepage": "https://www.drupal.org/project/views_slideshow",
+    "names": [
+        "drupal/views_slideshow"
+    ],
+    "versions": [
+        "5.0.1"
+    ],
+    "licenses": [
+        {
+            "name": "GNU General Public License v2.0 or later",
+            "osi": "GPL-2.0-or-later",
+            "url": "https://spdx.org/licenses/GPL-2.0-or-later.html#licenseText"
+        }
+    ],
+    "source": {
+        "type": "git",
+        "url": "https://git.drupalcode.org/project/views_slideshow.git",
+        "reference": "5.0.1"
+    },
+    "dist": {
+        "type": "zip",
+        "url": "https://ftp.drupal.org/files/projects/views_slideshow-5.0.1.zip",
+        "reference": "5.0.1"
+    },
+    "path": "/var/www/html/modules/contrib/views_slideshow",
+    "support": {
+        "source": "https://git.drupalcode.org/project/views_slideshow",
+        "issues": "https://www.drupal.org/project/issues/views_slideshow"
+    },
+    "requires": {
+        "drupal/core": "^9 || ^10 || ^11"
+    }
+}

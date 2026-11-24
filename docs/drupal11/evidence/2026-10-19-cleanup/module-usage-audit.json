@@ -1,0 +1,76 @@
+{
+    "dependent_config": {
+        "tour": [
+            "core.entity_view_mode.tour.token"
+        ]
+    },
+    "captcha_default": "recaptcha/reCAPTCHA",
+    "captcha_points": {
+        "captcha.captcha_point.comment_comment_form": {
+            "status": true,
+            "type": "recaptcha/reCAPTCHA"
+        },
+        "captcha.captcha_point.contact_message_feedback_form": {
+            "status": false,
+            "type": "default"
+        },
+        "captcha.captcha_point.contact_message_personal_form": {
+            "status": false,
+            "type": "default"
+        },
+        "captcha.captcha_point.node_event_form": {
+            "status": false,
+            "type": "default"
+        },
+        "captcha.captcha_point.node_files_form": {
+            "status": false,
+            "type": "default"
+        },
+        "captcha.captcha_point.node_news_form": {
+            "status": false,
+            "type": "default"
+        },
+        "captcha.captcha_point.node_page_form": {
+            "status": false,
+            "type": "default"
+        },
+        "captcha.captcha_point.node_parish_council_form": {
+            "status": false,
+            "type": "default"
+        },
+        "captcha.captcha_point.node_quickevent_form": {
+            "status": false,
+            "type": "default"
+        },
+        "captcha.captcha_point.node_webform_form": {
+            "status": false,
+            "type": "default"
+        },
+        "captcha.captcha_point.user_login_form": {
+            "status": false,
+            "type": "default"
+        },
+        "captcha.captcha_point.user_pass": {
+            "status": false,
+            "type": "default"
+        },
+        "captcha.captcha_point.user_register_form": {
+            "status": false,
+            "type": "default"
+        },
+        "captcha.captcha_point.webform_submission_contact_buriton_village_hall_form": {
+            "status": true,
+            "type": "recaptcha/reCAPTCHA"
+        },
+        "captcha.captcha_point.webform_submission_contact_form": {
+            "status": true,
+            "type": "recaptcha/reCAPTCHA"
+        }
+    },
+    "tour_config": [
+        "tour.tour.honeypot",
+        "tour.tour.views-ui"
+    ],
+    "image_migration_hash_count": 544,
+    "uninstall_validation": []
+}

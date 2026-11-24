@@ -1,0 +1,30 @@
+  - Removing drupal/tb_megamenu (1.10.0)
+  - Removing drupal/bootstrap5 (4.0.8)
+ 0/1 [>---------------------------]   0%
+ 1/1 [============================] 100%
+    0 [>---------------------------]    0 [->--------------------------]
+ 0/2 [>---------------------------]   0%
+ 1/2 [==============>-------------]  50%
+ 2/2 [============================] 100%
+Cleaning installed packages.
+  - Removing drupal/tb_megamenu (1.10.0)
+  - Removing drupal/bootstrap5 (4.0.8)
+ 0/1 [>---------------------------]   0%
+ 1/1 [============================] 100%
+    0 [>---------------------------]    0 [->--------------------------]
+  - Installing drupal/bootstrap5 (4.0.8): Extracting archive
+  - Installing drupal/tb_megamenu (1.10.0): Extracting archive
+ 0/2 [>---------------------------]   0%
+ 1/2 [==============>-------------]  50%
+ 2/2 [============================] 100%
+Cleaning installed packages.Deleting /var/www/html/modules/custom/tb_megamenu - deleted
+Deleting /var/www/html/themes/custom/bootstrap5 - deleted
+  - Patching drupal/bootstrap5
+      - Found cached patch at /mnt/ddev-global-cache/composer/patches/e4dea352cdd5942981eafc74c8599f44ec621cf37570322ec5aec429d620f8af.patch
+  - Patching drupal/tb_megamenu
+      - Found cached patch at /mnt/ddev-global-cache/composer/patches/f98a35c0d9e4692b9f1df02fda68243b29c0665e028e8c57bcfef0d80c80567a.patch
+      - Found cached patch at /mnt/ddev-global-cache/composer/patches/1e8050dac19a07f8924be052eef0f82c816db1c02642341a5f5264409659a8a1.patch
+  * Homepage: https://www.drupal.org/project/drupal
+  * Support:
+    * docs: https://www.drupal.org/docs/user_guide/en/index.html
+    * chat: https://www.drupal.org/node/314178

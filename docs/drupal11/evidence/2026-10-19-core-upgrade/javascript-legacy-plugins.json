@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "jquery": "4.0.0",
+  "checks": [
+    "Cycle initialise/advance/destroy",
+    "TB block chooser response parsing/rendering",
+    "TB AJAX unlock",
+    "preview field safety"
+  ]
+}

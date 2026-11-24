@@ -1,0 +1,240 @@
+{
+    "captcha_wrong_response_counter": {
+        "title": "CAPTCHA",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": "Already 82132 blocked form submissions\n"
+    },
+    "configuration_files": {
+        "title": "Configuration files",
+        "severity": "Warning",
+        "sid": 1,
+        "description": " * The file /sites/default/settings.php/ is not protected from modifications\n   and poses a security risk. You must change the file's permissions to be\n   non-writable.\n * The file /sites/default/settings.local.php/ is not protected from\n   modifications and poses a security risk. You must change the file's\n   permissions to be non-writable.\n\n",
+        "value": "Protection disabled\n"
+    },
+    "coverage_core": {
+        "title": "Drupal core security coverage",
+        "severity": "Warning",
+        "sid": 1,
+        "description": "Update to a supported version soon to continue receiving security updates.  \nVisit the release cycle overview [1] for more information on supported  \nreleases.\n\n[1] https://www.drupal.org/core/release-cycle-overview\n",
+        "value": "Covered until 2026-Dec-09\n"
+    },
+    "cron": {
+        "title": "Cron maintenance tasks",
+        "severity": "Info",
+        "sid": -1,
+        "description": "(more information [1])Run cron [2]\n\n[1] https://buriton11.ddev.site/admin/config/system/cron\n[2] https://buriton11.ddev.site/admin/reports/status/run-cron?token=[redacted]\n",
+        "value": "Last run 1 hour 5 minutes ago\n"
+    },
+    "database_support_json": {
+        "title": "Database support for JSON",
+        "severity": "OK",
+        "sid": 0,
+        "description": "Is required in Drupal 10.0.\n",
+        "value": "Available\n"
+    },
+    "database_system": {
+        "title": "Database system",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": "MariaDB\n"
+    },
+    "database_system_version": {
+        "title": "Database system version",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": "11.8.6-MariaDB-ubu2404-log\n"
+    },
+    "drupal": {
+        "title": "Drupal",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": "10.6.19\n"
+    },
+    "entity_update": {
+        "title": "Entity/field definitions",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": "Up to date\n"
+    },
+    "file system": {
+        "title": "File system",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": "Writable (/public/ download method)\n"
+    },
+    "file_progress": {
+        "title": "Upload progress",
+        "severity": "Info",
+        "sid": -1,
+        "description": "Your server is not capable of displaying file upload progress. File upload  \nprogress requires an Apache server running PHP with mod_php or Nginx with  \nPHP-FPM.\n",
+        "value": "Not enabled\n"
+    },
+    "fitvids": {
+        "title": "FitVids.js jQuery plugin",
+        "severity": "OK",
+        "sid": 0,
+        "description": "",
+        "value": "Installed\n"
+    },
+    "fontawesome": {
+        "title": "Font Awesome",
+        "severity": "OK",
+        "sid": 0,
+        "description": " * All icons loaded\n\n",
+        "value": "Font Awesome library is installed. Using /Webfonts with CSS/ version. (more  \ninformation [1])\n\n[1] https://buriton11.ddev.site/admin/config/content/fontawesome\n"
+    },
+    "image.toolkit": {
+        "title": "Image toolkit",
+        "severity": "Info",
+        "sid": -1,
+        "description": "GD2 image manipulation toolkit\n",
+        "value": "gd\n"
+    },
+    "image.toolkit.gd.version": {
+        "title": "GD library",
+        "severity": "Info",
+        "sid": -1,
+        "description": "Supported image file formats: /GIF, JPEG, PNG, WEBP/.\n",
+        "value": "2.3.3\n"
+    },
+    "mysql_transaction_level": {
+        "title": "Transaction isolation level",
+        "severity": "OK",
+        "sid": 0,
+        "description": "See the setting MySQL transaction isolation level [1] page for more  \ninformation.\n\n[1] https://www.drupal.org/docs/system-requirements/setting-the-mysql-transaction-isolation-level\n",
+        "value": "READ-COMMITTED\n"
+    },
+    "node_access": {
+        "title": "Node Access Permissions",
+        "severity": "Info",
+        "sid": -1,
+        "description": "If the site is experiencing problems with permissions to content, you may  \nhave to rebuild the permissions cache. Rebuilding will remove all privileges  \nto content and replace them with permissions based on the current modules and  \nsettings. Rebuilding may take some time if there is a lot of content or  \ncomplex permission settings. After rebuilding has completed, content will  \nautomatically use the new permissions. Rebuild permissions [1]\n\n[1] https://buriton11.ddev.site/admin/reports/status/rebuild\n",
+        "value": "Disabled\n"
+    },
+    "php": {
+        "title": "PHP",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": "8.4.18 (more information [1])\n\n[1] https://buriton11.ddev.site/admin/reports/status/php\n"
+    },
+    "php_extensions": {
+        "title": "PHP extensions",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": "Enabled\n"
+    },
+    "php_memory_limit": {
+        "title": "PHP memory limit",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": "-1 (Unlimited)\n"
+    },
+    "php_opcache": {
+        "title": "PHP OPcode caching",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": "Enabled\n"
+    },
+    "php_random_bytes": {
+        "title": "Random number generation",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": "Successful\n"
+    },
+    "search_status": {
+        "title": "Search index progress",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": "95% (89 remaining)\n"
+    },
+    "trusted_host_patterns": {
+        "title": "Trusted Host Settings",
+        "severity": "Info",
+        "sid": -1,
+        "description": "The trusted_host_patterns setting is set to allow /.*/\n",
+        "value": "Enabled\n"
+    },
+    "update": {
+        "title": "Database updates",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": "Up to date\n"
+    },
+    "update access": {
+        "title": "Access to update.php",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": "Protected\n"
+    },
+    "update status": {
+        "title": "Update notifications",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": "Enabled\n"
+    },
+    "update_contrib": {
+        "title": "Module and theme update status",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": "Up to date [1]\n\n[1] https://buriton11.ddev.site/admin/reports/updates\n"
+    },
+    "update_core": {
+        "title": "Drupal core update status",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": "Up to date [1]\n\n[1] https://buriton11.ddev.site/admin/reports/updates\n"
+    },
+    "webform_email": {
+        "title": "Webform: HTML email support",
+        "severity": "OK",
+        "sid": 0,
+        "description": "Webform PHP mailer: Sends the message as plain text or HTML, using PHP's  \nnative mail() function.\n",
+        "value": "Provided by the Webform module.\n"
+    },
+    "webform_file_private": {
+        "title": "Webform: Private files",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": "Private file system is set.\n"
+    },
+    "webform_libraries": {
+        "title": "Webform: External libraries",
+        "severity": "OK",
+        "sid": 0,
+        "description": "------------------------------------------------------------------------------\n*Choices 11.0.2* (Installed)\n    The Choices [1] library is installed in */libraries/choices*./(Choices.js\n    is used to improve the user experience for select menus. Choices.js is an\n    alternative to Select2.}/\n*Code Mirror 5.65.12* (Installed)\n    The Code Mirror [2] library is installed in\n    */libraries/codemirror*./(Code Mirror is used to provide a text editor\n    for YAML, HTML, CSS, and JavaScript configuration settings and\n    messages.}/\n*jQuery: Input Mask 5.0.9* (Installed)\n    The jQuery: Input Mask [3] library is installed in\n    */libraries/jquery.inputmask*./(Input masks are used to ensure predefined\n    and custom formats for text fields.}/\n*jQuery: International Telephone Input 17.0.19* (Installed)\n    The jQuery: International Telephone Input [4] library is installed in\n    */libraries/jquery.intl-tel-input*./(International Telephone Input is\n    used by the Telephone element.}/\n*jQuery: RateIt 1.1.5* (Installed)\n    The jQuery: RateIt [5] library is installed in\n    */libraries/jquery.rateit*./(RateIt is used to provide a customizable\n    rating element.}/\n*jQuery: Select2 4.0.13* (Installed)\n    The jQuery: Select2 [6] library is installed in\n    */libraries/jquery.select2*./(Select2 is used to improve the user\n    experience for select menus. Select2 is the recommended select menu\n    enhancement library.}/\n*jQuery: Text Counter 0.9.1* (Installed)\n    The jQuery: Text Counter [7] library is installed in\n    */libraries/jquery.textcounter*./(Word or character counting, with\n    server-side validation, is available for text fields and text areas.}/\n*jQuery: Timepicker 1.14.0* (Installed)\n    The jQuery: Timepicker [8] library is installed in\n    */libraries/jquery.timepicker*./(Timepicker is used to provide a polyfill\n    for HTML 5 time elements.}/\n*Popper.js 2.11.6* (Installed)\n    The Popper.js [9] library is installed in\n    */libraries/popperjs*./(Popper.js is used to provide tooltip behavior for\n    elements.}/\n*Progress Tracker 2.0.7* (Installed)\n    The Progress Tracker [10] library is installed in\n    */libraries/progress-tracker*./(Progress Tracker is used by multi-step\n    wizard forms.}/\n*Signature Pad 2.3.0* (Installed)\n    The Signature Pad [11] library is installed in\n    */libraries/signature_pad*./(Signature Pad is used to provide a signature\n    element.}/\n*Tabby 12.0.3* (Installed)\n    The Tabby [12] library is installed in */libraries/tabby*./(Tabby is used\n    to display tabs in the administrative UI}/\n*Tippy.js 6.3.7* (Installed)\n    The Tippy.js [13] library is installed in */libraries/tippyjs*./(Tippy.js\n    is used to provide tooltip behavior for elements.}/\n\n\n[1] https://choices-js.github.io/Choices/\n[2] https://codemirror.net/\n[3] https://robinherbots.github.io/Inputmask/\n[4] https://github.com/jackocnr/intl-tel-input\n[5] https://github.com/gjunge/rateit.js\n[6] https://select2.github.io/\n[7] https://github.com/ractoon/jQuery-Text-Counter\n[8] https://github.com/jonthornton/jquery-timepicker\n[9] https://github.com/floating-ui/floating-ui\n[10] https://nigelotoole.github.io/progress-tracker/\n[11] https://github.com/szimek/signature_pad\n[12] https://github.com/cferdinandi/tabby\n[13] https://github.com/atomiks/tippyjs\n",
+        "value": "14 libraries (13 installed; 1 excluded; 0 CDN)\n"
+    },
+    "webform_spam": {
+        "title": "Webform: Spam protection",
+        "severity": "Info",
+        "sid": -1,
+        "description": "------------------------------------------------------------------------------\n*CAPTCHA [1]*\n    Provides CAPTCHA for adding challenges to arbitrary forms.\n*reCAPTCHA [2]*\n    Uses the Google reCAPTCHA [3] web service to improve the CAPTCHA system.\n*Honeypot [4]*\n    Mitigates spam form submissions using the honeypot method.\n\n\n[1] https://www.drupal.org/project/captcha\n[2] https://www.drupal.org/project/recaptcha\n[3] https://cloud.google.com/security/products/recaptcha\n[4] https://www.drupal.org/project/honeypot\n",
+        "value": "Webform Spam protection module installed.\n"
+    },
+    "webserver": {
+        "title": "Web server",
+        "severity": "Info",
+        "sid": -1,
+        "description": "",
+        "value": ""
+    }
+}

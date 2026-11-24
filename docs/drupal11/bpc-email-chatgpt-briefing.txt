@@ -1,0 +1,27 @@
+Help me draft an email to BPC (Buriton Parish Council) explaining, in very simple non-technical terms, what our website upgrade trial has proved and what the remaining risks are. Use clear British English and a professional, straightforward tone. Explain the positive result without overstating what has been tested. The email should be understandable to councillors who do not work with websites. Help me refine it afterwards.
+
+Use this project context, recorded on 19 October 2026:
+
+- The existing Buriton website uses Drupal, the software behind the site. Local trials have successfully demonstrated the upgrade stages from Drupal 9, through Drupal 10, to Drupal 11. The final test site runs Drupal 11.4.10. This is a completed technical proof of concept: we have demonstrated a workable upgrade route for the existing website.
+
+- All work took place on separate test copies. The public website has not been upgraded or changed by this work. The trial supports upgrading the existing site while keeping its current design; it has not established a need to replace the whole website.
+
+- We updated the underlying software and supporting components, removed parts that were no longer needed, and made compatibility adjustments so the existing design and features could work with the newer software. The working steps, fixes and checks have been documented for reuse during the real upgrade.
+
+- Checks showed that the main pages, search, events, sample reports, contact-form pages, administration pages and news-feed output could load. Automated checks of the design, menus and slideshow-related code also passed. These checks demonstrate technical progress, but they do not prove every visitor or editor task works correctly.
+
+- The recorded content, user, media, form-submission and feed totals matched across the core upgrade, and the records checked showed no new loss. All 1,726 existing managed files checked were unchanged byte for byte. These were meaningful preservation checks, not an exhaustive manual review of every page, document and record.
+
+- We found 292 file records referring to files that were already absent from the test copy before the final upgrade. They were not newly lost during that upgrade. Their significance needs checking against a fresh copy of the live website. We have not established whether any live page or document is affected, so the email must not describe this as 292 files lost from the public website.
+
+- Before changing the public site, the procedure needs rehearsing against a fresh copy of the then-current live website, including its complete files. This will account for content and settings that may have changed since the trial. The live hosting environment also needs checking; the trial has not proved that the current host can run the upgraded site unchanged or that a hosting move is necessary.
+
+- Practical testing is still needed with the people who use and maintain the site. This includes editing and saving content, representative documents and downloads, existing-account logins and password resets, both contact forms and actual email delivery, and menus and other controls on phones and computers. Contact-form pages loading successfully is not proof that messages are delivered. The work is not a complete accessibility or security audit.
+
+- The live change needs complete backups, a verified way to restore the site if something goes wrong, and a planned changeover. A separate database restoration and selected file restores were tested, but a complete restored-site rehearsal remains to be done. A pause in editing or a service interruption may be needed; no duration or downtime promise has been agreed.
+
+- Keeping the current design means retaining some older components and a few documented compatibility fixes. These need ongoing maintenance and review when future updates are made. This upgrade does not remove the need for routine maintenance or settle any separate decision about a future redesign.
+
+- The outcome is positive: the technical upgrade route has been demonstrated and the reusable work has reduced uncertainty. This is a sound basis for planning the real upgrade. It is not evidence that the public site can be changed immediately without further preparation and testing. No fixed price, delivery date or live changeover window has been agreed in this project context.
+
+Please turn this into a clear email explaining what we have achieved, the practical limits and risks, and the next steps before changing the public website. Keep the email much shorter than this briefing. Translate the technical detail into its significance for the council, with a calm, balanced account of the remaining work.
