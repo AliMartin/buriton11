@@ -27,4 +27,4 @@ on_decline: ''
 wrapper_identifier:
   - .twitter-tweet
 attachments: {  }
-weight: 0
+weight: 6

@@ -26,4 +26,4 @@ on_accept: ''
 on_decline: ''
 wrapper_identifier: {  }
 attachments: {  }
-weight: 0
+weight: -6

@@ -1,6 +1,6 @@
 uuid: 4299158d-79e4-4036-af1f-bfad5093a8fa
 langcode: en
-status: false
+status: true
 dependencies: {  }
 _core:
   default_config_hash: VdibtFj4X5ekW1PpEJx9ujvGgbz_v8oXOpZi2hi2OaA
@@ -26,8 +26,8 @@ cookies:
 required: false
 opt_out: false
 only_once: false
-contextual_consent_only: null
-contextual_consent_text: null
+contextual_consent_only: false
+contextual_consent_text: ''
 info_url: 'https://marketingplatform.google.com/intl/de/about/analytics/'
 privacy_policy_url: 'https://policies.google.com/privacy'
 javascripts: {  }
@@ -37,4 +37,4 @@ on_accept: "gtag('consent', 'update', {\r\n  'analytics_storage': 'granted'\r\n}
 on_decline: "gtag('consent', 'update', {\r\n  'analytics_storage': 'denied'\r\n});"
 wrapper_identifier: {  }
 attachments: {  }
-weight: 1
+weight: -13

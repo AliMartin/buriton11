@@ -27,4 +27,4 @@ on_decline: ''
 wrapper_identifier:
   - .tiktok-embed
 attachments: {  }
-weight: 0
+weight: 4

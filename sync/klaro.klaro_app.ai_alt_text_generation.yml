@@ -26,4 +26,4 @@ on_decline: ''
 wrapper_identifier:
   - .ai-alt-text-generation
 attachments: {  }
-weight: 0
+weight: -8

@@ -1,6 +1,6 @@
 uuid: a4729a42-e897-47c6-9b8e-56b5e44f460f
 langcode: en
-status: false
+status: true
 dependencies: {  }
 _core:
   default_config_hash: '-iprVkW8-LtyDu0xCMSr8AqKTbIu4DYtGbd3RRPLWek'
@@ -14,8 +14,8 @@ cookies: {  }
 required: false
 opt_out: false
 only_once: false
-contextual_consent_only: null
-contextual_consent_text: null
+contextual_consent_only: false
+contextual_consent_text: ''
 info_url: 'https://www.google.com/recaptcha/about/'
 privacy_policy_url: 'https://policies.google.com/privacy'
 javascripts:
@@ -29,4 +29,4 @@ on_decline: ''
 wrapper_identifier:
   - .g-recaptcha
 attachments: {  }
-weight: 0
+weight: -12

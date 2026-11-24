@@ -30,4 +30,4 @@ on_decline: ''
 wrapper_identifier:
   - deep-chat
 attachments: {  }
-weight: 0
+weight: -9

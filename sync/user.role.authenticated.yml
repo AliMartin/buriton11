@@ -17,6 +17,7 @@ dependencies:
     - file
     - filter
     - fontawesome
+    - klaro
     - media
     - search
     - system
@@ -54,6 +55,7 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'update media'
+  - 'use klaro'
   - 'use text format full_html'
   - 'use text format restricted_html'
   - 'use text format webform_default'

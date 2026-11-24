@@ -8,6 +8,7 @@ dependencies:
     - aggregator
     - comment
     - filter
+    - klaro
     - media
     - search
     - system
@@ -24,5 +25,6 @@ permissions:
   - 'access user profiles'
   - 'post comments'
   - 'search content'
+  - 'use klaro'
   - 'use text format restricted_html'
   - 'view media'

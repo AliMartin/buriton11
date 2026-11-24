@@ -43,4 +43,4 @@ on_decline: ''
 wrapper_identifier: {  }
 attachments:
   - matomo_tracking_script
-weight: 3
+weight: 11

@@ -1,6 +1,6 @@
 uuid: 3b3be5a4-6059-4634-afd9-ec0398a59109
 langcode: en
-status: true
+status: false
 dependencies: {  }
 _core:
   default_config_hash: 3NypjVc12FPVFpA6Gyls4C7faiF34IhC5M2CH6VKnO8
@@ -14,8 +14,8 @@ cookies: {  }
 required: false
 opt_out: false
 only_once: false
-contextual_consent_only: null
-contextual_consent_text: null
+contextual_consent_only: false
+contextual_consent_text: ''
 info_url: 'https://vimeo.com/'
 privacy_policy_url: 'https://vimeo.com/privacy'
 javascripts:
@@ -26,4 +26,4 @@ on_accept: ''
 on_decline: ''
 wrapper_identifier: {  }
 attachments: {  }
-weight: 0
+weight: 5

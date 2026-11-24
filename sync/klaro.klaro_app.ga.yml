@@ -39,4 +39,4 @@ on_decline: ''
 wrapper_identifier: {  }
 attachments:
   - ga4_google_analytics
-weight: 1
+weight: 8

@@ -25,4 +25,4 @@ on_accept: "gtag('consent', 'update', {\r\n  'ad_storage': 'granted',\r\n  'ad_u
 on_decline: "gtag('consent', 'update', {\r\n  'ad_storage': 'denied',\r\n  'ad_user_data': 'denied',\r\n  'ad_personalization': 'denied'\r\n});"
 wrapper_identifier: {  }
 attachments: {  }
-weight: 1
+weight: 7

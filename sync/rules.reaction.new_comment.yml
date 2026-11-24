@@ -7,7 +7,7 @@ label: 'New comment'
 events:
   -
     event_name: 'rules_entity_insert:comment'
-description: 'Send an email when there''s a new comment.'
+description: "Send an email when there's a new comment."
 tags: {  }
 config_version: '3'
 expression:

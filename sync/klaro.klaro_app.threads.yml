@@ -27,4 +27,4 @@ on_decline: ''
 wrapper_identifier:
   - .text-post-media
 attachments: {  }
-weight: 0
+weight: 3
