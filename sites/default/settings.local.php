@@ -6,6 +6,8 @@ $settings['file_temp_path'] = DRUPAL_ROOT . '/tmp';
 $settings['config_sync_directory'] = DRUPAL_ROOT . '/sync';
 
 $settings['trusted_host_patterns'] = [
+  '^buriton\.hyperluminal\.co\.uk$',
+  '^.+\.buriton\.hyperluminal\.co\.uk$',
   '^buriton\.info$',
   '^.+\.buriton\.info$',
   '^buriton11\.ddev\.site$',
