@@ -532,3 +532,10 @@ footer.comment__meta > a {
     outline: 2px solid #0f5099;
     outline-offset: 3px;
 }
+/* Keep login text readable when the form appears in the dark footer. */
+.user-login-form input[type="text"],
+.user-login-form input[type="password"] {
+    color: #333;
+    background-color: #fff;
+}
+

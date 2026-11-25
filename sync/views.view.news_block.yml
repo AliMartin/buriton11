@@ -333,6 +333,7 @@ display:
         type: mini
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 4
           total_pages: null
           id: 0
@@ -347,7 +348,6 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
@@ -430,11 +430,12 @@ display:
             fail: 'not found'
           validate_options: {  }
           break_phrase: false
-          not: 0
+          not: false
           vocabularies:
             section: section
-            tags: 0
-          include_args: 0
+            tags: '0'
+          include_args: false
+          min_match_percentage: 1
       filters:
         status:
           id: status
