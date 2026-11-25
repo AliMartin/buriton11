@@ -1,0 +1,9 @@
+buriton_editor_search.search:
+  path: '/admin/content/search-the-site'
+  defaults:
+    _form: '\Drupal\buriton_editor_search\Form\EditorSearchForm'
+    _title: 'Search the site'
+  requirements:
+    _permission: 'search all buriton content'
+  options:
+    _admin_route: true

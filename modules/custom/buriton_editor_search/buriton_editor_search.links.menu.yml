@@ -1,0 +1,6 @@
+buriton_editor_search.search:
+  title: 'Search the site'
+  description: 'Find published and unpublished content by keyword.'
+  route_name: buriton_editor_search.search
+  parent: system.admin_content
+  weight: 5

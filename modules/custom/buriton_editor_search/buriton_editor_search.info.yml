@@ -1,0 +1,8 @@
+name: Buriton editor search
+type: module
+description: Search published and unpublished site content from the Content menu.
+core_version_requirement: ^11
+package: Buriton
+dependencies:
+  - drupal:node
+  - drupal:text

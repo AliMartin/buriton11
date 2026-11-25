@@ -1,0 +1,3 @@
+search all buriton content:
+  title: 'Search published and unpublished site content'
+  restrict access: true
