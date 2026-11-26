@@ -6,6 +6,9 @@ all content types and searches published and unpublished content by default.
 Each whitespace-separated word must match somewhere in the item's text fields.
 Results show the publication status and are paginated, 25 per page, with the
 most recently updated items first. It does not search inside attached files.
+Created and Updated both include the year. Created uses Drupal's authored-on
+date, which is retained when content is edited but can be changed by an editor;
+it is not an audit record of the first publication date.
 
 The `search all buriton content` permission is assigned to Website Editor in
 the exported configuration. Drupal administrators also have access. Entity

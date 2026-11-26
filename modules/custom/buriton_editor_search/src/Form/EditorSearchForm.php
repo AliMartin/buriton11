@@ -108,7 +108,8 @@ final class EditorSearchForm extends FormBase {
         $node->toLink(),
         $types[$node->bundle()]->label(),
         $node->isPublished() ? $this->t('Published') : $this->t('Unpublished'),
-        $this->dateFormatter->format($node->getChangedTime(), 'short'),
+        $this->dateFormatter->format($node->getCreatedTime(), 'custom', 'j M Y'),
+        $this->dateFormatter->format($node->getChangedTime(), 'custom', 'j M Y'),
         $edit,
       ];
     }
@@ -116,7 +117,7 @@ final class EditorSearchForm extends FormBase {
       '#type' => 'table',
       '#weight' => 10,
       '#caption' => $this->t('Search results'),
-      '#header' => [$this->t('Title'), $this->t('Content type'), $this->t('Status'), $this->t('Updated'), $this->t('Operations')],
+      '#header' => [$this->t('Title'), $this->t('Content type'), $this->t('Status'), $this->t('Created'), $this->t('Updated'), $this->t('Operations')],
       '#rows' => $rows,
       '#empty' => $this->t('No matching content found.'),
     ];

@@ -38,6 +38,8 @@ try {
       'type' => 'news',
       'title' => "$marker title $status",
       'status' => $status,
+      'created' => strtotime('2020-02-03 12:00:00 UTC'),
+      'changed' => strtotime('2024-06-15 12:00:00 UTC'),
       'body' => ['value' => "BodyOnly$marker camping", 'format' => 'plain_text'],
     ])->save();
   }
@@ -57,6 +59,10 @@ try {
     $form = $build(compact('q', 'published', 'unpublished'));
     $rows = $form['results']['#rows'];
     $assert(count($rows) === $expected, "Wrong result count for $q ($published/$unpublished).");
+    foreach ($rows as $row) {
+      $assert($row[3] === '3 Feb 2020', 'Created must show the original date including its year.');
+      $assert($row[4] === '15 Jun 2024', 'Updated must show the separate modification date including its year.');
+    }
     if ($published !== $unpublished && $rows) {
       $assert((string) $rows[0][2] === ($published === '1' ? 'Published' : 'Unpublished'), 'Wrong publication status returned.');
     }
