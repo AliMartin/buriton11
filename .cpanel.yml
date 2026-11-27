@@ -1,6 +1,5 @@
 ---
 deployment:
   tasks:
-#    - export DEPLOYPATH=/home/buritoni/public_html
-    - export DEPLOYPATH=/home/hyperlum/buriton.hyperluminal.co.uk
+    - export DEPLOYPATH=/home/buritoni/public_html
     - /bin/cp -r * $DEPLOYPATH
